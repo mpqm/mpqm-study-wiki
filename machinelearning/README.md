@@ -1,4 +1,4 @@
-# HMMCANTrafficAnalysis
+# 01. HMMCANTrafficAnalysis
 #### ⚪ About Project
 * ##### CAN 네트워크에서 정상과 비정상(공격포함)트래픽을 가지고 데이터 가공후 HMM 알고리즘 적용
 * ##### 타임스탬프가 1씩 증가하는 단위시간 동안의 각 Arbid 호출을 엔트로피 시퀀스로 가공 및 HMM 적용
@@ -33,14 +33,21 @@ python hmm_antropy.py
 
 #### ⚪ Description
 * ##### Data Set Sample
+<p align ="center">
+   <img src="../docs/img/machine-learning/ml-cantraffic-1.png"/>
+</p>
 ![1](https://github.com/MpqM/ML_HMMCANTrafficAnalysis/assets/79093184/15ca70f5-c81b-4a4c-8d77-cd4ea10d0e92)
 
 
 * ##### Arbid Time Stamp Method
-![image](https://github.com/MpqM/ML_HMMCANTrafficAnalysis/assets/79093184/61fad1cd-bea9-4012-9a1a-d0f85d6cc753)
+<p align ="center">
+   <img src="../docs/img/machine-learning/ml-cantraffic-2.png"/>
+</p>
 
 * ##### Arbid Haming Distance Method
-![image](https://github.com/MpqM/ML_HMMCANTrafficAnalysis/assets/79093184/982a29bb-94fa-41f6-84a1-564e0e43714d)
+<p align ="center">
+   <img src="../docs/img/machine-learning/ml-cantraffic-3.png"/>
+</p>
 
 - - -
 
@@ -60,7 +67,7 @@ python hmm_antropy.py
 
 #### ⚪ Running Screen || Video
 <p align ="center">
-<img src="https://private-user-images.githubusercontent.com/79093184/311500643-5f2324cb-1a8a-49c3-91a7-1577cddeb510.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTAwNjU0ODcsIm5iZiI6MTcxMDA2NTE4NywicGF0aCI6Ii83OTA5MzE4NC8zMTE1MDA2NDMtNWYyMzI0Y2ItMWE4YS00OWMzLTkxYTctMTU3N2NkZGViNTEwLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAzMTAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMzEwVDEwMDYyN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTFlYmZlN2ZhOTgxZGNkMGY2OGU0YmUwNjc0MTk3MWM4Yjk3OWZhZmVkNzVhYzYzNWNiYWQzZDAxOGQ1MjMxZmMmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.x5bXy6DxgZ5YWDmQYYNQp8S714LEPzUGHTMK0VUikiU"/>
+   <img src="../docs/img/machine-learning/ml-maliciouscode-1.png"/>
 </p>
 
 - - -
@@ -84,12 +91,19 @@ python ganada-1.py
 
 #### ⚪ Description 
 * ##### Data Set Sample
-![image](https://github.com/MpqM/ML_MaliciousCodeAnalysis/assets/79093184/7da72f29-77be-4e8d-8d19-eb2e458661f8)
-* ##### 6개의 데이터셋들에서 opcodeTrace 추출, target(mal/benign)과 feature(n-gram)데이터 가공
-![image](https://github.com/MpqM/ML_MaliciousCodeAnalysis/assets/79093184/0533259f-9573-4e19-893f-2e044356d747)
-* ##### 모델 학습
-![image](https://github.com/MpqM/ML_MaliciousCodeAnalysis/assets/79093184/24ceac78-4b54-462e-930c-444469685872)
+<p align ="center">
+   <img src="../docs/img/machine-learning/ml-maliciouscode-2.png"/>
+</p>
 
+* ##### 6개의 데이터셋들에서 opcodeTrace 추출, target(mal/benign)과 feature(n-gram)데이터 가공
+<p align ="center">
+   <img src="../docs/img/machine-learning/ml-maliciouscode-3.png"/>
+</p>
+
+* ##### 모델 학습
+<p align ="center">
+   <img src="../docs/img/machine-learning/ml-maliciouscode-4.png"/>
+</p>
 - - -
 
 #### ⚪ Writer
