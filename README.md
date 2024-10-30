@@ -5,8 +5,8 @@
 <br>
 
 #### X [android](https://github.com/mpqm/my-study/tree/main/android)
-#### X [c#](https://github.com/mpqm/my-study/tree/main/c#)
-#### X [c++](https://github.com/mpqm/my-study/tree/main/c++)
+#### X [c#](https://github.com/mpqm/my-study/tree/main/c%23)
+#### X [c++](https://github.com/mpqm/my-study/tree/main/c%2B%2B)
 #### B [HtmlCSS](https://github.com/mpqm/my-study/tree/main/htmlcss)
 #### O [HyperledgerFabric](https://github.com/mpqm/my-study/tree/main/hyperledgerfabric)
 #### B [JAVA](https://github.com/mpqm/my-study/tree/main/java)

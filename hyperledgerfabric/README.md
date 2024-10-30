@@ -6,7 +6,7 @@
 
 #### ⚪ Running Screen || Video
 <p align ="center">
-   <img src="https://github.com/MpqM/HyperledgerFabric_v1.x-SimpleAsset/assets/79093184/9bf5a1db-9a72-4054-9b72-1f592cc222b4.png"/>
+   <img src="../docs/img/hyperledgerfabric/hyperledgerfabric-asset-1.png"/>
 </p>
 
 - - -
