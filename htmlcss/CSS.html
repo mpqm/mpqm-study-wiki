@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+  <!-- CSS 아이콘 -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <!-- 탭에 아이콘 적용 -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <!-- 웹 페이지에서 사용할 각종 아이콘  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- style 태그: CSS 적용 -->
+  <!-- CSS 파일 없이 사용하는 방법 -->
+  <style>
+  /* CSS 기본 */
+  /* CSS 코드
+      선택자 {
+          디자인 코드 작성
+      }
+      선택자 : 태그이름, #아이디, .클래스이름
+  */
+  h1 {
+    color: red;
+  }
+  #h1_to_green{
+    color: green;
+  }
+
+  .h1_to_blue {
+    color: blue;
+  }
+  /* 공통 지정 */
+  .h1-to-blue, #h1-to-green {
+    background-color: gray;
+    font-size: 30px;
+  }
+  /* 자손 선택자 : 자식의 자식의 자식도 다 적용 */
+  .root h1 {
+    color: black;
+  }
+  /* 자식 선택자 : 바로 밑의 자식만 적용 */
+  .parent > h1 {
+    background-color: green;
+  }
+  
+  /* CSS 배경 */
+  body {
+    background-color: #F3F3F3;
+  }
+  .div_bg_img {
+    background-image: url('./test/img/test.img');
+    background-position: left;
+    /* background-repeat: repeat; */
+    width: 100%;
+    height: 100%;
+  }
+
+  /* CSS 테두리 */
+  .div_bd_1 {
+    border: 5px solid red;
+  }
+  .div_bd_2 {
+    border: 3px dotted green;
+  }
+  .div_bd_3 {
+    border: 1px solid gray;
+    /* 전부 */
+    /* border-radius: 5px; */
+    /* 왼쪽위,오른쪽아래 / 오른쪽위,왼쪽아래 */
+    /* border-radius: 5px 10px; */
+    /* 왼쪽위/ 오른쪽위,왼쪽아래, / 오른쪽아래 */
+    /* border-radius: 5px 10px 15px; */
+    /* 왼쪽위/ 오른쪽위 / 오른쪽아래 / 왼쪽아래*/
+    border-radius: 5px 10px 15px 20px;
+  }
+  .div_bd_4{
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+  
+  /* CSS 링크 */
+  .a_link_status {
+    background-color: black;
+    color: red;
+    text-decoration: none;
+  }
+  /* 방문한 적이 있는 상태 */
+  .a_link_status:visited { 
+      color: green;
+  }
+  /* 클릭 했을 때 링크 상태 */
+  .a_link_status:active {
+      color: pink;
+  }
+  /* 마우스를 올려놓았을 때의 상태 */
+  .a_link_status:hover {
+      color: blue;
+  }
+
+  /* CSS 리스트 */
+  ul {
+    list-style-type: decimal;
+  }
+  /* 기본 */
+  li {
+    color: red;
+  }
+  /* 3번 째 */
+  li:nth-child(3) {
+    color: blue;
+  }
+  /* 2n번 째 */
+  li:nth-child(2n) {
+    color: green;
+  }
+  /* 3n+1 번째 */
+  li:nth-child(3n+1) {
+    color: yellow;
+  }
+
+  /* CSS 아이콘 9~16 추가 */
+  .a_icon {
+    text-decoration: none;
+    font-size: xx-large;
+  }
+  .btn:hover {
+    color: red;
+  }
+
+  /* CSS padding, margin */
+  /* px 화면의 1칸, 사용자의 기기에 따라 다름 */
+  /* em 해당 태그의 font-size 기준으로 비율로 설정*/
+  /* rem 전체 페이지의 최상위의 font-size 기준으로 비율로 설정*/
+  .div_r {
+    width: 100px;
+    font-size: 20px;
+  }
+  .div_r_r {
+    font-size: 1.5em;
+  }
+  .div_r_r_r {
+    width: 1.5em;
+  }
+  .div_r_r_r_r {
+    margin: 3px;
+    border: 5px solid black;
+    padding: 7px;
+    height: 20px;
+  }
+  .movie_poster {
+    width: 100px;
+    margin-left: 10px;
+  }
+  .movie_description {
+    /* 테두리 5px */
+    border: 5px solid black;
+    /* 마진 10px */
+    margin: 10px 10px 10px 20px;
+    /* margin: 10px 20px; */
+    /* 패딩 7px */
+    padding: 7px;
+    /* 가로 ??? */
+    width: 56px;
+  }
+
+  /* CSS Display */
+  .div_dp {
+    width: 100px;
+    height: 50px;
+  }
+  .div_dp_1 {
+    background-color: red;
+  }
+  .div_dp_2 {
+    background-color: green;
+  }
+  .div_dp_3 {
+    background-color: blue;
+  }
+  .div_dp_inline {
+    display: inline;
+  }
+  .div_dp_inline_block {
+    /* 해당 태그 자체는 인라인처럼 동작 */
+    /* 해당 태그 안에 있는 애들은 블록처럼 동작 */
+    display: inline-block;
+  }
+
+  /* CSS flex */
+  .flex-container1 {
+    display: flex;
+    /* 
+    flex-direction은 플렉스 아이템의 배치될 방향을 지정
+    row : 기본값, 왼쪽에서 오른쪽
+    row-reverse : 오른쪽에서 왼쪽
+    column : 위에서 아래쪽
+    column-reverse : 아래에서 위쪽
+    flex-direction: column-reverse; 
+    */
+
+    /* 
+    justify-content은 플렉스 아이템의 정렬 방식을 지정
+    flex-start : 기본값, 컨테이너의 앞에서부터 배치
+    flex-end : 컨테이너의 뒤쪽에서부터 배치
+    center : 컨테이너의 가운데에서부터 배치
+    space-between : 플렉스 아이템 사이에만 여유 공간을 두고 배치
+    space-around : 플렉스 아이템 앞 뒤 사이에 여유 공간을 두고 배치
+    ex) justify-content: space-around;
+    */
+    
+    /* 
+    align-items은 플렉스 아이템의 수직 방향의 정렬 방식을 지정
+    stretch : 기본값, 플렉스 아이템의 크기가 컨테이너의 크기와 같게 늘어남
+    flex-start : 위쪽에서부터 배치
+    flex-end : 아래쪽에서부터 배치
+    center : 가운데에 배치
+    baseline : 컨테이너의 기준선에 배치
+    align-items: baseline; 
+    */
+
+    /* 
+    flex-wrap은 플렉스 아이템이 컨테이너의 크기를 넘으면 다음 아이템의 위치를 어떻게 할건지 지정
+    nowrap : 기본값, 플렉스 아이템이 다음 줄로 넘어가진않고 아이템의 너비를 줄임
+    wrap : 공간이 없으면 아이템을 다음 줄에 추가
+    wrap-reverse : 공간이 없으면 아이템을 이전 줄에 추가
+    */
+    flex-wrap: wrap;
+    background-color: aqua;
+    width: 1000px;
+    height: 150px;
+  }
+
+  .item {
+    background-color: gray;
+    /* width: 250px; */
+    height: 50px;
+    margin: 10px;
+    flex-basis: 200px;
+    /* 0보다 큰 값이 설정되는 아이템의 크기가 유동적 변함, 크게 해줌 */
+    flex-grow: 0;
+    /* 0보다 큰 값이 설정되는 아이템의 크기가 유동적 변함, basis보다 작은 값을 설정할 수 있는지 여부*/
+    flex-shrink: 0;
+  }
+
+  .first {
+    width: 10px;
+    /* order: -1; */
+    /* margin-right: auto; */
+  }
+
+  /* CSS position */
+  #container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    border: 1px solid black;
+    margin-bottom: 10px;
+  }
+
+  #fixed_button {
+    background-color: white;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+  }
+
+  #footer {
+    background-color: white;
+    position: sticky;
+    bottom: 0;
+    border: 1px solid black;
+    margin-bottom: 10px;
+  }
+  .pos_div {
+    border: solid red;
+  }
+  #pos_div_1 {
+    /* 위치 지정 X */
+    position: static;
+  }
+  #pos_div_2 {
+    /* 위치를 상대적으로 지정하겠다 */
+    display: inline-block;
+    position: relative;
+    left: 200px;
+    top: 100px;
+  }
+  #pos_div_3 {
+    /* 브라우저에서 고정된 위치로 지정 */
+    position: fixed;
+    right: 30px;
+    bottom: 20%;
+  }
+  #pos_div_4 {
+    /* 절대값으로 위치 지정 */
+    position: absolute;
+    right: 300px;
+    bottom: 200px;
+  }
+  #pos_div_5 {
+    /* 화면을 벗어났을 때 fixed처럼 동작 */
+    position: sticky;
+    top: 0px;
+    left: 50px;
+    width: 300px;
+  }
+
+  /* 반응형 설정 */
+  .div_rp {
+    border: solid green;
+    width: 100px;
+  }
+  #div_rp_1 {
+    width: 1000px;
+  }
+  #div_rp_2 {
+    width: 100%;
+    max-width: 1000px;
+  }
+  #div_rp_3 {
+    min-width: 800px;
+  }
+  /* 세로 모드 모바일 */
+  @media (min-width: 375px) {
+    #div_rp_4 {
+      background-color: yellow;
+      display: none;
+    }
+  }
+  /* 가로 모드 모바일 */
+  @media (min-width: 576px) {
+    #div_rp_4 {
+      background-color: red;
+      display: none;
+    }
+  }
+  /* 일반 태블릿 */
+  @media (min-width: 768px) {
+    #div_rp_4 {
+      background-color: blue;
+      display: block;
+    }
+  }
+  /* 일반 데스크탑 */
+  @media (min-width: 992px) {
+    #div_rp_4 {
+      background-color: black;
+    }
+  }
+
+  /* CSS Grid */
+  .item {
+      border: 1px solid black;
+  }
+  .grid_container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: minmax(100px, auto) minmax(100px, auto) minmax(100px, auto);
+      gap: 10px 20px;
+
+      /* row-gap: 10px;
+      column-gap: 20px; */
+      /*
+      grid-template-columns : 열의 크기
+      grid-template-rows : 행의 크기
+      row-gap : 행 사이의 간격
+      column-gap : 열 사이의 간격
+      gap : row-gap, column-gap 한번에
+      minmax(100px, auto) : 최소한 100px, 최대는 자동으로(auto) 늘어나게 
+      */
+  }
+
+
+  .item:nth-child(1) {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+  }
+
+  .item:nth-child(2) {
+      grid-column: 3 / 5;
+      grid-row: 1 / 2;
+  }
+
+  /* .item:nth-child(1) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+  } */
+  </style>
+ 
+  <!-- CSS 파일 사용 -->
+  <!-- 위의 파일 내용을 복사해서 style.css 파일로 만듬 -->
+  <!-- <link rel="stylesheet" href="./style.css" /> -->
+</head>
+
+<body>
+  <!-- CSS 기본 -->
+  <h1 >CSS</h1>
+  <h1 id="h1_to_green">CSS</h1>
+  <h1 class="h1_to_blue">CSS</h1>
+  <!-- CSS 적용 순서: id -> class -> 태그 -->
+  <div class="root">
+    <div class="parent">
+      <h1> CSS </h1>
+    </div>
+      <h1> CSS</h1>
+  </div>
+  
+  <!-- CSS 배경 -->
+  <div class="div_bg_img">
+    CSS 배경<br>
+    CSS 배경<br>
+    CSS 배경<br>
+    CSS 배경<br>
+    CSS 배경<br>
+    CSS 배경<br>
+  </div>
+
+  <!-- CSS 테두리 -->
+  <div class="div_bd_1">CSS 테두리</div>
+  <div class="div_bd_2">CSS 테두리</div>
+  <div class="div_bd_3">CSS 테두리</div>
+  <div class="div_bd_4">CSS 테두리</div>
+
+  <!-- CSS 링크 -->
+  <a class="a_link_status" href="http://www.naver.com/">네이버</a>
+  
+  <!-- CSS 리스트 -->
+  <ul>
+    <li>CSS 리스트</li>
+    <li>CSS 리스트</li>
+    <li>CSS 리스트</li>
+    <li>CSS 리스트</li>
+    <li>CSS 리스트</li>
+    <li>CSS 리스트</li>
+    <li>CSS 리스트</li>
+  </ul>
+
+  <!-- CSS 아이콘 -->
+  <div>
+    <a class="a_icon" href="https://www.youtube.com/">
+      <i class="btn fa-brands fa-youtube"></i>
+    </a>
+    <a class="a_icon" href="https://www.instagram.com/">
+      <i class="btn fa-brands fa-instagram"></i>
+    </a>
+  </div>
+
+  <!-- CSS padding, margin -->
+  <img class="movie_poster" src="./test/img/test.img">
+  <div class="movie_description">영화 설명</div>
+  <div class="div_r">
+    <div class="div_r_r">
+      <div class="div_r_r_r">
+        <div class="div_r_r_r_r">
+          bbb
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CSS display -->
+  <div class="div_dp div_dp_1">박스1</div>
+  <div class="div_dp div_dp_2">박스2</div>
+  <div class="div_dp div_dp_3">박스3</div>
+  <br>
+  <div class="div_dp div_dp_1 div_dp_inline">박스1</div>
+  <div class="div_dp div_dp_2 div_dp_inline">박스2</div>
+  <div class="div_dp div_dp_3 div_dp_inline">박스3</div>
+  <br>
+  <div class="div_dp div_dp_1 div_dp_inline_block">박스1</div>
+  <div class="div_dp div_dp_2 div_dp_inline_block">박스2</div>
+  <div class="div_dp div_dp_3 div_dp_inline_block">박스3</div>
+
+  <!-- CSS flex -->
+  <!-- flex-container
+  display 속성을 flex, flex-direction, justify-content, align-items, flex-wrap, flex-flow -->
+  <div class="flex-container1">
+  <!-- flex-item  
+    order, margin, flex-basis(플렉스 아이템의 기본 크기), 
+    flex-dirextion row면 width / flex-dirextion column면 height
+    flex(flex-grow, flex-shrink, flex-basis) -->
+    <div class="item">1</div>
+    <div class="item first">2</div>
+    <div class="item">3</div>
+  </div>
+
+  <!-- CSS position -->
+   <div>
+     <div id="header"> 헤더 △ </div>
+     <div id="container">
+      
+      <div class="card">
+          <img src="https://picsum.photos/id/1/200/250">
+          <h2>제목 1</h2>
+          <p>내용 1</p>
+      </div>
+      <div class="card">
+          <img src="https://picsum.photos/id/2/200/250">
+          <h2>제목 2</h2>
+          <p>내용 2</p>
+      </div>
+      <div class="card">
+          <img src="https://picsum.photos/id/3/200/250">
+          <h2>제목 3</h2>
+          <p>내용 3</p>
+      </div>
+    </div>
+     <div id="footer"> 풋터 </div>
+   </div>
+   <div class="pos_div" id="pos_div_1">static</div>
+   <div class="pos_div" id="pos_div_2">relative</div>
+   <div class="pos_div" id="pos_div_3">fixed</div>
+   <div class="pos_div" id="pos_div_4">absolute</div>
+   <div class="pos_div" id="pos_div_5">sticky</div>
+  
+  <!-- CSS Responsive -->
+  <div id="div_rp_1">CSS Responsive</div>
+  <div id="div_rp_2">CSS Responsive</div>
+  <div id="div_rp_3">CSS Responsive</div>
+  <div id="div_rp_4">CSS Responsive</div>
+
+  <!-- CSS Grid -->
+  <div class="grid_container">
+    <div class="item">A</div>
+    <div class="item">B</div>
+    <div class="item">C</div>
+    <div class="item">D</div>
+    <div class="item">E</div>
+    <div class="item">F</div>
+    <div class="item">G</div>
+    <div class="item">H</div>
+    <div class="item">I</div>
+    <div class="item">J</div>
+  </div>
+  
+  <!-- CSS 아이콘 -->
+  <i class="fa-brands fa-youtube"></i>
+  <i class="fa-solid fa-chevron-up"></i>
+  <i class="fa-solid fa-chevron-right"></i>
+  <i class="fa-solid fa-chevron-left"></i>
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <i class="fa-solid fa-cart-shopping"></i>
+  <i class="fa-solid fa-bars"></i>
+
+</body>
+
+</html>

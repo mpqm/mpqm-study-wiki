@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="2" failures="0" errors="0" time="1.348">
+  <testsuite name="LoginComponent.vue" errors="0" failures="0" skipped="0" timestamp="2024-08-06T03:54:01" time="0.549" tests="1">
+    <testcase classname="LoginComponent.vue 이메일 입력값 검증 테스트" name="LoginComponent.vue 이메일 입력값 검증 테스트" time="0.038">
+    </testcase>
+  </testsuite>
+  <testsuite name="TestComponent.vue" errors="0" failures="0" skipped="0" timestamp="2024-08-06T03:54:02" time="0.112" tests="1">
+    <testcase classname="TestComponent.vue renders props.msg when passed" name="TestComponent.vue renders props.msg when passed" time="0.019">
+    </testcase>
+  </testsuite>
+</testsuites>

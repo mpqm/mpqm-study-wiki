@@ -1,0 +1,100 @@
+.chat {
+    display: flex;
+}
+.chat-sidebar {
+    height: 95vh;
+    color: black;
+    border: 1px solid black;
+    background: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 200px;
+    overflow-y: scroll
+}
+.chat-main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    font-weight: 300; 
+}
+.chat-messages {
+    margin-left: 5px;
+    background: white;
+    border: 1px solid black;
+    flex-grow: 1;
+    padding: 5px 10px 5px 10px;
+    overflow-y: scroll;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+}
+.message {
+    width: auto;
+    margin-bottom: 10px;  
+}
+.message-name {
+    color: black;
+    font-weight: 300;
+    font-size: 15px;
+    margin-right: 5px;
+}
+.message-meta {
+    color: grey;
+    font-size: 10px;
+}
+.message a {
+    color: blue;
+}
+.form-container {
+    display: flex;
+    flex-shrink: 0;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.form-container form {
+    display: flex;
+    flex-grow: 1;
+    border: 2px solid black;
+}
+.form-container input {
+    width: 95vh;
+    padding: 15px;
+    outline: none;
+    border: none;
+    flex-grow: 1;
+}
+.form-container button {
+    font-size: 15px;
+    background: grey;
+    color: white;
+    border: none;
+    outline: none;
+    width: 100px;
+}
+button:hover {
+    background: black;
+    color:white
+}
+.room-title {
+    border-bottom: 1px solid black;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    font-weight: 300;
+    font-size: 20px;
+    background: white;
+    padding: 20px;   
+}
+.list-title {
+    border-bottom: 1px solid black;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 15px;
+}
+.users {
+    list-style-type: none;
+    color: black;
+    font-weight: 300;
+    margin: 0px 0px 0px 0px;
+    padding: 5px 25px 0px 10px;
+}
+

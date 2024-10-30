@@ -1,0 +1,39 @@
+@font-face {
+  font-family: __font_1f2a32;
+  src: url(https://assets.cdn.soomgo.com/_next/static/media/9031250013752d4b-s.p.woff2)
+    format("woff2");
+  font-display: swap;
+  font-weight: 400;
+}
+@font-face {
+  font-family: __font_1f2a32;
+  src: url(https://assets.cdn.soomgo.com/_next/static/media/fba9d678ff638e59-s.p.woff2)
+    format("woff2");
+  font-display: swap;
+  font-weight: 500;
+}
+@font-face {
+  font-family: __font_1f2a32;
+  src: url(https://assets.cdn.soomgo.com/_next/static/media/eb9adf802b0a60eb-s.p.woff2)
+    format("woff2");
+  font-display: swap;
+  font-weight: 600;
+}
+@font-face {
+  font-family: __font_1f2a32;
+  src: url(https://assets.cdn.soomgo.com/_next/static/media/81b352a4d7a000ae-s.p.woff2)
+    format("woff2");
+  font-display: swap;
+  font-weight: 700;
+}
+@font-face {
+  font-family: __font_Fallback_1f2a32;
+  src: local("Arial");
+  ascent-override: 93.76%;
+  descent-override: 23.75%;
+  line-gap-override: 0%;
+  size-adjust: 101.55%;
+}
+.__className_1f2a32 {
+  font-family: __font_1f2a32, __font_Fallback_1f2a32;
+}

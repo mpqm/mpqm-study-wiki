@@ -1,0 +1,9 @@
+# 기본 설정 + 개발 환경 필요 정보
+db:
+  host: 'localhost'
+  username: 'postgres'
+  password: 'postgres'
+  synchronize: true
+
+jwt:
+  secret: 'secret'

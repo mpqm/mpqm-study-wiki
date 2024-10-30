@@ -1,0 +1,404 @@
+.grid[data-v-a9bcd63a] {
+  display: grid;
+  -moz-column-gap: 1rem;
+  column-gap: 1rem;
+  padding: 0 1rem;
+  max-width: 90rem;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid > [data-v-a9bcd63a] {
+  grid-column: span 4;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.grid > .span-md-1[data-v-a9bcd63a] {
+  grid-column: span 1;
+}
+.grid > .span-md-2[data-v-a9bcd63a] {
+  grid-column: span 2;
+}
+.grid > .span-md-3[data-v-a9bcd63a] {
+  grid-column: span 3;
+}
+.grid > .span-md-4[data-v-a9bcd63a] {
+  grid-column: span 4;
+}
+@media (min-width: 992px) {
+  .grid[data-v-a9bcd63a] {
+    padding: 0 7.5rem;
+  }
+  .grid.max-col-8[data-v-a9bcd63a] {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .grid.max-col-8 > [data-v-a9bcd63a] {
+    grid-column: span 8;
+  }
+  .grid.max-col-8 > .span-lg-1[data-v-a9bcd63a] {
+    grid-column: span 1;
+  }
+  .grid.max-col-8 > .span-lg-2[data-v-a9bcd63a] {
+    grid-column: span 2;
+  }
+  .grid.max-col-8 > .span-lg-3[data-v-a9bcd63a] {
+    grid-column: span 3;
+  }
+  .grid.max-col-8 > .span-lg-4[data-v-a9bcd63a] {
+    grid-column: span 4;
+  }
+  .grid.max-col-8 > .span-lg-5[data-v-a9bcd63a] {
+    grid-column: span 5;
+  }
+  .grid.max-col-8 > .span-lg-6[data-v-a9bcd63a] {
+    grid-column: span 6;
+  }
+  .grid.max-col-8 > .span-lg-7[data-v-a9bcd63a] {
+    grid-column: span 7;
+  }
+  .grid.max-col-8 > .span-lg-8[data-v-a9bcd63a] {
+    grid-column: span 8;
+  }
+  .grid.max-col-15[data-v-a9bcd63a] {
+    grid-template-columns: repeat(15, 1fr);
+  }
+  .grid.max-col-15 > [data-v-a9bcd63a] {
+    grid-column: span 15;
+  }
+  .grid.max-col-15 > .span-lg-1[data-v-a9bcd63a] {
+    grid-column: span 1;
+  }
+  .grid.max-col-15 > .span-lg-2[data-v-a9bcd63a] {
+    grid-column: span 2;
+  }
+  .grid.max-col-15 > .span-lg-3[data-v-a9bcd63a] {
+    grid-column: span 3;
+  }
+  .grid.max-col-15 > .span-lg-4[data-v-a9bcd63a] {
+    grid-column: span 4;
+  }
+  .grid.max-col-15 > .span-lg-5[data-v-a9bcd63a] {
+    grid-column: span 5;
+  }
+  .grid.max-col-15 > .span-lg-6[data-v-a9bcd63a] {
+    grid-column: span 6;
+  }
+  .grid.max-col-15 > .span-lg-7[data-v-a9bcd63a] {
+    grid-column: span 7;
+  }
+  .grid.max-col-15 > .span-lg-8[data-v-a9bcd63a] {
+    grid-column: span 8;
+  }
+  .grid.max-col-15 > .span-lg-9[data-v-a9bcd63a] {
+    grid-column: span 9;
+  }
+  .grid.max-col-15 > .span-lg-10[data-v-a9bcd63a] {
+    grid-column: span 10;
+  }
+  .grid.max-col-15 > .span-lg-11[data-v-a9bcd63a] {
+    grid-column: span 11;
+  }
+  .grid.max-col-15 > .span-lg-12[data-v-a9bcd63a] {
+    grid-column: span 12;
+  }
+  .grid.max-col-15 > .span-lg-13[data-v-a9bcd63a] {
+    grid-column: span 13;
+  }
+  .grid.max-col-15 > .span-lg-14[data-v-a9bcd63a] {
+    grid-column: span 14;
+  }
+  .grid.max-col-15 > .span-lg-15[data-v-a9bcd63a] {
+    grid-column: span 15;
+  }
+}
+.post-header-title[data-v-a9bcd63a] {
+  margin: 0 0 2rem;
+  font-weight: 700;
+  color: #2d2d2d;
+}
+.post-header-title-wrapper[data-v-a9bcd63a] {
+  margin-bottom: 2rem;
+}
+.post-header-title-wrapper.has-service .post-address-info[data-v-a9bcd63a],
+.post-header-title-wrapper.has-service[data-v-a9bcd63a] {
+  margin-top: 1rem;
+}
+.post-header-title-wrapper.has-service[data-v-a9bcd63a]:not(
+    :has(.post-address-info)
+  ) {
+  margin-bottom: 3rem;
+}
+.post-header-title-wrapper .post-header-title[data-v-a9bcd63a] {
+  margin: 0;
+}
+.post-header-title-wrapper .post-service-name[data-v-a9bcd63a] {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+.post-header-title-wrapper .post-address-info[data-v-a9bcd63a] {
+  margin-top: 0.5rem;
+}
+.post-header-title-wrapper .post-address-info[data-v-a9bcd63a],
+.post-header-title-wrapper .post-service-name[data-v-a9bcd63a] {
+  font-size: 0.875rem;
+  line-height: 1.57;
+  letter-spacing: -0.01875rem;
+  color: #888;
+}
+.grid[data-v-27cb0b18] {
+  display: grid;
+  -moz-column-gap: 1rem;
+  column-gap: 1rem;
+  padding: 0 1rem;
+  max-width: 90rem;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid > [data-v-27cb0b18] {
+  grid-column: span 4;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.grid > .span-md-1[data-v-27cb0b18] {
+  grid-column: span 1;
+}
+.grid > .span-md-2[data-v-27cb0b18] {
+  grid-column: span 2;
+}
+.grid > .span-md-3[data-v-27cb0b18] {
+  grid-column: span 3;
+}
+.grid > .span-md-4[data-v-27cb0b18] {
+  grid-column: span 4;
+}
+@media (min-width: 992px) {
+  .grid[data-v-27cb0b18] {
+    padding: 0 7.5rem;
+  }
+  .grid.max-col-8[data-v-27cb0b18] {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .grid.max-col-8 > [data-v-27cb0b18] {
+    grid-column: span 8;
+  }
+  .grid.max-col-8 > .span-lg-1[data-v-27cb0b18] {
+    grid-column: span 1;
+  }
+  .grid.max-col-8 > .span-lg-2[data-v-27cb0b18] {
+    grid-column: span 2;
+  }
+  .grid.max-col-8 > .span-lg-3[data-v-27cb0b18] {
+    grid-column: span 3;
+  }
+  .grid.max-col-8 > .span-lg-4[data-v-27cb0b18] {
+    grid-column: span 4;
+  }
+  .grid.max-col-8 > .span-lg-5[data-v-27cb0b18] {
+    grid-column: span 5;
+  }
+  .grid.max-col-8 > .span-lg-6[data-v-27cb0b18] {
+    grid-column: span 6;
+  }
+  .grid.max-col-8 > .span-lg-7[data-v-27cb0b18] {
+    grid-column: span 7;
+  }
+  .grid.max-col-8 > .span-lg-8[data-v-27cb0b18] {
+    grid-column: span 8;
+  }
+  .grid.max-col-15[data-v-27cb0b18] {
+    grid-template-columns: repeat(15, 1fr);
+  }
+  .grid.max-col-15 > [data-v-27cb0b18] {
+    grid-column: span 15;
+  }
+  .grid.max-col-15 > .span-lg-1[data-v-27cb0b18] {
+    grid-column: span 1;
+  }
+  .grid.max-col-15 > .span-lg-2[data-v-27cb0b18] {
+    grid-column: span 2;
+  }
+  .grid.max-col-15 > .span-lg-3[data-v-27cb0b18] {
+    grid-column: span 3;
+  }
+  .grid.max-col-15 > .span-lg-4[data-v-27cb0b18] {
+    grid-column: span 4;
+  }
+  .grid.max-col-15 > .span-lg-5[data-v-27cb0b18] {
+    grid-column: span 5;
+  }
+  .grid.max-col-15 > .span-lg-6[data-v-27cb0b18] {
+    grid-column: span 6;
+  }
+  .grid.max-col-15 > .span-lg-7[data-v-27cb0b18] {
+    grid-column: span 7;
+  }
+  .grid.max-col-15 > .span-lg-8[data-v-27cb0b18] {
+    grid-column: span 8;
+  }
+  .grid.max-col-15 > .span-lg-9[data-v-27cb0b18] {
+    grid-column: span 9;
+  }
+  .grid.max-col-15 > .span-lg-10[data-v-27cb0b18] {
+    grid-column: span 10;
+  }
+  .grid.max-col-15 > .span-lg-11[data-v-27cb0b18] {
+    grid-column: span 11;
+  }
+  .grid.max-col-15 > .span-lg-12[data-v-27cb0b18] {
+    grid-column: span 12;
+  }
+  .grid.max-col-15 > .span-lg-13[data-v-27cb0b18] {
+    grid-column: span 13;
+  }
+  .grid.max-col-15 > .span-lg-14[data-v-27cb0b18] {
+    grid-column: span 14;
+  }
+  .grid.max-col-15 > .span-lg-15[data-v-27cb0b18] {
+    grid-column: span 15;
+  }
+}
+.post-header[data-v-27cb0b18] {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .post-header[data-v-27cb0b18] {
+    margin-top: 3.5rem;
+  }
+}
+.grid[data-v-0a24800e] {
+  display: grid;
+  -moz-column-gap: 1rem;
+  column-gap: 1rem;
+  padding: 0 1rem;
+  max-width: 90rem;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid > [data-v-0a24800e] {
+  grid-column: span 4;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.grid > .span-md-1[data-v-0a24800e] {
+  grid-column: span 1;
+}
+.grid > .span-md-2[data-v-0a24800e] {
+  grid-column: span 2;
+}
+.grid > .span-md-3[data-v-0a24800e] {
+  grid-column: span 3;
+}
+.grid > .span-md-4[data-v-0a24800e] {
+  grid-column: span 4;
+}
+@media (min-width: 992px) {
+  .grid[data-v-0a24800e] {
+    padding: 0 7.5rem;
+  }
+  .grid.max-col-8[data-v-0a24800e] {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .grid.max-col-8 > [data-v-0a24800e] {
+    grid-column: span 8;
+  }
+  .grid.max-col-8 > .span-lg-1[data-v-0a24800e] {
+    grid-column: span 1;
+  }
+  .grid.max-col-8 > .span-lg-2[data-v-0a24800e] {
+    grid-column: span 2;
+  }
+  .grid.max-col-8 > .span-lg-3[data-v-0a24800e] {
+    grid-column: span 3;
+  }
+  .grid.max-col-8 > .span-lg-4[data-v-0a24800e] {
+    grid-column: span 4;
+  }
+  .grid.max-col-8 > .span-lg-5[data-v-0a24800e] {
+    grid-column: span 5;
+  }
+  .grid.max-col-8 > .span-lg-6[data-v-0a24800e] {
+    grid-column: span 6;
+  }
+  .grid.max-col-8 > .span-lg-7[data-v-0a24800e] {
+    grid-column: span 7;
+  }
+  .grid.max-col-8 > .span-lg-8[data-v-0a24800e] {
+    grid-column: span 8;
+  }
+  .grid.max-col-15[data-v-0a24800e] {
+    grid-template-columns: repeat(15, 1fr);
+  }
+  .grid.max-col-15 > [data-v-0a24800e] {
+    grid-column: span 15;
+  }
+  .grid.max-col-15 > .span-lg-1[data-v-0a24800e] {
+    grid-column: span 1;
+  }
+  .grid.max-col-15 > .span-lg-2[data-v-0a24800e] {
+    grid-column: span 2;
+  }
+  .grid.max-col-15 > .span-lg-3[data-v-0a24800e] {
+    grid-column: span 3;
+  }
+  .grid.max-col-15 > .span-lg-4[data-v-0a24800e] {
+    grid-column: span 4;
+  }
+  .grid.max-col-15 > .span-lg-5[data-v-0a24800e] {
+    grid-column: span 5;
+  }
+  .grid.max-col-15 > .span-lg-6[data-v-0a24800e] {
+    grid-column: span 6;
+  }
+  .grid.max-col-15 > .span-lg-7[data-v-0a24800e] {
+    grid-column: span 7;
+  }
+  .grid.max-col-15 > .span-lg-8[data-v-0a24800e] {
+    grid-column: span 8;
+  }
+  .grid.max-col-15 > .span-lg-9[data-v-0a24800e] {
+    grid-column: span 9;
+  }
+  .grid.max-col-15 > .span-lg-10[data-v-0a24800e] {
+    grid-column: span 10;
+  }
+  .grid.max-col-15 > .span-lg-11[data-v-0a24800e] {
+    grid-column: span 11;
+  }
+  .grid.max-col-15 > .span-lg-12[data-v-0a24800e] {
+    grid-column: span 12;
+  }
+  .grid.max-col-15 > .span-lg-13[data-v-0a24800e] {
+    grid-column: span 13;
+  }
+  .grid.max-col-15 > .span-lg-14[data-v-0a24800e] {
+    grid-column: span 14;
+  }
+  .grid.max-col-15 > .span-lg-15[data-v-0a24800e] {
+    grid-column: span 15;
+  }
+}
+.post-react-state[data-v-0a24800e] {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.post-react-state .post-react-item[data-v-0a24800e] {
+  display: flex;
+  gap: 0.25rem;
+  align-items: center;
+  padding: 1.0625rem 0;
+  margin-right: 1.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #6a7685;
+}
+.post-react-state .post-react-item.like-btn[data-v-0a24800e] {
+  cursor: pointer;
+}
+.post-react-state .post-react-item.like-btn.selected[data-v-0a24800e] {
+  color: #1aa69d;
+}
+.post-react-state .post-react-item .action-count[data-v-0a24800e] {
+  margin-left: 0.125rem;
+}

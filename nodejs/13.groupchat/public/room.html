@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room</title>
+</head>
+<body>
+    <div class="room"></div>
+    <div class="room-box">
+        <form class="search-bar">
+            <input type="text" name="roomname" placeholder="방이름" required>
+            <button>검색</button>
+        </form>
+        <ul class="room-list">
+            {{#rooms}}
+                <li>{{roomName}}</li>
+            {{/rooms}}
+        </ul>
+    </div>
+</body>
+<script id = "room-template" type="text/html">
+    
+</script>
+</html>

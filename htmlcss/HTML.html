@@ -1,0 +1,140 @@
+<!-- HTML 버전 5 사용 -->
+<!DOCTYPE html>
+
+<!-- HTML 페이지 시작 -->
+<html lang="en"> 
+
+<!-- 웹 페이지의 여러 정보를 작성 -->
+<head>
+    <!-- 웹페이지에서 글자 인코딩 방식 -->
+    <meta charset="UTF-8">
+    
+    <!-- 클라이언트의 기기, 장치를 인식할 때 사용 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- 탭에 표시될 제목 -->
+    <title>Document</title>
+    
+    <!-- CSS 파일을 다운받을 수 있는 주소 -->
+    <!-- CSS 코드 -->
+</head>
+
+<!-- 웹 브라우저 화면에 나올 내용을 작성 -->
+<body>
+<!-- 태그: HTML에서 특정 모양을 화면에 만들어주는 문법 -->
+<!-- Element: HTML에서의 태그를 Element라고 부르며 태그 이름과 Attribute라는 속성들로 이루어짐 -->
+<!-- 대표적인 HTML 태그들 -->
+
+<!-- h1~5 태그: 제목 태그임 -->
+<h1>h1</h1>
+<h2>h2</h2>
+<h3>h3</h3>
+<h4>h4</h4>
+<h5>h5</h5>
+<h6>h6</h6>
+
+<!-- 개행은 HTML 코드에서는 적용되지만 화면에서는 적용안됨 br 태그로 적용 가능 -->
+<br>
+
+<!-- 하이퍼링크 태그 -->
+<a href="https://www.google.co.kr/">구글</a>
+<a href="https://www.naver.com/">네이버</a>
+
+<!-- 절대경로, 상대경로 -->
+<a href="/a/test.html">절대 경로</a> 
+<a href="./a/test.html">상대 경로</a><br>
+
+<!-- img 태그-->
+<img src="./test/img/test.img">
+<img src="./test/img/test.img" width="200">
+<img src="./test/img/test.img" style="width: 200px;">
+<!-- alt 속성: 이미지를 불러오지 못했을때 대체할 텍스트  -->
+<img src="./test/test.png" alt="이미지 대체 텍스트" width="200">
+<img src="https://s.pstatic.net/shopping.phinf/20240102_26/a6d473c3-bb1d-456a-8594-54958c012648.jpg?type=f294_378" height="200">
+
+<!-- 테이블 태그 -->
+<table border="1px">
+    <tr>
+        <th>칼럼 이름1</th>
+        <th>칼럼 이름2</th>
+        <th>칼럼 이름3</th>
+    </tr>
+    <tbody>
+        <tr>
+            <!-- colspan: 열 병합 -->
+            <td colspan="3">1 - 1</td>
+        </tr>
+        <tr>
+            <td>2 - 1</td>
+            <!-- rowspan: 행 병합 -->
+            <td rowspan="2">2 - 2</td>
+        </tr>
+        <tr>
+            <td>3 - 1</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- 리스트 태그 -->
+<!-- 앞에가 점임 -->
+<ul>
+    <li>아이템1</li>
+    <li>아이템2</li>
+    <li>아이템3</li>
+</ul>
+<!-- 앞에가 숫자임 -->
+<ol>
+    <li>아이템1</li>
+    <li>아이템2</li>
+    <li>아이템3</li>
+</ol>
+
+<!-- p 태그: 일반적으로 출력하고 싶은 글자를 이용해서 출력  -->
+<!-- 띄어쓰기는 HTML파일에서 아무리 많이해도 화면에선 한 칸만 적용 -->
+<!-- 화면에서 한줄 전체를 차지하는 디스플레이 블록속성 p, div -->
+<p>안녕하세요</p>
+<div>안녕하세요</div>
+<!-- 화면에서 해당 내용만큼만 자리를 차지하는 디스플레이 인라인 태그들, span -->
+<span>안녕하세요</span><br>
+
+<!-- iframe 태그: 웹페이지 안에 다른 html 파일을 불러와서 삽입할 수 있는 기능-->
+<iframe src="https://www.gmarket.co.kr/n/best" width="1200" height="500"></iframe>
+
+<!-- form 태그: 입력된 데이터를 한번에 전송함 -->
+<form method="post" action="http://localhost:8080/test/ex-form" enctype="multipart/form-data">
+    이메일 : <input type="text" name="email"> <br>
+    비밀번호 : <input type="password" name="pw"> <br>
+    사진 : <input type="file" multiple accept="image/*" name="files"> <br>
+    개인정보 제공 :
+    <input type="radio" name="accept" value="동의"> 동의
+    <input type="radio" name="accept" value="뭔데"> 동의한 것도 안한 것도 아님
+    <input type="radio" name="accept" value="비동의"> 비동의
+    <br>
+
+    점심 메뉴 :
+    <input type="checkbox" name="lunch" value="치킨"> 치킨
+    <input type="checkbox" name="lunch" value="피자"> 피자
+    <input type="checkbox" name="lunch" value="삼겹살"> 삼겹살
+    <br>
+    예약 날짜 : <input type="date" name="date">
+    <br>
+    <input type="reset" value="초기화버튼">
+    <input type="button" value="기능없는버튼">
+    <!-- submit 버튼을 누르면 input 태그들에 입력한 내용을 form 태그에 지정한 서버로 전송 -->
+    <input type="submit" value="전송하기버튼">
+    <button type="submit">전송하기버튼</button>
+
+    <!-- select 태그 -->
+    <select>
+        <option value="메뉴1"></option>
+        <option value="메뉴2"></option>
+        <option value="메뉴3"></option>
+    </select>
+</form>
+<script>
+// JS 파일을 다운받을 수 있는 주소
+// JS 코드 
+</script>
+</body>
+
+</html>

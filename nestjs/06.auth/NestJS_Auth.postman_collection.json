@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "16ccfddd-94fa-4b42-ac3c-dbdbd946f2bb",
+		"name": "NestJS_Auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28272940"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"pjs@email.com\",\n    \"username\" : \"pjs\",\n    \"password\": \"pjs\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/auth/register"
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"pjs@email.com\",\n    \"password\": \"pjs\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/auth/login"
+					},
+					"response": []
+				},
+				{
+					"name": "loginGuard",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"pjs@email.com\",\n    \"password\": \"pjs\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/auth/loginguard"
+					},
+					"response": []
+				},
+				{
+					"name": "testGuard",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/auth/testguard"
+					},
+					"response": []
+				},
+				{
+					"name": "loginGuardSession",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"pjs@email.com\",\n    \"password\": \"pjs\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/auth/loginsguardsession"
+					},
+					"response": []
+				},
+				{
+					"name": "testGuardSession",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "createUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"pjs10@email.com\",\n    \"username\" : \"pjs10\",\n    \"password\": \"pjs10\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/user/createuser"
+					},
+					"response": []
+				},
+				{
+					"name": "getAllUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/user/getalluser"
+					},
+					"response": []
+				},
+				{
+					"name": "getUser",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/user/get/pjs10@email.com"
+					},
+					"response": []
+				},
+				{
+					"name": "deleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:3000/user/delete/pjs10@gmail.com"
+					},
+					"response": []
+				},
+				{
+					"name": "updateUser",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"pjs@email.com\",\n    \"username\" : \"pjs_updated\",\n    \"password\": \"pjs_updated\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/user/update/pjs@email.com"
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAllUser",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:3000/user/deletealluser"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

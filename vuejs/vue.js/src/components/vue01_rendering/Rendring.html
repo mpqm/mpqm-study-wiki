@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>렌더링</title>
+  </head>
+  <!-- 
+  특성	        명령형 렌더링	        선언적 렌더링
+  제어	        세부 사항 직접 제어	    프레임워크가 제어
+  복잡성	        복잡성 증가 가능	    상대적으로 단순
+  유지보수	    어려움 증가 가능	    유지보수 용이
+  가독성	        가독성 저하 가능	    가독성 향상
+  생산성	        상대적으로 낮음	        높음
+  성능 최적화     세부 최적화 가능	    일부 성능 오버헤드 발생 가능
+  학습 곡선	    낮음	               높음
+  디버깅 용이성	용이	                복잡성 증가
+  재사용성	    낮음	                높음    
+-->
+<body>
+  <div id="app1">
+    <button id="toggle-button">명령적 렌더링</button>
+    <p id="message">1</p>
+  </div>
+  <div id="app2">
+    <button @click="toggle">선언적 렌더링</button>
+    <p v-if="showMessage">1</p>
+    <p v-else=>2</p>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const button = document.getElementById("toggle-button");
+      const message = document.getElementById("message");
+      let showMessage = true;
+      button.addEventListener("click", () => {
+        showMessage = !showMessage;
+        if (showMessage) { message.textContent = "1"; } 
+        else { message.textContent = "2"; }
+      });
+    });
+  </script>
+
+  <!-- Vue 3 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
+    <script>
+      // Vue 객체 생성
+      const app = Vue.createApp(
+          {
+          data() {
+              return {
+                showMessage: true
+              };
+          },
+          methods: {
+            toggle() {
+              this.showMessage = !this.showMessage;
+            }
+          }
+      });
+      // Vue 객체를 id가 app인 div 태그에 연결
+      app.mount('#app2')
+    </script>
+</body>
+</html>
