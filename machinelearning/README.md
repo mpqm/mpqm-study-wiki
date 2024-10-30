@@ -36,8 +36,6 @@ python hmm_antropy.py
 <p align ="center">
    <img src="../docs/img/machine-learning/ml-cantraffic-1.png"/>
 </p>
-![1](https://github.com/MpqM/ML_HMMCANTrafficAnalysis/assets/79093184/15ca70f5-c81b-4a4c-8d77-cd4ea10d0e92)
-
 
 * ##### Arbid Time Stamp Method
 <p align ="center">
@@ -57,7 +55,12 @@ python hmm_antropy.py
 </p>
 
 - - -
-# MaliciousCodeAnalysis
+
+<br/>
+
+- - -
+
+# 02. MaliciousCodeAnalysis
 #### ⚪ About Project
 * ##### N-GRAM 기반 탐지를 이용해 Opcode를 토큰으로하는 Opcode N-Gram을 이용해 머신러닝 기반 악성코드 탐지를 구현
 * ##### test(정상, 악성), train(정상, 악성), valid(정상, 악성)로 이루어진 데이터의 OPcode를 추출해 N-Gram으로 가공후 특징정보 추출
@@ -104,6 +107,7 @@ python ganada-1.py
 <p align ="center">
    <img src="../docs/img/machine-learning/ml-maliciouscode-4.png"/>
 </p>
+
 - - -
 
 #### ⚪ Writer
@@ -112,4 +116,3 @@ python ganada-1.py
 </p>
 
 - - -
-
