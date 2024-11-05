@@ -1,4 +1,4 @@
-# my-study
+# my-wiki
 #### 개발 폴더 바로가기
 #### R: README 여부 / B: Blog에 정리 / X: 단순 저장
 
