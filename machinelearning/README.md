@@ -56,7 +56,7 @@ python hmm_antropy.py
 
 - - -
 
-<br/>
+<br>
 
 - - -
 

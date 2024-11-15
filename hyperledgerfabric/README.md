@@ -1,4 +1,4 @@
-# Asset
+# 01. Asset
 #### ⚪ About Project
 * ##### HyperLedgerFabric, NodeJS express, Javascript, HTML을 사용해 단순한 asset데이터에 대한 DApp 구축
 
@@ -111,5 +111,9 @@ check asset localhost:5984/_utils
 <p align ="center">
   <img src ="https://img.shields.io/badge/gmail-EA4335.svg?&style=for-the-badge&logo=gmail&logoColor=white"/></a> <a href = "https://github.com/MpqM"><img src ="https://img.shields.io/badge/GitHub-181717.svg?&style=for-the-badge&logo=GitHub&logoColor=white"/></a> <a href = "https://MpqM.tistory.com/"> <img src ="https://img.shields.io/badge/tistory-000000.svg?&style=for-the-badge&logo=Tistory&logoColor=white"/></a>
 </p>
+
+- - -
+
+<br>
 
 - - -
