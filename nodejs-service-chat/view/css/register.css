@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.register-form {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    padding: 10px 10px 5px;
+    width: 400px;
+}
+
+.register-box input {
+    border: 1px solid black;
+    padding: 5px;
+    outline: none;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.register-box button {
+    cursor: pointer;
+    background: grey;
+    padding: 5px;
+    border: none;
+    color: white;
+    transition: background .1s ease;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.register-box button:hover {
+    cursor: pointer;
+    background: black;
+    color: white
+}
+
+.register-box h3 {
+    text-align: center;
+    padding-bottom: 10px;
+}

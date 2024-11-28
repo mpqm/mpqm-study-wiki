@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat-Public</title>
+    <link rel="stylesheet" href="./css/public-chat.css">
+    <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+    <div class="chat">
+        <div id="sidebar" class="sidebar">
+            <!-- sidebar-template -->
+        </div>
+        <div class="main">
+            <div id="messages" class="messages">
+                <!-- message-to/from-template -->
+            </div>
+            <div class="message-form">
+                <form id="message-form">
+                    <input id="message-form-input" name="message" placeholder="메시지를 입력하세요" required>
+                    <button id="message-form-btn">전송</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script id="sidebar-template" type="text/html">
+        <h2 class="chat-title">{{chatname}}</h2>
+        <h3 class="list-title">참여유저</h3>
+        <ul class="users">
+            {{#users}}
+                <li>{{username}}</li>
+            {{/users}}
+        </ul>
+    </script>
+
+    <script id="message-to-template" type="text/html">
+        <div class="message-to">
+            <p>
+                <span class="message-to-name">{{username}}</span>
+                <span class="message-to-meta">{{createdAt}}</span>
+            </p>
+            <p class="message">{{message}}</p>
+        </div>
+    </script>
+
+    <script id="message-from-template" type="text/html">
+        <div class="message-from">
+            <p>
+                <span class="message-from-name">{{username}}</span>
+                <span class="message-from-meta">{{createdAt}}</span>
+            </p>
+            <p class="message">{{message}}</p>
+        </div>
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/public-chat.js"></script>
+</body>
+
+</html>

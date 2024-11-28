@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home {
+    width: 100vw;
+    height: 95vh;
+    display: flex;
+}
+
+.home h3 {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.public-chat-box {
+    margin: 5px 5px 5px 5px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+    border: 1px solid black;
+    color: black;
+    padding: 10px;
+}
+
+.public-chat-box form {
+    width: 100%;
+    display: flex;
+    border: 1px solid black;
+}
+
+.public-chat-box input {
+    padding: 5px;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+
+.public-chat-box button {
+    font-size: 15px;
+    padding: 5px;
+    background: grey;
+    color: white;
+    border: none;
+    outline: none;
+    width: 100px;
+}
+
+.public-chat-box button:hover {
+    cursor: pointer;
+    background: black;
+    color: white
+}
+
+.public-chat-list {
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.public-chats {
+    width: 100%;
+    list-style-type: none;
+}
+
+.public-chat {
+    width: 100%;
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding: 5px;
+}
+
+.public-chat::-webkit-scrollbar {
+    display: none;
+}
+
+.public-chat:hover {
+    cursor: pointer;
+    padding: 5px;
+    background-color: grey;
+}
+
+.private-chat-box {
+    flex: 1;
+    margin: 5px 5px 5px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    color: black;
+    padding: 10px;
+}
+
+.private-chat-info {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logout-btn {
+    margin-left: 10px;
+    font-size: 15px;
+    padding: 5px;
+    background: grey;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+
+.private-chat-link {
+    margin-top: 10px;
+    width: 100%;
+    font-size: 15px;
+    padding: 5px;
+    background: grey;
+    color: white;
+    border: none;
+    outline: none;
+}
