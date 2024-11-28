@@ -1,0 +1,55 @@
+<div class="container mx-auto p-5 w-9/12">
+  <div class="text-3xl font-bold mb-10">게시판</div>
+  <div class="flex flex-row mb-5 space-x-2">
+    <input type="text" name="search" id="search" class="input input-sm input-bordered w-full" value="{{search}}" placeholder="검색어를 입력하세요." />
+    <button class="btn btn-sm" onclick="location.href=`/?search=${document.getElementById('search').value}`">검색</button>
+    <a href="/write" class="btn btn-sm btn-primary"> 작성</a>
+  </div>
+  <div class="mb-5">
+    <table class="table w-full">
+      <thead>
+        <tr>
+          <th width="60%">제목</th>
+          <th>작성자</th>
+          <th>조회수</th>
+          <th>등록일</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each posts}}
+          <tr>
+            <td><a href="/detail/{{_id}}">{{title}}</a></td>
+            <td>{{writer}}</td>
+            <td>{{hits}}</td>
+            <td>{{dateString createdDt}}</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+  <div class="flex justify-center">
+    <div class="btn-group">
+      {{#with paginator}}
+        <a class="btn btn-sm btn-outline" href="/?page=1&search={{@root.search}}">&lt;&lt;</a>       
+        {{#if hasPrev}}
+          <a class="btn btn-sm btn-outline" href="/?page={{prevPage}}&search={{@root.search}}">&lt;</a>          
+        {{else}}
+          <a class="btn btn-sm btn-disabled">&lt;</a>
+        {{/if}}       
+        {{#each pageList}}
+          {{#if (eq . @root.paginator.page)}}
+            <a class="btn btn-sm btn-outline btn-active">{{.}}</a>
+          {{else}}
+            <a class="btn btn-sm btn-outline" href="/?page={{.}}&search={{@root.search}}">{{.}}</a>
+          {{/if}}
+        {{/each}}         
+        {{#if hasNext}}
+          <a class="btn btn-sm btn-outline" href="/?page={{nextPage}}&search={{@root.search}}">&gt;</a>          
+        {{else}}
+          <a class="btn btn-sm btn-disabled">&gt;</a>
+        {{/if}}
+        <a class="btn btn-sm btn-outline" href="/?page={{lastPage}}&search={{@root.search}}">&gt;&gt;</a>
+      {{/with}}
+    </div>
+  </div>
+</div>
