@@ -4,7 +4,7 @@
 * github 레포지토리에있던 전공 과제 프로젝트 정리
 * github 레포지토리에있던 전공 공부 코드 정리
 * github 레포지토리에있던 관리안하는 토이 프로젝트 정리
-* R (README 있음) / B (Blog 정리) / X: 단순 저장+
+* R (README 있음) / B (Blog 정리) / X: 단순 저장
 
 #### ⚪ 토이 프로젝트 바로가기
 <div align="center">
@@ -17,6 +17,7 @@
 * R [nodejs-service-shop](https://github.com/mpqm/my-study/tree/main/nodejs-service-shop)
 * R [nodejs-service-ott](https://github.com/mpqm/my-study/tree/main/nodejs-service-ott)
 * R [nodejs-service-sns](https://github.com/mpqm/my-study/tree/main/nodejs-service-sns)
+* X [nodejs-service-ecommerce](https://github.com/mpqm/my-study/tree/main/nodejs-service-ecommerce)
 
 
 #### ⚪ 폴더 바로가기
