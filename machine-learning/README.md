@@ -46,21 +46,21 @@ python hmm_antropy.py
 <details>
 	<summary><b> Data Set Sample</b></summary>
    <p align ="center">
-      <img src="../docs/img/machine-learning/ml-cantraffic-1.png"/>
+      <img src="../wiki-images/machine-learning/ml-cantraffic-1.png"/>
    </p>
 </details>
 <br>
 <details>
 	<summary><b> Arbid Time Stamp Method</b></summary>
    <p align ="center">
-      <img src="../docs/img/machine-learning/ml-cantraffic-2.png"/>
+      <img src="../wiki-images/machine-learning/ml-cantraffic-2.png"/>
    </p>
 </details>
 <br>
 <details>
 	<summary><b> Arbid Haming Distance Method</b></summary>
    <p align ="center">
-      <img src="../docs/img/machine-learning/ml-cantraffic-3.png"/>
+      <img src="../wiki-images/machine-learning/ml-cantraffic-3.png"/>
    </p>
 </details>
 
@@ -73,7 +73,7 @@ python hmm_antropy.py
 # 02. MaliciousCodeAnalysis
 <!-- 프로젝트 대표 이미지 -->
 <div align="center">
-    <img  style="width: 50%" src="../docs/img/machine-learning/ml-maliciouscode-1.png">
+    <img  style="width: 50%" src="../wiki-images/machine-learning/ml-maliciouscode-1.png">
       <!-- <h3>
        🌐 시연영상
         <a href="{실행동영상 유튜브 링크}">유튜브링크</a>
@@ -118,21 +118,21 @@ python ganada-1.py
 <details>
 	<summary><b> Data Set Sample</b></summary>
    <p align ="center">
-      <img src="../docs/img/machine-learning/ml-maliciouscode-2.png"/>
+      <img src="../wiki-images/machine-learning/ml-maliciouscode-2.png"/>
    </p>
 </details>
 <br>
 <details>
 	<summary><b> 6개의 데이터셋들에서 opcodeTrace 추출, target(mal/benign)과 feature(n-gram)데이터 가공</b></summary>
    <p align ="center">
-      <img src="../docs/img/machine-learning/ml-maliciouscode-3.png"/>
+      <img src="../wiki-images/machine-learning/ml-maliciouscode-3.png"/>
    </p>
 </details>
 <br>
 <details>
 	<summary><b> 모델 학습</b></summary>
    <p align ="center">
-      <img src="../docs/img/machine-learning/ml-maliciouscode-4.png"/>
+      <img src="../wiki-images/machine-learning/ml-maliciouscode-4.png"/>
    </p>
 </details>
 

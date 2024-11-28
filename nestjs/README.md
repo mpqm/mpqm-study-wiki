@@ -120,42 +120,42 @@ http://localhost:3000/auth/testloginsession
 <details>
 	<summary><b> 유저, 인증 모듈, 가드</b></summary>
   <p align ="center">
-    <img src ="../docs/img/nestjs/nestjs-auth-1.png"/>
+    <img src ="../wiki-images/nestjs/nestjs-auth-1.png"/>
   </p>
 </details>
 <br>
 <details>
 	<summary><b> 페스포트와 세션을 사용한 인증 과정</b></summary>
   <p align ="center">
-    <img src ="../docs/img/nestjs/nestjs-auth-2.png"/>
+    <img src ="../wiki-images/nestjs/nestjs-auth-2.png"/>
   </p>
 </details>
 <br>
 <details>
 	<summary><b> 로그인부터 세션 저장까지 순서도</b></summary>
   <p align ="center">
-    <img src ="../docs/img/nestjs/nestjs-auth-3.png"/>
+    <img src ="../wiki-images/nestjs/nestjs-auth-3.png"/>
   </p>
 </details>
 <br>
 <details>
 	<summary><b> OAuth 프로토콜 흐름, 엑세스 토큰 만료시 리프레시 토큰을 통한 재발행 </b></summary>
   <p align ="center">
-    <img src ="../docs/img/nestjs/nestjs-auth-4.png"/>
+    <img src ="../wiki-images/nestjs/nestjs-auth-4.png"/>
   </p>
 </details>
 <br>
 <details>
 	<summary><b> 구글 OAuth 구현 순서 </b></summary>
   <p align ="center">
-    <img src ="../docs/img/nestjs/nestjs-auth-5.png"/>
+    <img src ="../wiki-images/nestjs/nestjs-auth-5.png"/>
   </p>
 </details>
 <br>
 <details>
 	<summary><b> GoogleAuthGuard의 동작 순서도 </b></summary>
   <p align ="center">
-    <img src ="../docs/img/nestjs/nestjs-auth-6.png"/>
+    <img src ="../wiki-images/nestjs/nestjs-auth-6.png"/>
   </p>
 </details>
 
@@ -315,6 +315,6 @@ npm run start
 <details>
 	<summary><b> chat </b></summary>
   <p align ="center">
-    <img src ="../docs/img/nestjs/nestjs-chat-2.png"/>
+    <img src ="../wiki-images/nestjs/nestjs-chat-2.png"/>
   </p>
 </details>

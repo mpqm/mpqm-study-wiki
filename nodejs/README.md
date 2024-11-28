@@ -1,7 +1,7 @@
 - - -
 # 14. Auth
 <div align="center">
-    <img  style="width: 50%" src="../docs/img/nodejs/nodejs-auth-1.png">
+    <img  style="width: 50%" src="../wiki-images/nodejs/nodejs-auth-1.png">
       <h3>
       🌐 시연영상
         <a href="https://www.youtube.com/watch?v=vQkZ0dgmi9I">유튜브링크</a>
@@ -52,20 +52,20 @@ npm start
 ## 기능 설명
 <details>
 	<summary><b> jwt 기반 인증 인가 </b></summary>
- <p align ="center"><img src="../docs/img/nodejs/nodejs-auth-2.png"/></p>
+ <p align ="center"><img src="../wiki-images/nodejs/nodejs-auth-2.png"/></p>
 </details>
 <br>
 <details>
 	<summary><b>jwt 엑세스, 리프레시 토큰</b></summary>
- <p align ="center"><img src="../docs/img/nodejs/nodejs-auth-3.png"/></p>
+ <p align ="center"><img src="../wiki-images/nodejs/nodejs-auth-3.png"/></p>
 </details>
 <br>
 <details>
 	<summary><b> Passport를 이용한 쿠키 세션</b></summary>
-  <p align ="center"><img src="../docs/img/nodejs/nodejs-auth-4.png"/></p>
+  <p align ="center"><img src="../wiki-images/nodejs/nodejs-auth-4.png"/></p>
 </details>
 <br>
 <details>
 	<summary><b> Oauth 인증 흐름</b></summary>
-  <p align ="center"><img src="../docs/img/nodejs/nodejs-auth-5.png"/></p>
+  <p align ="center"><img src="../wiki-images/nodejs/nodejs-auth-5.png"/></p>
 </details>

@@ -9,12 +9,12 @@
 <p align="center">
   <a href="https://www.youtube.com/watch?v=b2JAx2kzs_g"><img src ="https://img.shields.io/badge/youtube-FF0000.svg?&style=for-the-badge&logo=youtube&logoColor=white"/></a>
   </br>
-  <img src="./docs/img/시연이미지1.png" align="center" width="35%">
-  <img src="./docs/img/시연이미지4.png" align="center" width="35%">
+  <img src="../wiki-images/nodejs-service-board/시연이미지1.png" align="center" width="35%">
+  <img src="../wiki-images/nodejs-service-board/시연이미지4.png" align="center" width="35%">
 </p>
 <p align="center">
-  <img src="./docs/img/시연이미지3.png" align="center" width="35%">
-  <img src="./docs/img/시연이미지2.png" align="center" width="35%">
+  <img src="../wiki-images/nodejs-service-board/시연이미지3.png" align="center" width="35%">
+  <img src="../wiki-images/nodejs-service-board/시연이미지2.png" align="center" width="35%">
 </p>
 
 - - -

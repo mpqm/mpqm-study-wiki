@@ -11,7 +11,7 @@
 <p align ="center">
   <a href="https://www.youtube.com/watch?v=-PwSEkOKk4E"><img src ="https://img.shields.io/badge/youtube-FF0000.svg?&style=for-the-badge&logo=youtube&logoColor=white"/></a>
   </br>
-  <img src="./docs/img/메인 이미지1.png">
+  <img src="../wiki-images/nodejs-service-sns/메인 이미지1.png">
 </p>
 
 - - -

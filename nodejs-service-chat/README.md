@@ -9,7 +9,7 @@
 <p align ="center">
   <a href="https://www.youtube.com/watch?v=LVwr8A8msis"><img src ="https://img.shields.io/badge/youtube-FF0000.svg?&style=for-the-badge&logo=youtube&logoColor=white"/></a>
   </br>
-  <img width="900" height="500" src="./docs/img/메인 이미지1.png">
+  <img width="900" height="500" src="../wiki-images/nodejs-service-chat/메인 이미지1.png">
 </p>
 
 - - -
