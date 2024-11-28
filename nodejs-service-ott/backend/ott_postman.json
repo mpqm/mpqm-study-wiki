@@ -1,0 +1,515 @@
+{
+	"info": {
+		"_postman_id": "0621c4df-b09f-40d6-97ec-fc3d4f687628",
+		"name": "Node",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28272940"
+	},
+	"item": [
+		{
+			"name": "NodeJS_OTT",
+			"item": [
+				{
+					"name": "auth",
+					"item": [
+						{
+							"name": "register",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"pjs3\",\n    \"email\": \"pjs3@email.com\",\n    \"password\": \"pjs3\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/auth/register",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"auth",
+										"register"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "login",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"pjs@email.com\",\n    \"password\": \"pjs\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/auth/login",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"auth",
+										"login"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "logout",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/auth/logout",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"auth",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getauth",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/auth/getauth",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"auth",
+										"getauth"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "user",
+					"item": [
+						{
+							"name": "updateUser",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"profile\":\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsVkj5yEG8zZ6zvOVMKhEAhwUorgBWbxYypg&usqp=CAU\",\n    \"isAdmin\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/user/updateuser/64b624a4ea7fcb267d94deff",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"user",
+										"updateuser",
+										"64b624a4ea7fcb267d94deff"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteUser",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/user/deleteuser/64ba073028703d53465cc625",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"user",
+										"deleteuser",
+										"64ba073028703d53465cc625"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getUser",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/user/getuser/64b624a4ea7fcb267d94deff",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"user",
+										"getuser",
+										"64b624a4ea7fcb267d94deff"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllUser",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/user/getalluser",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"user",
+										"getalluser"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getUserStat",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/user/getuserstat",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"user",
+										"getuserstat"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "content",
+					"item": [
+						{
+							"name": "createContent",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"type\": \"series\",\n    \"genre\": \"animation\",\n    \"content\":[\n        \"64b7c381d7aa390ab5a02afd\",\n        \"64b7c381d7aa390ab5a02afd\",\n        \"64b7c381d7aa390ab5a02afd\",\n        \"64b7c381d7aa390ab5a02afd\",\n        \"64b7c385d7aa390ab5a02b00\",\n        \"64b7c385d7aa390ab5a02b00\",\n        \"64b7c385d7aa390ab5a02b00\",\n        \"64b7c38ad7aa390ab5a02b03\",\n        \"64b7c38ad7aa390ab5a02b03\",\n        \"64b7c38ad7aa390ab5a02b03\"\n    ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/content/createcontent/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"content",
+										"createcontent",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteContent",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/content/deletecontent/64bbe1caded083e2400d1a14",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"content",
+										"deletecontent",
+										"64bbe1caded083e2400d1a14"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getContent",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/content/getcontent",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"content",
+										"getcontent"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "movie",
+					"item": [
+						{
+							"name": "createMovie",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"mydrama\",\n    \"desc\": \"1111\",\n    \"img\": \"https://images.unsplash.com/photo-1585951237318-9ea5e175b891?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80\",\n    \"trailer\": \"https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c0fd273d2c6d9a064f3ae35579b2bbdf&profile_id=139&oauth2_token_id=57447761\",\n    \"video\":\"http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4\",\n    \"year\":\"2023\",\n    \"limit\":\"15\",\n    \"genre\":\"documentary\",\n    \"isSeries\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/movie/createmovie",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"movie",
+										"createmovie"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "updateMovie",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"u\",\n    \"img\": \"u\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/movie/updatemovie/64bbe18dded083e2400d1a03",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"movie",
+										"updatemovie",
+										"64bbe18dded083e2400d1a03"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "deleteMovie",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/movie/deletemovie/64bbe18dded083e2400d1a03",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"movie",
+										"deletemovie",
+										"64bbe18dded083e2400d1a03"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getMovie",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/movie/getmovie/64b7c3bcd7aa390ab5a02b0f",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"movie",
+										"getmovie",
+										"64b7c3bcd7aa390ab5a02b0f"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getAllMovie",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/movie/getallmovie",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"movie",
+										"getallmovie"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getMovieByType",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/movie/getmoviebytype?type=series",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"movie",
+										"getmoviebytype"
+									],
+									"query": [
+										{
+											"key": "type",
+											"value": "series"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "getMovieByName",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/movie/getmoviebytitle?title=mydrama",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"movie",
+										"getmoviebytitle"
+									],
+									"query": [
+										{
+											"key": "title",
+											"value": "mydrama"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

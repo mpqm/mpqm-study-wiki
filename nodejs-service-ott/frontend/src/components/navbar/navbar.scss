@@ -1,0 +1,107 @@
+.navbar {
+    width: 100%;
+    color: white;
+    font-size: 15px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
+
+    .container {
+        padding: 0px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;
+
+        .left {
+            display: flex;
+            align-items: center;
+
+            h1 {
+                margin-right: 40px;
+                height: 40px;
+                width: 40px;
+            }
+
+            span {
+                padding: 5px 5px;
+                margin-right: 20px;
+                cursor: pointer;
+            }
+
+            .category {
+                font-size: 20px;
+                color: white;
+                display: flex;
+
+                select {
+                    cursor: pointer;
+                    background-color: var(--main-color);
+                    border: 1px solid white;
+                    color: white;
+                }
+            }
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            margin-right: 40px;
+
+            .username {
+                object-fit: cover;
+                padding: 3px;
+                margin-right: 10px;
+                border-radius: 5px;
+            }
+
+            .profile {
+                img {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 5px;
+                    object-fit: cover;
+                    cursor: pointer;
+                }
+
+                .hideIcon {
+                    display: none;
+                }
+
+                .options {
+                    display: none;
+                }
+
+                span {
+                    padding: 10px;
+                    cursor: pointer
+                }
+
+                &:hover {
+                    img {
+                        display: none;
+                    }
+
+                    .hideIcon {
+                        display: block;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 5px;
+                        object-fit: cover;
+                        border: 1px soilid white;
+                    }
+
+                    .options {
+                        background-color: var(--main-color);
+                        border-radius: 5px;
+                        border: 1px solid white;
+                        display: flex;
+                        flex-direction: column;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
+}
