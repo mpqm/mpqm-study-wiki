@@ -1,0 +1,36 @@
+<%- include('../partial/header') %>
+<div class="mx-3">
+    <h5 class="mb-3">상품</h5>
+    <a href="/admin/product/add" class="mb-3 w-100 btn btn-secondary"><i class="bi bi-plus-circle"></i></a>
+    <% if (products.length > 0) { %>
+    <table class="table">
+        <thead>
+            <tr class="home">
+                <th>상품명</th>
+                <th>가격</th>
+                <th>카테고리</th>
+                <th>상품이미지</th>
+                <th class="table-fixed">수정</th>
+                <th class="table-fixed">삭제</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% products.forEach((product) => { %>
+                <tr>
+                    <td><%= product.title %></td>
+                    <td><%= product.price %></td>
+                    <td><%= product.category %></td>
+                    <td><img style="width: 100px; height: 100px;" src="/product-images/<%= product._id %>/<%= product.image %>" ></td>
+                    <td><a href="/admin/product/edit/<%= product._id %>" class="btn btn-secondary"><i class="bi bi-pencil"></i></a></td>
+                    <td>
+                        <form action="/admin/product/<%= product._id %>?_method=DELETE" method="POST">
+                            <button class="btn btn-secondary" type="submit"><i class="bi bi-trash3"></i></button>
+                        </form>
+                    </td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+    <% } else { %> <div> <h5>생성된 상품이 없습니다.</h5> </div> <% } %>
+</div>
+<%- include('../partial/footer') %>

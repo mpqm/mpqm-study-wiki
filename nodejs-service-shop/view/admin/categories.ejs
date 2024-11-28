@@ -1,0 +1,26 @@
+<%- include('../partial/header') %>
+<div class="mx-3">
+    <h5 class="mb-3">카테고리</h5>
+    <a href="/admin/category/add" class="mb-3 w-100 btn btn-secondary"><i class="bi bi-plus-circle"></i></a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>카테고리명</th>
+                <th class="table-fixed">삭제</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% categories.forEach((category) => { %>
+                <tr>
+                    <td><%= category.title %></td>
+                    <td>
+                        <form action="/admin/category/<%= category._id %>?_method=DELETE" method="POST">
+                            <button type="submit" class="btn btn-secondary"><i class="bi bi-trash3"></i></button>
+                        </form>
+                    </td>
+                </tr>
+            <% }) %>
+        </tbody>
+    </table>
+</div>
+<%- include('../partial/footer') %>

@@ -1,0 +1,23 @@
+<%- include('../partial/header') %>
+<div class="mx-3 row">
+    <div class="col-md-4">
+        <img class="mb-3 w-100"  src="/product-images/<%= product.id %>/<%= product.image %>" alt="product">
+        <div class="mb-3 d-flex">
+            <% galleryImages.forEach(image => {  %>
+                <% if (image !== 'thumbs') { %>
+                    <div>
+                        <a><img style="width:100%" src="/product-images/<%= product.id %>/gallery/thumbs/<%= image %>" alt="product"></a>
+                    </div>
+                <% } %>
+            <% }) %>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <h5 class="mb-3"><%= product.title %></h5>
+        <p class="mb-3">설명: <%= product.desc %></p>
+        <p class="mb-3">가격: <%= product.price %>원</p>
+        <% if (currentUser) { %><form action="/cart/<%= product.slug %>" method="POST"><button class="btn btn-secondary" role="button"><i class="bi bi-cart"></i></button></form>
+        <% } else { %> <p>먼저 로그인을 해주세요.</p> <% } %>
+    </div>
+</div>
+<%- include('../partial/footer') %>

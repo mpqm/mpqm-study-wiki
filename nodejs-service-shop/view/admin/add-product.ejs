@@ -1,0 +1,27 @@
+<%- include('../partial/header') %>
+<div class="mx-3">
+    <h5 class="mb-3">상품 생성</h5>
+    <form method="POST" action="/admin/product/add" enctype="multipart/form-data">
+        <input type="text" id="title" class="mb-3 form-control" name="title" placeholder="상품명" required>
+        <textarea name="desc" id="description" class="mb-3 form-control" cols="30" rows="10" placeholder="상품설명" required></textarea>
+        <select name="category" id="category" class="mb-3 form-control"><% categories.forEach((category) => { %><option value="<%= category.slug %>"><%= category.title %></option> <% }) %></select>
+        <input type="number" class="form-control mb-3" name="price" id="price" placeholder="가격" required>
+        <input type="file" class="mb-3 form-control" name="image" id="img" required>
+        <img src="#" id="imgPreview" alt="" class="mb-3" style="width: 100px;">
+        <div class="btn-box">
+            <button class="btn btn-secondary" type="submit"><i class="bi bi-plus-circle"></i></button>
+            <a href="/admin/product" class="btn btn-secondary"><i class="bi bi-backspace"></i></a>
+        </div>
+    </form>
+</div>
+<script>
+    function readFile(inputEl) {
+        if (inputEl.files && inputEl.files[0]) {
+            let reader = new FileReader();
+            reader.readAsDataURL(inputEl.files[0]);
+            reader.onload = function(e) { document.querySelector('#imgPreview').setAttribute('src', e.target.result);}
+        }
+    }
+    document.querySelector('#img').addEventListener('change', function() { readFile(this);})
+</script>
+<%- include('../partial/footer') %>
