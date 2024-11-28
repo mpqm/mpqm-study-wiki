@@ -1,64 +1,71 @@
+- - -
 # 14. Auth
-#### ⚪ About Project
-* ##### jwt 엑세스토큰, 리프레시토큰 사용 인증 구현
-* ##### 쿠키세션 + PassPort(Strategy, Session Serializer, deSerializer)를 사용한 인증 구현
-* ##### jwt, passport를 통해 인증받은 사용자 만이 리소스에 접근하게 하는 미들웨어 구현
-* ##### Mongoose를 이용해 Oauth ID 및 사용자 정보 모델, P/W 함수(저장 전 해싱, 비교) 정의
+<div align="center">
+    <img  style="width: 50%" src="../docs/img/nodejs/nodejs-auth-1.png">
+      <h3>
+      🌐 시연영상
+        <a href="https://www.youtube.com/watch?v=vQkZ0dgmi9I">유튜브링크</a>
+      </h3>
 
-- - -
+  | **Category** |**Skills**| 
+  |-------------|---------|
+  |**Language**| ![JavaScript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white) |
+  |**Frontend**|  ![Handlebars.js](https://img.shields.io/badge/ejs-B4CA65.svg?&style=for-the-badge&logo=ejs&logoColor=white) |
+  |**Backend**|  ![express](https://img.shields.io/badge/express-000000?style=for-the-badge&logo=express&logoColor=white)  |
+  | **Database**| ![MariaDB](https://img.shields.io/badge/mongodb-339933.svg?&style=for-the-badge&logo=mongodb&logoColor=white)
 
-#### ⚪ Running Screen || Video
-<p align ="center">
-  <a href="https://www.youtube.com/watch?v=vQkZ0dgmi9I"><img src ="https://img.shields.io/badge/youtube-FF0000.svg?&style=for-the-badge&logo=youtube&logoColor=white"/></a>
-  </br>
-  <img width="700" height="500" src="../docs/img/nodejs/nodejs-auth-1.png"/>
-</p>
+</div>
 
-- - -
-
-#### ⚪ Built With
-<p align ="center">
-  <img src ="https://img.shields.io/badge/ejs-B4CA65.svg?&style=for-the-badge&logo=ejs&logoColor=white"/> <img src ="https://img.shields.io/badge/javascript-F7DF1E.svg?&style=for-the-badge&logo=JavaScript&logoColor=white"/> <img src ="https://img.shields.io/badge/express-339933.svg?&style=for-the-badge&logo=express&logoColor=white"/> <img src ="https://img.shields.io/badge/nodejs-339933.svg?&style=for-the-badge&logo=nodedotjs&logoColor=white"/> <img src ="https://img.shields.io/badge/mongodb-339933.svg?&style=for-the-badge&logo=mongodb&logoColor=white"/>
-</p>
-
-- - -
-
-#### ⚪ Getting Started
-  ```bash
-  # prerequisites: npm, node, MongoDB Connection URI, Kakao Client ID, Google Oauth Client ID
-  # execution
-  git clone https://github.com/MpqM/NodeJS_Auth.git
-  # Change the .env with yours
-  npm install
-  npm start
-  # test: http://localhost:3000/ppauth/
-  # 소스코드 주석, Postman 참조
-  ```
-
-- - -
-
-#### ⚪ Description
-* ##### jwt 기반 인증 인가
- <p align ="center"><img src="../docs/img/nodejs/nodejs-auth-2.png"/></p>
- 
-* ##### jwt 엑세스, 리프레시 토큰
- <p align ="center"><img src="../docs/img/nodejs/nodejs-auth-3.png"/></p>
-
-* ##### Passport를 이용한 쿠키 세션
- <p align ="center"><img src="../docs/img/nodejs/nodejs-auth-4.png"/></p>
-
-* ##### Oauth 인증 흐름
- <p align ="center"><img src="../docs/img/nodejs/nodejs-auth-5.png"/></p>
-
-- - -
-
-#### ⚪ Writer
-<p align ="center">
-  <img src ="https://img.shields.io/badge/gmail-EA4335.svg?&style=for-the-badge&logo=gmail&logoColor=white"/></a> <a href = "https://github.com/MpqM"><img src ="https://img.shields.io/badge/GitHub-181717.svg?&style=for-the-badge&logo=GitHub&logoColor=white"/></a> <a href = "https://MpqM.tistory.com/"> <img src ="https://img.shields.io/badge/tistory-000000.svg?&style=for-the-badge&logo=Tistory&logoColor=white"/></a>
-</p>
-
-- - -
+## 프로젝트 설명
+<details>
+	<summary><b> 프로젝트 개요</b></summary>
+    <ul>
+        <li>jwt 엑세스토큰, 리프레시토큰 사용 인증 구현
+        </li>
+        <li>쿠키세션 + PassPort(Strategy, Session Serializer, deSerializer)를 사용한 인증 구현
+        </li>
+        <li>jwt, passport를 통해 인증받은 사용자 만이 리소스에 접근하게 하는 미들웨어 구현
+        </li>
+        <li>Mongoose를 이용해 Oauth ID 및 사용자 정보 모델, P/W 함수(저장 전 해싱, 비교) 정의
+        </li>
+    </ul>
+</details>
 
 <br>
 
-- - -
+<details>
+	<summary><b> 프로젝트 실행</b></summary>
+
+```bash
+# prerequisites: npm, node, MongoDB Connection URI, Kakao Client ID, Google Oauth Client ID
+# execution
+git clone https://github.com/MpqM/NodeJS_Auth.git
+# Change the .env with yours
+npm install
+npm start
+# test: http://localhost:3000/ppauth/
+# 소스코드 주석, Postman 참조
+```
+
+</details>
+
+## 기능 설명
+<details>
+	<summary><b> jwt 기반 인증 인가 </b></summary>
+ <p align ="center"><img src="../docs/img/nodejs/nodejs-auth-2.png"/></p>
+</details>
+<br>
+<details>
+	<summary><b>jwt 엑세스, 리프레시 토큰</b></summary>
+ <p align ="center"><img src="../docs/img/nodejs/nodejs-auth-3.png"/></p>
+</details>
+<br>
+<details>
+	<summary><b> Passport를 이용한 쿠키 세션</b></summary>
+  <p align ="center"><img src="../docs/img/nodejs/nodejs-auth-4.png"/></p>
+</details>
+<br>
+<details>
+	<summary><b> Oauth 인증 흐름</b></summary>
+  <p align ="center"><img src="../docs/img/nodejs/nodejs-auth-5.png"/></p>
+</details>
