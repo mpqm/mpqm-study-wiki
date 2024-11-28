@@ -1,7 +1,7 @@
 - - -
 # 01. Asset
 <div align="center">
-    <img  style="width: 50%" src="../wiki-images/hyperledgerfabric/hyperledgerfabric-asset-1.png">
+    <img  style="width: 50%" src="../wiki-images/hyperledger-fabric/메인이미지1.png">
    
    <br>
 
