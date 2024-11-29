@@ -50,6 +50,8 @@
 
 </details>
 
+<br>
+
 ## 기능 설명
 <details>
 	<summary><b> User </b></summary>

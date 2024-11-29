@@ -51,6 +51,8 @@ npm start
 
 </details>
 
+<br>
+
 ## 기능 설명
 <details>
 	<summary><b> 게시글 </b></summary>

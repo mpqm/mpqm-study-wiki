@@ -49,6 +49,8 @@ npm start
 
 </details>
 
+<br>
+
 ## 기능 설명
 <details>
 	<summary><b> jwt 기반 인증 인가 </b></summary>

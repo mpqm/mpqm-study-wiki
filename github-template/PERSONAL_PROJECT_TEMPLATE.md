@@ -57,6 +57,8 @@ npm start
 
 </details>
 
+<br>
+
 ## 기능 설명
 <details>
 	<summary><b> 기능 1</b></summary>

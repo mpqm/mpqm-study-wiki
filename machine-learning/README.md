@@ -42,6 +42,8 @@ python hmm_antropy.py
 
 </details>
 
+<br>
+
 ## 기능 설명
 <details>
 	<summary><b> Data Set Sample</b></summary>
@@ -85,7 +87,7 @@ python hmm_antropy.py
 
 </div>
 
-## 프로젝트 개요
+## 프로젝트 설명
 <details>
 	<summary><b> 프로젝트 소개</b></summary>
     <ul>

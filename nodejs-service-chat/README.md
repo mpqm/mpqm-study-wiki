@@ -45,6 +45,8 @@ npm start
 
 </details>
 
+<br>
+
 ## 기능 설명
 <details>
 	<summary><b> Public Chat </b></summary>

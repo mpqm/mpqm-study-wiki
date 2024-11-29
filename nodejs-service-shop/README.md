@@ -1,3 +1,4 @@
+- - -
 # nodejs-service-shop
 <div align="center">
     <img  style="width: 50%" src="../wiki-images/nodejs-service-shop/메인 이미지1.png">
@@ -46,6 +47,8 @@ npm start
 ```
 
 </details>
+
+<br>
 
 ## 기능 설명
 <details>
