@@ -1,3 +1,4 @@
+- - -
 # nodejs-service-ott
 <div align="center">
     <img  style="width: 50%" src="../wiki-images/nodejs-service-ott/메인 이미지1.png">
@@ -13,6 +14,8 @@
 |**Backend**| ![express](https://img.shields.io/badge/express-000000?style=for-the-badge&logo=express&logoColor=white)|
 | **Database**| ![MongoDB](https://img.shields.io/badge/mongodb-47A248?style=for-the-badge&logo=mongodb&logoColor=white)|
 | **Env**|![npm](https://img.shields.io/badge/npm-D24939?style=for-the-badge&logo=npm&logoColor=white) ![Docker](https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white) 
+
+</div>
 
 ## 프로젝트 설명
 <details>
