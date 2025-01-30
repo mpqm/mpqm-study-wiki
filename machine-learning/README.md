@@ -1,22 +1,27 @@
 - - -
-# 01. HMMCANTrafficAnalysis
+<!-- 프로젝트 대표 이미지 -->
+<p align="center">
+    01. HMMCANTrafficAnalysis
+</p>
+
 <!-- 프로젝트 대표 이미지 -->
 <div align="center">
     <img  style="width: 50%" src="https://miro.medium.com/v2/resize:fit:681/1*BGYc0XF3JuykME2sNBtXlg.png">
-      <!-- <h3>
-       🌐 시연영상
-        <a href="{실행동영상 유튜브 링크}">유튜브링크</a>
-       </h3> -->
-
-  | **Category** |**Skills**| 
-  |-------------|---------|
-  |**Language**| ![Python](https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white) |
-
 </div>
 
-## 프로젝트 설명
+<!-- 홈페이지 링크
+<div align=center>
+    <h3>
+        🌐 시연영상
+        <a href="{실행동영상 유튜브 링크}">유튜브링크</a>
+    </h3>
+</div> -->
+
+<br>
+
+## 👨🏻‍🏫 프로젝트 개요
 <details>
-	<summary><b> 프로젝트 개요</b></summary>
+	<summary><b> 프로젝트 소개</b></summary>
     <ul>
         <li>CAN 네트워크에서 정상과 비정상(공격포함)트래픽을 가지고 데이터 가공후 HMM 알고리즘 적용
         </li>
@@ -44,50 +49,59 @@ python hmm_antropy.py
 
 <br>
 
-## 기능 설명
 <details>
-	<summary><b> Data Set Sample</b></summary>
-   <p align ="center">
-      <img src="../wiki-images/machine-learning/ml-cantraffic-1.png"/>
-   </p>
+	<summary><b> 주요 기능 설명</b></summary>
+    <ul>
+        <b> Data Set Sample</b>
+            <p align ="center">
+               <img src="../wiki-images/machine-learning/ml-cantraffic-1.png"/>
+            </p>
+        <b> Arbid Time Stamp Method</b>
+            <p align ="center">
+               <img src="../wiki-images/machine-learning/ml-cantraffic-2.png"/>
+            </p>
+        <b> Arbid Haming Distance Method</b>
+         <p align ="center">
+            <img src="../wiki-images/machine-learning/ml-cantraffic-3.png"/>
+         </p>
+    </ul>
 </details>
+
 <br>
-<details>
-	<summary><b> Arbid Time Stamp Method</b></summary>
-   <p align ="center">
-      <img src="../wiki-images/machine-learning/ml-cantraffic-2.png"/>
-   </p>
-</details>
+
+## 💻 기술스택
+| **Category** |**Skills**| 
+|-------------|---------|
+|**Language**| ![Python](https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white) |
+
 <br>
-<details>
-	<summary><b> Arbid Haming Distance Method</b></summary>
-   <p align ="center">
-      <img src="../wiki-images/machine-learning/ml-cantraffic-3.png"/>
-   </p>
-</details>
 
 - - -
 
 <br>
 
-- - -
+<!-- 제목 -->
+<p align="center">
+    02. MaliciousCodeAnalysis
+</p>
 
-# 02. MaliciousCodeAnalysis
 <!-- 프로젝트 대표 이미지 -->
 <div align="center">
     <img  style="width: 50%" src="../wiki-images/machine-learning/ml-maliciouscode-1.png">
-      <!-- <h3>
-       🌐 시연영상
-        <a href="{실행동영상 유튜브 링크}">유튜브링크</a>
-       </h3> -->
-
-  | **Category** |**Skills**| 
-  |-------------|---------|
-  |**Language**| ![Python](https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white) |
-
 </div>
 
-## 프로젝트 설명
+<!-- 홈페이지 링크
+<div align=center>
+    <h3>
+        🌐 시연영상
+        <a href="{실행동영상 유튜브 링크}">유튜브링크</a>
+    </h3>
+</div> -->
+
+<br>
+
+## 👨🏻‍🏫 프로젝트 개요
+
 <details>
 	<summary><b> 프로젝트 소개</b></summary>
     <ul>
@@ -116,30 +130,28 @@ python ganada-1.py
 
 <br>
 
-## 기능 설명
 <details>
-	<summary><b> Data Set Sample</b></summary>
+   <summary><b> 주요 기능 설명</b></summary>
+   <ul>
+	<b> Data Set Sample</b>
    <p align ="center">
       <img src="../wiki-images/machine-learning/ml-maliciouscode-2.png"/>
    </p>
-</details>
-<br>
-<details>
-	<summary><b> 6개의 데이터셋들에서 opcodeTrace 추출, target(mal/benign)과 feature(n-gram)데이터 가공</b></summary>
+	<b> 6개의 데이터셋들에서 opcodeTrace 추출, target(mal/benign)과 feature(n-gram)데이터 가공</b>
    <p align ="center">
       <img src="../wiki-images/machine-learning/ml-maliciouscode-3.png"/>
    </p>
-</details>
-<br>
-<details>
-	<summary><b> 모델 학습</b></summary>
+	<b> 모델 학습</b>
    <p align ="center">
       <img src="../wiki-images/machine-learning/ml-maliciouscode-4.png"/>
    </p>
+   </ul>
 </details>
-
-<!-- - - -
 
 <br>
 
-- - - -->
+## 💻 기술스택
+
+| **Category** |**Skills**| 
+|-------------|---------|
+|**Language**| ![Python](https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white) |

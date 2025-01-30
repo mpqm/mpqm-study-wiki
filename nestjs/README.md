@@ -1,17 +1,24 @@
-- - -
-# 02. Blog
+<!-- 제목 -->
+<p align="center">
+    02. Blog
+</p>
 
+<!-- 프로젝트 대표 이미지 -->
 <div align="center">
-      <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-
-  | **Category** |**Skills**| 
-  |-------------|---------|
-  |**Backend**| ![HTML5](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=NestJS&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white) ![Postman](https://img.shields.io/badge/postman-FF6C37.svg?&style=for-the-badge&logo=postman&logoColor=white)|
+    <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </div>
 
-## 프로젝트 설명
+<!-- 홈페이지 링크
+<div align=center>
+    <h3>
+        🌐 시연영상
+        <a href="{실행동영상 유튜브 링크}">유튜브링크</a>
+    </h3>
+</div> -->
+
+## 👨🏻‍🏫 프로젝트 개요
 <details>
-	<summary><b> 프로젝트 개요</b></summary>
+	<summary><b> 프로젝트 소개</b></summary>
     <ul>
         <li>NestJS로 Blog API 만들기, 의존성 주입, 몽고DB 연동하기 연습
         </li>
@@ -48,10 +55,10 @@ npm run test:cov
 
 <br>
 
-## 기능 설명
 <details>
-	<summary><b> 게시글 </b></summary>
+	<summary>주요 기능 설명</summary>
     <ul>
+      <b> 게시글 </b>
         <li>getAllPost(): 모든 블로그 글 가져오기
         </li>
         <li>createPost(): 새로운 블로그 글 작성
@@ -69,24 +76,43 @@ npm run test:cov
     </ul>
 </details>
 
-- - -
+<br>
+
+## 💻 기술스택
+
+| **Category** |**Skills**| 
+|-------------|---------|
+|**Backend**| ![HTML5](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=NestJS&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white) ![Postman](https://img.shields.io/badge/postman-FF6C37.svg?&style=for-the-badge&logo=postman&logoColor=white)|
+
 
 <br>
 
 - - -
 
-# 06. Auth
-<div align="center">
-      <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+<br>
 
-  | **Category** |**Skills**| 
-  |-------------|---------|
-  |**Backend**| ![HTML5](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=NestJS&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white) ![Postman](https://img.shields.io/badge/postman-FF6C37.svg?&style=for-the-badge&logo=postman&logoColor=white) ![Postman](https://img.shields.io/badge/sqlite-003B57.svg?&style=for-the-badge&logo=sqlite&logoColor=white) |
+<!-- 제목 -->
+<p align="center">
+    06. Auth
+</p>
+
+<!-- 프로젝트 대표 이미지 -->
+<div align="center">
+    <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </div>
 
-## 프로젝트 설명
+<!-- 홈페이지 링크
+<div align=center>
+    <h3>
+        🌐 시연영상
+        <a href="{실행동영상 유튜브 링크}">유튜브링크</a>
+    </h3>
+</div> -->
+
+
+## 👨🏻‍🏫 프로젝트 개요
 <details>
-	<summary><b> 프로젝트 개요</b></summary>
+	<summary><b> 프로젝트 소개</b></summary>
     <ul>
         <li>유저생성, 조회, 전체조회, 수정, 삭제, 전체삭제기능 API 사용자 모듈, Sqlite DB를 이용
         </li>
@@ -120,67 +146,75 @@ http://localhost:3000/auth/testloginsession
 
 <br>
 
-## 기능 설명
 <details>
-	<summary><b> 유저, 인증 모듈, 가드</b></summary>
-  <p align ="center">
-    <img src ="../wiki-images/nestjs/nestjs-auth-1.png"/>
-  </p>
-</details>
-<br>
-<details>
-	<summary><b> 페스포트와 세션을 사용한 인증 과정</b></summary>
-  <p align ="center">
-    <img src ="../wiki-images/nestjs/nestjs-auth-2.png"/>
-  </p>
-</details>
-<br>
-<details>
-	<summary><b> 로그인부터 세션 저장까지 순서도</b></summary>
-  <p align ="center">
-    <img src ="../wiki-images/nestjs/nestjs-auth-3.png"/>
-  </p>
-</details>
-<br>
-<details>
-	<summary><b> OAuth 프로토콜 흐름, 엑세스 토큰 만료시 리프레시 토큰을 통한 재발행 </b></summary>
-  <p align ="center">
-    <img src ="../wiki-images/nestjs/nestjs-auth-4.png"/>
-  </p>
-</details>
-<br>
-<details>
-	<summary><b> 구글 OAuth 구현 순서 </b></summary>
-  <p align ="center">
-    <img src ="../wiki-images/nestjs/nestjs-auth-5.png"/>
-  </p>
-</details>
-<br>
-<details>
-	<summary><b> GoogleAuthGuard의 동작 순서도 </b></summary>
-  <p align ="center">
-    <img src ="../wiki-images/nestjs/nestjs-auth-6.png"/>
-  </p>
+	<summary><b> 주요 기능 설명</b></summary>
+    <ul>
+        <b>유저, 인증 모듈, 가드</b>
+          <p align ="center">
+            <img src ="../wiki-images/nestjs/nestjs-auth-1.png"/>
+          </p>
+        <b>페스포트와 세션을 사용한 인증 과정</b>
+          <p align ="center">
+            <img src ="../wiki-images/nestjs/nestjs-auth-2.png"/>
+          </p>
+        <b>로그인부터 세션 저장까지 순서도</b>
+          <p align ="center">
+            <img src ="../wiki-images/nestjs/nestjs-auth-3.png"/>
+          </p>
+        <b> OAuth 프로토콜 흐름, 엑세스 토큰 만료시 리프레시 토큰을 통한 재발행 </b>
+          <p align ="center">
+            <img src ="../wiki-images/nestjs/nestjs-auth-4.png"/>
+          </p>
+        <b> 구글 OAuth 구현 순서 </b>
+          <p align ="center">
+            <img src ="../wiki-images/nestjs/nestjs-auth-5.png"/>
+          </p>
+        <b> GoogleAuthGuard의 동작 순서도 </b>
+          <p align ="center">
+            <img src ="../wiki-images/nestjs/nestjs-auth-6.png"/>
+          </p>
+    </ul>
 </details>
 
-- - -
+
+## 💻 기술스택
+
+| **Category** |**Skills**| 
+|-------------|---------|
+|**Backend**| ![HTML5](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=NestJS&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white) ![Postman](https://img.shields.io/badge/postman-FF6C37.svg?&style=for-the-badge&logo=postman&logoColor=white) ![Postman](https://img.shields.io/badge/sqlite-003B57.svg?&style=for-the-badge&logo=sqlite&logoColor=white) |
 
 <br>
 
 - - -
 
-# 07. Board
-<div align="center">
-      <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+<br>
 
-  | **Category** |**Skills**| 
-  |-------------|---------|
-  |**Backend**| ![HTML5](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=NestJS&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white) ![Postman](https://img.shields.io/badge/postman-FF6C37.svg?&style=for-the-badge&logo=postman&logoColor=white) ![Postman](https://img.shields.io/badge/postgresql-4169E1.svg?&style=for-the-badge&logo=postgresql&logoColor=white)|
+
 </div>
 
-## 프로젝트 설명
+<!-- 제목 -->
+<p align="center">
+    07. Board
+</p>
+
+<!-- 프로젝트 대표 이미지 -->
+<div align="center">
+    <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+</div>
+
+<!-- 홈페이지 링크
+<div align=center>
+    <h3>
+        🌐 시연영상
+        <a href="{실행동영상 유튜브 링크}">유튜브링크</a>
+    </h3>
+</div> -->
+
+<br>
+
+## 👨🏻‍🏫 프로젝트 개요
 <details>
-	<summary><b> 프로젝트 개요</b></summary>
+	<summary><b> 프로젝트 소개</b></summary>
     <ul>
         <li>인증된 사용자가 작성한 게시글은 사용자에게 종속된 접근권한 분리형 게시판 서비스
         </li>
@@ -208,10 +242,10 @@ npm run start
 
 <br>
 
-## 기능 설명
 <details>
-	<summary><b> User </b></summary>
+	<summary><b> 주요 기능 설명</b></summary>
     <ul>
+        <b> User </b>
         <li>createUser: 사용자 엔티티 생성 및 저장
         </li>
         <li>getUser: 주어진 이메일을 이용해 사용자 조회
@@ -223,11 +257,8 @@ npm run start
         <li>deleteUser: 주어진 이메일을 이용해 사용자 삭제
         </li>
     </ul>
-</details>
-<br>
-<details>
-	<summary><b> Board</b></summary>
     <ul>
+        <b> Board</b>
         <li>createBoard: 게시물 엔티티 생성 및 저장
         </li>
         <li>getBoard: 주어진 ID를 이용해 게시글 조회
@@ -239,21 +270,15 @@ npm run start
         <li>deleteBoard: 유저가 가진 게시글을 삭제
         </li>
     </ul>
-</details>
-<br>
-<details>
-	<summary><b> Auth</b></summary>
     <ul>
+        <b> Auth</b>
         <li>register: getUser로 사용자 존재여부 확인, 비밀번호 해시화후 createUser에 주입해 사용자 등록
         </li>
         <li>login: getUser로 사용자 존재여부 확인, 비밀번호 비교후 JWT accessToken 생성
         </li>
     </ul>
-</details>
-<br>
-<details>
-	<summary><b> Else</b></summary>
     <ul>
+        <b> Else </b>
         <li>PassPort와 JWT Strategy를 이용한 사용자 인증, Guard를 통한 핸들러 메서드에 전달전 검증
         </li>
         <li>TypeORM 설정과 Entity를 통한 Postgresql 연동
@@ -265,35 +290,44 @@ npm run start
     </ul>
 </details>
 
-- - -
+<br>
+
+## 💻 기술스택
+
+| **Category** |**Skills**| 
+|-------------|---------|
+|**Backend**| ![HTML5](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=NestJS&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white) ![Postman](https://img.shields.io/badge/postman-FF6C37.svg?&style=for-the-badge&logo=postman&logoColor=white) ![Postman](https://img.shields.io/badge/postgresql-4169E1.svg?&style=for-the-badge&logo=postgresql&logoColor=white)|
 
 <br>
 
 - - -
 
-# 08. Chat
-<div align="center">
-  <p align ="center">
-    <a href=""><img src ="https://img.shields.io/badge/youtube-FF0000.svg?&style=for-the-badge&logo=youtube&logoColor=white"/></a>
-    </br>
-    <img width="700" height="500" src="https://user-images.githubusercontent.com/79093184/260901610-e7dab1f5-c9ab-4a7d-be95-96130f604c49.png">
-  </p>
-    <h3>
-    시연영상
-      <a href="https://www.youtube.com/watch?v=1UvK-YwjQaA">유튜브링크</a>
-    </h3> 
-   <br>
-
-   | **Category** |**Skills**| 
-   |-------------|---------|
-   |**Frontend & Language**| ![HTML5](https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
-   |**Backend**| ![HTML5](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=NestJS&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white) ![Postman](https://img.shields.io/badge/postman-FF6C37.svg?&style=for-the-badge&logo=postman&logoColor=white)
+<br>
 
 </div>
+<!-- 제목 -->
+<p align="center">
+    08. Chat
+</p>
 
-## 프로젝트 설명
+<!-- 프로젝트 대표 이미지 -->
+  <p align ="center">
+    <img width="700" height="500" src="https://user-images.githubusercontent.com/79093184/260901610-e7dab1f5-c9ab-4a7d-be95-96130f604c49.png">
+  </p>
+<!-- 홈페이지 링크 -->
+<div align=center>
+    <h3>
+        🌐 시연영상
+        <a href="https://www.youtube.com/watch?v=1UvK-YwjQaA">유튜브링크</a>
+    </h3>
+</div>
+
+<br>
+
+## 👨🏻‍🏫 프로젝트 개요
+
 <details>
-	<summary><b> 프로젝트 개요</b></summary>
+	<summary><b> 프로젝트 소개</b></summary>
     <ul>
         <li>웹소켓을 사용한 실시간 채팅 구현
         </li>
@@ -319,10 +353,19 @@ npm run start
 
 <br>
 
-## 기능 설명
 <details>
-	<summary><b> chat </b></summary>
-  <p align ="center">
-    <img src ="../wiki-images/nestjs/nestjs-chat-2.png"/>
-  </p>
+	<summary><b> 주요 기능 설명</b></summary>
+    <ul>
+        <b>chat</b>
+        <p align ="center">
+          <img src ="../wiki-images/nestjs/nestjs-chat-2.png"/>
+        </p>
+    </ul>
 </details>
+
+## 💻 기술스택
+
+| **Category** |**Skills**| 
+|-------------|---------|
+|**Frontend**| ![HTML5](https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
+|**Backend**| ![HTML5](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=NestJS&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white) ![Postman](https://img.shields.io/badge/postman-FF6C37.svg?&style=for-the-badge&logo=postman&logoColor=white)

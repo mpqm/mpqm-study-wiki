@@ -56,6 +56,7 @@ npm start
 <details>
 	<summary><b> 주요 기능 설명</b></summary>
     <ul>
+        <b>기능</b>
         <li>기능1
         </li>
         <li>기능 2
@@ -81,3 +82,9 @@ npm start
 |**MSA**| ![apachekafka](https://img.shields.io/badge/apachekafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white) ![SpringCloud](https://img.shields.io/badge/SpringCloud-6DB33F?style=for-the-badge&logo=spring&logoColor=white) ![axon](https://img.shields.io/badge/axonframework-FF9900?style=for-the-badge&logo=axonframework&logoColor=white) |
 |**BlockChain**| ![HyperLedgerFabric](https://img.shields.io/badge/HyperLedgerFabric-2496ED?style=for-the-badge&logo=HyperLedgerFabric&logoColor=white) |
 |**Contact**| ![Tistory](https://img.shields.io/badge/tistory-000000?style=for-the-badge&logo=Tistory&logoColor=white) ![Gmail](https://img.shields.io/badge/okqkrwhdtjd@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white) ![NAVER](https://img.shields.io/badge/okqkrwhdtjd@naver.com-03C75A?style=for-the-badge&logo=naver&logoColor=white) 
+
+<br>
+
+- - -
+
+<br>

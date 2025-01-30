@@ -1,2 +1,2 @@
-## java_wiki
+## java
 https://mpqm.tistory.com/category/JAVA

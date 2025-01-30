@@ -1,27 +1,36 @@
-- - -
-# 01. Asset
+<!-- 제목 -->
+<p align="center">
+   01. asset
+</p>
+
+<!-- 프로젝트 대표 이미지 -->
 <div align="center">
-    <img  style="width: 50%" src="../wiki-images/hyperledger-fabric/메인이미지1.png">
-   
-   <br>
-
-   | **Category** |**Skills**| 
-   |-------------|---------|
-   |**Frontend & Language**| ![HTML5](https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
-   |**Backend**| ![express](https://img.shields.io/badge/express-339933?style=for-the-badge&logo=express&logoColor=white) ![typescript](https://img.shields.io/badge/hyperledgerFabric-3178C6?style=for-the-badge&logo=hyperledgerFabric&logoColor=white)
-
+        <img  style="width: 50%" src="../wiki-images/hyperledgerfabric/메인이미지1.png">
 </div>
 
-## 프로젝트 설명
+<!-- 홈페이지 링크
+<div align=center>
+    <h3>
+        🌐 시연영상
+        <a href="{실행동영상 유튜브 링크}">유튜브링크</a>
+    </h3>
+</div> -->
+
+<br>
+
+## 👨🏻‍🏫 프로젝트 개요
+
 <details>
-	<summary><b> 프로젝트 개요</b></summary>
+	<summary><b> 프로젝트 소개</b></summary>
     <ul>
         <li>
         HyperLedgerFabric, NodeJS express, Javascript, HTML을 사용해 단순한 asset데이터에 대한 DApp 구축
         </li>
     </ul>
 </details>
+
 <br>
+
 <details>
 	<summary><b> 프로젝트 실행</b></summary>
 
@@ -98,20 +107,17 @@ check asset localhost:5984/_utils
 
 <br>
 
-## 기능 설명
 <details>
-	<summary><b> HyperledgerFabric</b></summary>
+	<summary><b> 주요 기능 설명</b></summary>
     <ul>
+        <b> HyperledgerFabric</b>
         <li>v1.x 사용, 3 org(each have 1 peer) 1 ca(cryptogen) 1 order
         </li>
         <li>로컬호스트 도커 가상 환경, 인증서들(msp)는 cryptogen으로 임의생성
         </li>
     </ul>
-</details>
-<br>
-<details>
-	<summary><b> SmartContract</b></summary>
     <ul>
+        <b> SmartContract</b>
         <li>init, invoke
         </li>
          <li> set: 원장에 저장할 asset데이터 생성(asset 소유자 id, asset 값)
@@ -125,11 +131,8 @@ check asset localhost:5984/_utils
          <li>gethistory: asset 소유자 id별 트랜잭션 기록 조회
         </li>
     </ul>
-</details>
-<br>
-<details>
-	<summary><b> Application</b></summary>
     <ul>
+        <b> Application</b>
         <li>Node.js express 사용, 하이퍼레저 패브릭 네트워크 연동
         </li>
         <li>html view, 스마트 컨트랙트 별 restapi
@@ -137,8 +140,11 @@ check asset localhost:5984/_utils
     </ul>
 </details>
 
-<!-- - - -
-
 <br>
 
-- - - -->
+## 💻 기술스택
+
+| **Category** |**Skills**| 
+|-------------|---------|
+|**Frontend & Language**| ![HTML5](https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
+|**Backend**| ![express](https://img.shields.io/badge/express-339933?style=for-the-badge&logo=express&logoColor=white) ![typescript](https://img.shields.io/badge/hyperledgerFabric-3178C6?style=for-the-badge&logo=hyperledgerFabric&logoColor=white)

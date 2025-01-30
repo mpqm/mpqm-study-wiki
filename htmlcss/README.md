@@ -1,2 +1,2 @@
-## HTML/CSS_wiki
+## HTML/CSS
 https://mpqm.tistory.com/

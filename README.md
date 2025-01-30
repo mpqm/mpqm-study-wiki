@@ -11,7 +11,7 @@
 * BC [htmlcss](https://github.com/mpqm/my-study/tree/main/htmlcss)
 * BC [java](https://github.com/mpqm/my-study/tree/main/java)
 * RE [hyperledgerfabric](https://github.com/mpqm/my-study/tree/main/hyperledgerfabric)
-* RE [machinelearning](https://github.com/mpqm/my-study/tree/main/machinelearning)
+* RE [machine-learning](https://github.com/mpqm/my-study/tree/main/machinelearning)
 * RE [nestjs](https://github.com/mpqm/my-study/tree/main/nestjs)
 * RE [nodejs](https://github.com/mpqm/my-study/tree/main/nodejs)
 * RE [vuejs](https://github.com/mpqm/my-study/tree/main/vuejs)
