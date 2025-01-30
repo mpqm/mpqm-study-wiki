@@ -1,12 +1,32 @@
-# mpqm-wiki
-#### ⚪ 목적
-* github 레포지토리에있던 학습용 프로젝트 정리
-* github 레포지토리에있던 전공 과제 프로젝트 정리
-* github 레포지토리에있던 전공 공부 코드 정리
-* github 레포지토리에있던 관리안하는 토이 프로젝트 정리
-* R (README 있음) / B (Blog 정리) / X: 단순 저장
+## wiki
 
-#### ⚪ 토이 프로젝트 바로가기
+## 레포 목적
+* github 레포지토리에있던 학습용, 전공 과제 및 스터디 프로젝트 저장 및 정리
+* RE (README 있음) / BC (Blog 정리 완료) / BH (Blog 정리 예정) / XX (단순 저장)
+
+## 폴더 바로가기
+* BH [javascript](https://github.com/mpqm/my-study/tree/main/javascript)
+* BH [cicd](https://github.com/mpqm/my-study/tree/main/cicd)
+* BH [spring](https://github.com/mpqm/my-study/tree/main/spring)
+* BC [htmlcss](https://github.com/mpqm/my-study/tree/main/htmlcss)
+* BC [java](https://github.com/mpqm/my-study/tree/main/java)
+* RE [hyperledgerfabric](https://github.com/mpqm/my-study/tree/main/hyperledgerfabric)
+* RE [machinelearning](https://github.com/mpqm/my-study/tree/main/machinelearning)
+* RE [nestjs](https://github.com/mpqm/my-study/tree/main/nestjs)
+* RE [nodejs](https://github.com/mpqm/my-study/tree/main/nodejs)
+* RE [vuejs](https://github.com/mpqm/my-study/tree/main/vuejs)
+
+* X [template](https://github.com/mpqm/my-study/tree/main/github-template)
+* X [android](https://github.com/mpqm/my-study/tree/main/android)
+* X [c#](https://github.com/mpqm/my-study/tree/main/c%23)
+* X [c++](https://github.com/mpqm/my-study/tree/main/c%2B%2B)
+* X [sql](https://github.com/mpqm/my-study/tree/main/sql)
+
+
+
+
+
+## 토이 프로젝트 바로가기
 <div align="center">
     <img  style="width: 50%" src="./wiki-images/main/before.png">
 </div>
@@ -18,20 +38,3 @@
 * R [nodejs-service-ott](https://github.com/mpqm/my-study/tree/main/nodejs-service-ott)
 * R [nodejs-service-shop](https://github.com/mpqm/my-study/tree/main/nodejs-service-shop)
 * R [nodejs-service-sns](https://github.com/mpqm/my-study/tree/main/nodejs-service-sns)
-
-
-#### ⚪ 폴더 바로가기
-* X [android](https://github.com/mpqm/my-study/tree/main/android)
-* X [c#](https://github.com/mpqm/my-study/tree/main/c%23)
-* X [c++](https://github.com/mpqm/my-study/tree/main/c%2B%2B)
-* X [CICD](https://github.com/mpqm/my-study/tree/main/CICD)
-* X [github-template](https://github.com/mpqm/my-study/tree/main/github-template)
-* X [htmlcss](https://github.com/mpqm/my-study/tree/main/htmlcss)
-* R [hyperledger-fabric](https://github.com/mpqm/my-study/tree/main/hyperledger-fabric)
-* X [java](https://github.com/mpqm/my-study/tree/main/java)
-* X [javascript](https://github.com/mpqm/my-study/tree/main/javascript)
-* R [machine-learning](https://github.com/mpqm/my-study/tree/main/machine-learning)
-* R [nestjs](https://github.com/mpqm/my-study/tree/main/nestjs)
-* R [nodejs](https://github.com/mpqm/my-study/tree/main/nodejs)
-* X [SQL](https://github.com/mpqm/my-study/tree/main/SQL)
-* R [vuejs](https://github.com/mpqm/my-study/tree/main/vuejs)
