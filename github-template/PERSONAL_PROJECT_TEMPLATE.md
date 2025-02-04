@@ -1,14 +1,7 @@
-<!-- 제목 -->
-<p align="center">
-    {프로젝트 제목}
-</p>
-
-<!-- 프로젝트 대표 이미지 -->
+# {프로젝트 제목}
 <div align="center">
-    <img  style="width: 50%" src="https://placehold.co/600x400">
+        <img  style="width: 50%" src="https://placehold.co/600x400">
 </div>
-
-<!-- 홈페이지 링크 -->
 <div align=center>
     <h3>
         🌐 시연영상
@@ -18,35 +11,23 @@
 
 <br>
 
-## 👨🏻‍🏫 프로젝트 개요
-
+## 👨🏻‍🏫 프로젝트 소개
 <details>
-	<summary><b> 프로젝트 소개</b></summary>
-    <ul>
-        <li>
-        </li>
-        <li>
-        </li>
-    </ul>
+<summary><b> 📌 프로젝트 개요</b></summary>
+<br>
+
+- 
+
 </details>
 
 <br>
 
 <details>
-	<summary><b> 프로젝트 실행</b></summary>
+<summary><b> 🏃프로젝트 실행</b></summary>
+<br>
 
 ```bash
-# Prerequisites:
-# 실행
-git clone https://github.com/MpqM/{repository}
-# backend
-cd server
-npm install
-npm start
-# frontend
-cd client
-npm install
-npm start
+
 ```
 
 </details>
@@ -54,19 +35,20 @@ npm start
 <br>
 
 <details>
-	<summary><b> 주요 기능 설명</b></summary>
-    <ul>
-        <b>기능</b>
-        <li>기능1
-        </li>
-        <li>기능 2
-        </li>
-    </ul>
+<summary><b> 🚀 주요기능 설명</b></summary>
+<br>
+
+- 
+    - 
+
 </details>
 
 <br>
 
-## 💻 기술스택
+<details>
+<summary><b> 💻 기술스택</b></summary>
+<br>
+
 
 | **Category** |**Skills**| 
 |-------------|---------|
@@ -82,6 +64,8 @@ npm start
 |**MSA**| ![apachekafka](https://img.shields.io/badge/apachekafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white) ![SpringCloud](https://img.shields.io/badge/SpringCloud-6DB33F?style=for-the-badge&logo=spring&logoColor=white) ![axon](https://img.shields.io/badge/axonframework-FF9900?style=for-the-badge&logo=axonframework&logoColor=white) |
 |**BlockChain**| ![HyperLedgerFabric](https://img.shields.io/badge/HyperLedgerFabric-2496ED?style=for-the-badge&logo=HyperLedgerFabric&logoColor=white) |
 |**Contact**| ![Tistory](https://img.shields.io/badge/tistory-000000?style=for-the-badge&logo=Tistory&logoColor=white) ![Gmail](https://img.shields.io/badge/okqkrwhdtjd@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white) ![NAVER](https://img.shields.io/badge/okqkrwhdtjd@naver.com-03C75A?style=for-the-badge&logo=naver&logoColor=white) 
+
+</details>
 
 <br>
 
