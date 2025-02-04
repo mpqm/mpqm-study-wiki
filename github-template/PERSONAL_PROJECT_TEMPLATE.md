@@ -35,7 +35,7 @@
 <br>
 
 <details>
-<summary><b> 🚀 주요기능 설명</b></summary>
+<summary><b> 🚀 주요 기능 설명</b></summary>
 <br>
 
 - 
@@ -46,7 +46,7 @@
 <br>
 
 <details>
-<summary><b> 💻 기술스택</b></summary>
+<summary><b> 💻 기술 스택</b></summary>
 <br>
 
 

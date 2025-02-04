@@ -1,78 +1,81 @@
-<!-- 제목 -->
-<p align="center">
-    {프로젝트 제목}
-</p>
-
-<!-- 프로젝트 대표 이미지 -->
+# {프로젝트 제목}
 <div align="center">
     <img  style="width: 50%" src="https://placehold.co/600x400">
 </div>
-
-<!-- 홈페이지 링크 -->
 <div align=center>
-	<h3>
-	    🌐 {프로젝트 명} 사이트
-	    <a href="{사이트링크}">{사이트 링크}</a>
-	</h3>
+	<h3> 🌐 {프로젝트명} 사이트 <a href="{사이트링크}">{사이트 링크}</a> </h3>
 </div>
 
 <br>
 
-<!-- 팀원 소개 -->
-## 👩🏻‍💻‍ {팀명} 팀원
-<div align="center">
+## 👨🏻‍🏫 프로젝트 소개
+<details>
+<summary><b> 👩🏻‍💻 {팀명} 소개</b></summary>
+<br>
 
 |<img src="https://placehold.co/600x400" width="150" height="150"/>|<img src="https://placehold.co/600x400" width="150" height="150"/>|<img src="https://placehold.co/600x400" width="150" height="150"/>|<img src="https://placehold.co/600x400" width="150" height="150"/>|<img src="https://placehold.co/600x400" width="150" height="150"/>|
 |:-:|:-:|:-:|:-:|:-:|
 |<a href="{github}">👑팀장</a>|<a href="{github}">팀원1</a>|<a href="{github}">팀원2</a>|<a href="{github}">팀원3</a>|<a href="{github}">팀원4</a>|
 
+</details>
+
+<br>
+
+<details>
+<summary><b> 📌 프로젝트 개요</b></summary>
+<br>
+
+- 
+
+</details>
+
+<br>
+
+<details>
+<summary><b> 💡 프로젝트 배경</b></summary>
+<br>
+
+- 
+
+</details>
+
+<br>
+
+<details>
+<summary><b> 🎡 ERD & Architecture </b></summary>
+<br>
+<div align="center">
+    <img  style="width: 50%" src="https://placehold.co/600x400">
+    <img  style="width: 50%" src="https://placehold.co/600x400">
 </div>
-
-<br>
-
-<!-- 프로젝트 개요 -->
-## 👨🏻‍🏫 프로젝트 개요
-<details>
-	<summary><b> 📋 프로젝트 소개</b></summary>
-    <ul>
-        <li>
-            {프로젝트 소개1}
-        </li>
-        <li>
-            {프로젝트 소개2}
-        </li>
-        <li>
-            {프로젝트 소개3}
-        </li>
-    </ul>
 </details>
 
 <br>
 
 <details>
-	<summary><b> 💡 프로젝트 배경</b></summary>
-    <ul>
-        <li>
-             <p>참고 기사 1</p><br>
-            <div align="left">
-                <img src="{기사1}" width=500, height=310><br>
-                <a>{기사링크}</a>
-            </div>
-        </li>
-        <li>
-            <p>참고 기사 2</p><br>
-            <div align="left">
-                <img src="{기사2}" width=500, height=310><br>
-                <a>{기사링크}</a>
-            </div>
-        </li>
-    </ul>
-</details>
+<summary><b> 🗄️ 개발 문서 및 링크 </b></summary>
+<br>
 
+| **문서**|**링크**|
+|--------|--------|
+| 🎡 ERD & 아키텍처| [ERD & 아키텍처](wiki링크)|
+| ➰ 요구사항 정의서| [요구사항 정의서](wiki링크)|
+| 📃 백엔드 API 명세서|[백엔드 API 명세서](wiki링크)|
+| ✔️ 백엔드 기능 테스트|[백엔드 기능 테스트](wiki링크)|
+| 🌱 프론트엔드 화면설계서|[프론트엔드 화면설계서](wiki링크)|
+| 🎥 프론트엔드 시연 영상|[프론트엔드 시연 영상](wiki링크)|
+| 🔎 기능 및 성능 개선|[기능 및 성능 개선](wiki링크)|
+| 🔎 핵심 기능 설명|[핵심 기능 설명](wiki링크)|
+| 🖥️ CICD 프로세스|[CICD 프로세스](wiki링크)|
+| 🔗 컨벤션|[컨벤션](wiki링크)|
+
+</details>
 
 <br>
 
-## 💻 기술 스택
+<details>
+<summary><b> 💻 기술 스택 </b></summary>
+<br>
 
 | *Category* |**Skills**| 
 |-------------|---------|
@@ -89,26 +92,4 @@
 |**BlockChain**| ![HyperLedgerFabric](https://img.shields.io/badge/HyperLedgerFabric-2496ED?style=for-the-badge&logo=HyperLedgerFabric&logoColor=white) |
 |**Contact**| ![Tistory](https://img.shields.io/badge/tistory-000000?style=for-the-badge&logo=Tistory&logoColor=white) ![Gmail](https://img.shields.io/badge/okqkrwhdtjd@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white) ![NAVER](https://img.shields.io/badge/okqkrwhdtjd@naver.com-03C75A?style=for-the-badge&logo=naver&logoColor=white) 
 
-<br>
-
-## 🎡 ERD & Architecture
-<div align="center">
-    <img  style="width: 50%" src="https://placehold.co/600x400">
-    <img  style="width: 50%" src="https://placehold.co/600x400">
-</div>
-
-<br>
-
-## 🗄️ 개발 문서 및 링크
-| **문서**|**링크**|
-|--------|--------|
-| 🎡 ERD & 아키텍처| [ERD & 아키텍처](wiki링크)|
-| ➰ 요구사항 정의서| [요구사항 정의서](wiki링크)|
-| 📃 백엔드 API 명세서|[백엔드 API 명세서](wiki링크)|
-| ✔️ 백엔드 기능 테스트|[백엔드 기능 테스트](wiki링크)|
-| 🌱 프론트엔드 화면설계서|[프론트엔드 화면설계서](wiki링크)|
-| 🎥 프론트엔드 시연 영상|[프론트엔드 시연 영상](wiki링크)|
-| 🔎 기능 및 성능 개선|[기능 및 성능 개선](wiki링크)|
-| 🔎 핵심 기능 설명|[핵심 기능 설명](wiki링크)|
-| 🖥️ CICD 프로세스|[CICD 프로세스](wiki링크)|
-| 🔗 컨벤션|[컨벤션](wiki링크)|
+</details>
