@@ -1,15 +1,8 @@
-<!-- 제목 -->
-<p align="center">
-   01. asset
-</p>
-
-<!-- 프로젝트 대표 이미지 -->
+# 01. asset
 <div align="center">
         <img  style="width: 50%" src="../wiki-images/hyperledgerfabric/메인이미지1.png">
 </div>
-
-<!-- 홈페이지 링크
-<div align=center>
+<!-- <div align=center>
     <h3>
         🌐 시연영상
         <a href="{실행동영상 유튜브 링크}">유튜브링크</a>
@@ -18,21 +11,21 @@
 
 <br>
 
-## 👨🏻‍🏫 프로젝트 개요
-
+## 👨🏻‍🏫 프로젝트 소개
 <details>
-	<summary><b> 프로젝트 소개</b></summary>
-    <ul>
-        <li>
-        HyperLedgerFabric, NodeJS express, Javascript, HTML을 사용해 단순한 asset데이터에 대한 DApp 구축
-        </li>
-    </ul>
+<summary><b> 📌 프로젝트 개요</b></summary>
+<br>
+
+- HyperLedgerFabric, NodeJS express, Javascript, HTML을 사용해 단순한 asset데이터에 대한 DApp 구축
+- 블록체인 원장 데이터 조작 방법
+
 </details>
 
 <br>
 
 <details>
-	<summary><b> 프로젝트 실행</b></summary>
+<summary><b> 🏃프로젝트 실행</b></summary>
+<br>
 
 ```bash
 # prerequisites
@@ -108,43 +101,34 @@ check asset localhost:5984/_utils
 <br>
 
 <details>
-	<summary><b> 주요 기능 설명</b></summary>
-    <ul>
-        <b> HyperledgerFabric</b>
-        <li>v1.x 사용, 3 org(each have 1 peer) 1 ca(cryptogen) 1 order
-        </li>
-        <li>로컬호스트 도커 가상 환경, 인증서들(msp)는 cryptogen으로 임의생성
-        </li>
-    </ul>
-    <ul>
-        <b> SmartContract</b>
-        <li>init, invoke
-        </li>
-         <li> set: 원장에 저장할 asset데이터 생성(asset 소유자 id, asset 값)
-        </li>
-         <li> get: 원장에 저장된 asset데이터 조회
-        </li>
-         <li> update: 원장에 저장된 asset 데이터를 수정
-        </li>
-        <li>delete: 원장에 저장된 asset 데이터를 삭제
-        </li>
-         <li>gethistory: asset 소유자 id별 트랜잭션 기록 조회
-        </li>
-    </ul>
-    <ul>
-        <b> Application</b>
-        <li>Node.js express 사용, 하이퍼레저 패브릭 네트워크 연동
-        </li>
-        <li>html view, 스마트 컨트랙트 별 restapi
-        </li>
-    </ul>
+<summary><b> 🚀 주요 기능 설명</b></summary>
+<br>
+
+- HyperledgerFabric
+    - v1.x 사용, 3 org(each have 1 peer) 1 ca(cryptogen) 1 order
+    - 로컬호스트 도커 가상 환경, 인증서들(msp)는 cryptogen으로 임의생성
+- SmartContract
+    - init, invoke
+    - set: 원장에 저장할 asset데이터 생성(asset 소유자 id, asset 값)
+    - get: 원장에 저장된 asset데이터 조회
+    - update: 원장에 저장된 asset 데이터를 수정
+    - delete: 원장에 저장된 asset 데이터를 삭제
+    - gethistory: asset 소유자 id별 트랜잭션 기록 조회
+- Application
+    - Node.js express 사용, 하이퍼레저 패브릭 네트워크 연동
+    - html view, 스마트 컨트랙트 별 restapi
+
 </details>
 
 <br>
 
-## 💻 기술스택
+<details>
+<summary><b> 💻 기술 스택</b></summary>
+<br>
 
 | **Category** |**Skills**| 
 |-------------|---------|
 |**Frontend & Language**| ![HTML5](https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
 |**Backend**| ![express](https://img.shields.io/badge/express-339933?style=for-the-badge&logo=express&logoColor=white) ![typescript](https://img.shields.io/badge/hyperledgerFabric-3178C6?style=for-the-badge&logo=hyperledgerFabric&logoColor=white)
+
+</details>
