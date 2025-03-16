@@ -66,10 +66,10 @@ npm run test:cov
 <summary><b> 🎮 기술 스택</b></summary>
 <br>
 
-| **CATEGORY** | **SKILLS**                                                                                                                                                                                                              | 
-|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
-| **BACKEND**  | ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=NestJS&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white) |
-| **TEST**     | ![Postman](https://img.shields.io/badge/postman-FF6C37.svg?&style=for-the-badge&logo=postman&logoColor=white)                                                                                                           |
+| **CATEGORY** | **SKILLS**                                                                                                                                                                                                               | 
+|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
+| **BACKEND**  | ![NestJS](https://img.shields.io/badge/Nest.JS-E0234E?style=for-the-badge&logo=NestJS&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white) |
+| **TEST**     | ![Postman](https://img.shields.io/badge/postman-FF6C37.svg?&style=for-the-badge&logo=postman&logoColor=white)                                                                                                            |
 </details>
 
 <br>
@@ -159,11 +159,11 @@ http://localhost:3000/auth/testloginsession
 <summary><b> 🎮 기술 스택</b></summary>
 <br>
 
-| **CATEGORY** | **SKILLS**                                                                                                                                                                                                              | 
-|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **BACKEND**  | ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=NestJS&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white) |
-| **DATABASE** | ![SQLITE](https://img.shields.io/badge/sqlite-003B57.svg?&style=for-the-badge&logo=sqlite&logoColor=white)                                                                                                              |
-| **TEST**     | ![Postman](https://img.shields.io/badge/postman-FF6C37.svg?&style=for-the-badge&logo=postman&logoColor=white)                                                                                                           |
+| **CATEGORY** | **SKILLS**                                                                                                                                                                                                               | 
+|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **BACKEND**  | ![NestJS](https://img.shields.io/badge/Nest.JS-E0234E?style=for-the-badge&logo=NestJS&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white) |
+| **DATABASE** | ![SQLITE](https://img.shields.io/badge/sqlite-003B57.svg?&style=for-the-badge&logo=sqlite&logoColor=white)                                                                                                               |
+| **TEST**     | ![Postman](https://img.shields.io/badge/postman-FF6C37.svg?&style=for-the-badge&logo=postman&logoColor=white)                                                                                                            |
 </details>
 
 <br>
@@ -239,11 +239,11 @@ npm run start
 <summary><b> 🎮 기술 스택</b></summary>
 <br>
 
-| **CATEGORY** | **SKILLS**                                                                                                                                                                                                              | 
-|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
-| **BACKEND**  | ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=NestJS&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white) |
-| **DATABASE** | ![Postgresql](https://img.shields.io/badge/postgresql-4169E1.svg?&style=for-the-badge&logo=postgresql&logoColor=white)                                                                                                  |
-| **TEST**     | ![Postman](https://img.shields.io/badge/postman-FF6C37.svg?&style=for-the-badge&logo=postman&logoColor=white)                                                                                                           |
+| **CATEGORY** | **SKILLS**                                                                                                                                                                                                               | 
+|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| 
+| **BACKEND**  | ![NestJS](https://img.shields.io/badge/Nest.JS-E0234E?style=for-the-badge&logo=NestJS&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white) |
+| **DATABASE** | ![Postgresql](https://img.shields.io/badge/postgresql-4169E1.svg?&style=for-the-badge&logo=postgresql&logoColor=white)                                                                                                   |
+| **TEST**     | ![Postman](https://img.shields.io/badge/postman-FF6C37.svg?&style=for-the-badge&logo=postman&logoColor=white)                                                                                                            |
 </details>
 
 <br>
@@ -302,12 +302,12 @@ npm run start
 <summary><b> 🎮 기술 스택</b></summary>
 <br>
 
-| **CATEGORY** | **SKILLS**                                                                                                                                                                                                                                                                                                                               | 
-|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **FRONTEND** | ![HTML5](https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white) ![WebSocket](https://img.shields.io/badge/websocket-010101?style=for-the-badge&logo=socketdotio&logoColor=white)     | 
-| **BACKEND**  | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white) ![NestJS](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=NestJS&logoColor=white) ![WebSocket](https://img.shields.io/badge/websocket-010101?style=for-the-badge&logo=socketdotio&logoColor=white) |
-| **DATABASE** | ![Postgresql](https://img.shields.io/badge/postgresql-4169E1.svg?&style=for-the-badge&logo=postgresql&logoColor=white)                                                                                                                                                                                                                   |
-| **TEST**     | ![Postman](https://img.shields.io/badge/postman-FF6C37.svg?&style=for-the-badge&logo=postman&logoColor=white)                                                                                                                                                                                                                            |
+| **CATEGORY** | **SKILLS**                                                                                                                                                                                                                                                                                                                                | 
+|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **FRONTEND** | ![HTML5](https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white) ![WebSocket](https://img.shields.io/badge/websocket-010101?style=for-the-badge&logo=socketdotio&logoColor=white)      | 
+| **BACKEND**  | ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white) ![NestJS](https://img.shields.io/badge/Nest.JS-E0234E?style=for-the-badge&logo=NestJS&logoColor=white) ![WebSocket](https://img.shields.io/badge/websocket-010101?style=for-the-badge&logo=socketdotio&logoColor=white) |
+| **DATABASE** | ![Postgresql](https://img.shields.io/badge/postgresql-4169E1.svg?&style=for-the-badge&logo=postgresql&logoColor=white)                                                                                                                                                                                                                    |
+| **TEST**     | ![Postman](https://img.shields.io/badge/postman-FF6C37.svg?&style=for-the-badge&logo=postman&logoColor=white)                                                                                                                                                                                                                             |
 
 </details>
 
