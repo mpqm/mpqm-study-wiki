@@ -116,11 +116,11 @@ check asset localhost:5984/_utils
 <details>
 <summary><b> 🎮 기술 스택</b></summary>
 
-| **CATEGORY** | **SKILLS**                                                                                                                                                                                                                    | 
-|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **FRONTEND** | ![HTML5](https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white)                                                                                                                             |
-| **BACKEND**  | ![express](https://img.shields.io/badge/express.JS-000000?style=for-the-badge&logo=express&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white) |
-| **DATABASE** | ![hlf](https://img.shields.io/badge/hyperledgerFabric-3178C6?style=for-the-badge&logo=hyperledgerFabric&logoColor=white)                                                                                                      |
+| **CATEGORY** | **SKILLS**                                                                                                                                                                                                                 | 
+|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **FRONTEND** | ![HTML5](https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white)                                                                                                                          |
+| **BACKEND**  | ![express](https://img.shields.io/badge/express-000000?style=for-the-badge&logo=express&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white) |
+| **DATABASE** | ![hlf](https://img.shields.io/badge/hyperledgerFabric-3178C6?style=for-the-badge&logo=hyperledgerFabric&logoColor=white)                                                                                                   |
 </details>
 
 <br>
