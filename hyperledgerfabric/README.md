@@ -6,19 +6,6 @@
 <br>
 
 ## 👨🏻‍🏫 프로젝트 소개
-
-<details>
-<summary><b> 💻 기술 스택</b></summary>
-
-| **Category** |**Skills**| 
-|-------------|---------|
-|**Frontend & Language**| ![HTML5](https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
-|**Backend**| ![express](https://img.shields.io/badge/express-339933?style=for-the-badge&logo=express&logoColor=white) ![typescript](https://img.shields.io/badge/hyperledgerFabric-3178C6?style=for-the-badge&logo=hyperledgerFabric&logoColor=white)
-
-</details>
-
-<br>
-
 <details>
 <summary><b> 📌 프로젝트 개요</b></summary>
 
@@ -121,6 +108,18 @@ check asset localhost:5984/_utils
 - Application
     - Node.js express 사용, 하이퍼레저 패브릭 네트워크 연동
     - html view, 스마트 컨트랙트 별 restapi
+
+</details>
+
+<br>
+
+<details>
+<summary><b> 🎮 기술 스택</b></summary>
+
+| **Category** |**Skills**| 
+|-------------|---------|
+|**Frontend & Language**| ![HTML5](https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white) |
+|**Backend**| ![express](https://img.shields.io/badge/express-339933?style=for-the-badge&logo=express&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white) ![typescript](https://img.shields.io/badge/hyperledgerFabric-3178C6?style=for-the-badge&logo=hyperledgerFabric&logoColor=white)|
 
 </details>
 
