@@ -61,9 +61,9 @@ python hmm_antropy.py
 <summary><b> 🎮 기술 스택</b></summary>
 <br>
 
-| **Category** |**Skills**| 
-|-------------|---------|
-|**Language**| ![Python](https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white) |
+| **CATEGORY** | **SKILLS**                                                                                            | 
+|--------------|-------------------------------------------------------------------------------------------------------|
+| **LANGUAGE** | ![Python](https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white) |
 
 </details>
 
@@ -134,9 +134,9 @@ python ganada-1.py
 <summary><b> 🎮 기술 스택</b></summary>
 <br>
 
-| **Category** |**Skills**| 
-|-------------|---------|
-|**Language**| ![Python](https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white) |
+| **CATEGORY** | **SKILLS**                                                                                            | 
+|--------------|-------------------------------------------------------------------------------------------------------|
+| **LANGUAGE** | ![Python](https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white) |
 
 </details>
 
