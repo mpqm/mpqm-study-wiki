@@ -1,20 +1,25 @@
-<!-- 제목 -->
 # 02. Blog
 
 <div align="center">
     <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </div>
-<!-- <div align=center>
-    <h3>
-        🌐 시연영상
-        <a href="{실행동영상 유튜브 링크}">유튜브링크</a>
-    </h3>
-</div> -->
+
+<br>
 
 ## 👨🏻‍🏫 프로젝트 소개
 <details>
-<summary><b> 📌 프로젝트 개요</b></summary>
+<summary><b> 💻 기술 스택</b></summary>
+
+| **Category** |**Skills**| 
+|-------------|---------|
+|**Backend**| ![HTML5](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=NestJS&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white) ![Postman](https://img.shields.io/badge/postman-FF6C37.svg?&style=for-the-badge&logo=postman&logoColor=white)|
+
+</details>
+
 <br>
+
+<details>
+<summary><b> 📌 프로젝트 개요</b></summary>
 
 - NestJS로 Blog API 만들기, 의존성 주입, 몽고DB 연동하기 연습
 - Blog글 객체에 대한 생성, 조회, 전체조회, 수정, 삭제, 전체삭제기능 API
@@ -24,8 +29,7 @@
 <br>
 
 <details>
-<summary><b> 🏃프로젝트 실행</b></summary>
-<br>
+<summary><b> 🏃 프로젝트 실행</b></summary>
 
 ```bash
 # Prerequisites: npm, node, MongoDB Connection URL
@@ -52,7 +56,6 @@ npm run test:cov
 
 <details>
 <summary><b> 🚀 주요 기능 설명</b></summary>
-<br>
 
 - 게시글
   - getAllPost(): 모든 블로그 글 가져오기
@@ -67,40 +70,30 @@ npm run test:cov
 
 <br>
 
-<details>
-<summary><b> 💻 기술 스택</b></summary>
-<br>
-
-| **Category** |**Skills**| 
-|-------------|---------|
-|**Backend**| ![HTML5](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=NestJS&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white) ![Postman](https://img.shields.io/badge/postman-FF6C37.svg?&style=for-the-badge&logo=postman&logoColor=white)|
-
-</details>
-
-
-<br>
-
 - - -
 
-<br>
-
 # 06. Auth
+
 <div align="center">
     <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </div>
 
-<!-- <div align=center>
-    <h3>
-        🌐 시연영상
-        <a href="{실행동영상 유튜브 링크}">유튜브링크</a>
-    </h3>
-</div> -->
-
+<br>
 
 ## 👨🏻‍🏫 프로젝트 소개
 <details>
-<summary><b> 📌 프로젝트 개요</b></summary>
+<summary><b> 💻 기술 스택</b></summary>
+
+| **Category** |**Skills**| 
+|-------------|---------|
+|**Backend**| ![HTML5](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=NestJS&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white) ![Postman](https://img.shields.io/badge/postman-FF6C37.svg?&style=for-the-badge&logo=postman&logoColor=white) ![Postman](https://img.shields.io/badge/sqlite-003B57.svg?&style=for-the-badge&logo=sqlite&logoColor=white) |
+
+</details>
+
 <br>
+
+<details>
+<summary><b> 📌 프로젝트 개요</b></summary>
 
 - 유저생성, 조회, 전체조회, 수정, 삭제, 전체삭제기능 API 사용자 모듈, Sqlite DB를 이용
 - 파이프로 유효성검증(Validataion Pipe, Guard, class-validator), Guard를 통한 핸드러 메서드 전 인증검증
@@ -112,8 +105,7 @@ npm run test:cov
 <br>
 
 <details>
-<summary><b> 🏃프로젝트 실행</b></summary>
-<br>
+<summary><b> 🏃 프로젝트 실행</b></summary>
 
 ```bash
 # prerequisites: npm, node, sqlite viewr vscode extension
@@ -132,7 +124,6 @@ http://localhost:3000/auth/testloginsession
 
 <details>
 <summary><b> 🚀 주요 기능 설명</b></summary>
-<br>
 
 - 유저, 인증 모듈, 가드
 <p align ="center">
@@ -168,39 +159,29 @@ http://localhost:3000/auth/testloginsession
 
 <br>
 
-<details>
-<summary><b> 💻 기술 스택</b></summary>
-<br>
-
-| **Category** |**Skills**| 
-|-------------|---------|
-|**Backend**| ![HTML5](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=NestJS&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white) ![Postman](https://img.shields.io/badge/postman-FF6C37.svg?&style=for-the-badge&logo=postman&logoColor=white) ![Postman](https://img.shields.io/badge/sqlite-003B57.svg?&style=for-the-badge&logo=sqlite&logoColor=white) |
-
-</details>
-
-<br>
-
 - - -
-
-<br>
 
 #  07. Board
 <div align="center">
     <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </div>
-<!-- <div align=center>
-    <h3>
-        🌐 시연영상
-        <a href="{실행동영상 유튜브 링크}">유튜브링크</a>
-    </h3>
-</div> -->
 
 <br>
 
 ## 👨🏻‍🏫 프로젝트 소개
 <details>
-<summary><b> 📌 프로젝트 개요</b></summary>
+<summary><b> 💻 기술 스택</b></summary>
+
+| **Category** |**Skills**| 
+|-------------|---------|
+|**Backend**| ![HTML5](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=NestJS&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white) ![Postman](https://img.shields.io/badge/postman-FF6C37.svg?&style=for-the-badge&logo=postman&logoColor=white) ![Postman](https://img.shields.io/badge/postgresql-4169E1.svg?&style=for-the-badge&logo=postgresql&logoColor=white)|
+
+</details>
+
 <br>
+
+<details>
+<summary><b> 📌 프로젝트 개요</b></summary>
 
 - 인증된 사용자가 작성한 게시글은 사용자에게 종속된 접근권한 분리형 게시판 서비스
 - 게시글, 유저 API, 관계형 데이터 베이스인 Postgresql로 권한분리 구현
@@ -211,8 +192,7 @@ http://localhost:3000/auth/testloginsession
 <br>
 
 <details>
-<summary><b> 🏃프로젝트 실행</b></summary>
-<br>
+<summary><b> 🏃 프로젝트 실행</b></summary>
 
 ```bash
 # Prerequisites: npm, node, Postgresql
@@ -228,7 +208,6 @@ npm run start
 
 <details>
 <summary><b> 🚀 주요 기능 설명</b></summary>
-<br>
 
 - User
   - createUser: 사용자 엔티티 생성 및 저장
@@ -255,39 +234,30 @@ npm run start
 
 <br>
 
-<details>
-<summary><b> 💻 기술 스택</b></summary>
-<br>
-
-| **Category** |**Skills**| 
-|-------------|---------|
-|**Backend**| ![HTML5](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=NestJS&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white) ![Postman](https://img.shields.io/badge/postman-FF6C37.svg?&style=for-the-badge&logo=postman&logoColor=white) ![Postman](https://img.shields.io/badge/postgresql-4169E1.svg?&style=for-the-badge&logo=postgresql&logoColor=white)|
-
-</details>
-
-<br>
-
 - - -
-
-<br>
 
 # 08. Chat
 <p align ="center">
   <img width="700" height="500" src="https://user-images.githubusercontent.com/79093184/260901610-e7dab1f5-c9ab-4a7d-be95-96130f604c49.png">
 </p>
-<div align=center>
-    <h3>
-        🌐 시연영상
-        <a href="https://www.youtube.com/watch?v=1UvK-YwjQaA">유튜브링크</a>
-    </h3>
-</div>
 
 <br>
 
 ## 👨🏻‍🏫 프로젝트 소개
 <details>
-<summary><b> 📌 프로젝트 개요</b></summary>
+<summary><b> 💻 기술 스택</b></summary>
+
+| **Category** |**Skills**| 
+|-------------|---------|
+|**Frontend**| ![HTML5](https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
+|**Backend**| ![HTML5](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=NestJS&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white) ![Postman](https://img.shields.io/badge/postman-FF6C37.svg?&style=for-the-badge&logo=postman&logoColor=white)
+
+</details>
+
 <br>
+
+<details>
+<summary><b> 📌 프로젝트 개요</b></summary>
 
 - 웹소켓을 사용한 실시간 채팅 구현
 - NestJS, 웹소켓 게이트웨이를 통해 서버와 클라이언트간 양방향 통신 지원
@@ -297,8 +267,7 @@ npm run start
 <br>
 
 <details>
-<summary><b> 🏃프로젝트 실행</b></summary>
-<br>
+<summary><b> 🏃 프로젝트 실행</b></summary>
 
   ```bash
   # prerequisites: npm, node
@@ -314,7 +283,6 @@ npm run start
 
 <details>
 <summary><b> 🚀 주요 기능 설명</b></summary>
-<br>
 
 - chat
 <p align ="center">
@@ -325,13 +293,3 @@ npm run start
 
 <br>
 
-<details>
-<summary><b> 💻 기술 스택</b></summary>
-<br>
-
-| **Category** |**Skills**| 
-|-------------|---------|
-|**Frontend**| ![HTML5](https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
-|**Backend**| ![HTML5](https://img.shields.io/badge/NestJS-E0234E?style=for-the-badge&logo=NestJS&logoColor=white) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=TypeScript&logoColor=white) ![Postman](https://img.shields.io/badge/postman-FF6C37.svg?&style=for-the-badge&logo=postman&logoColor=white)
-
-</details>

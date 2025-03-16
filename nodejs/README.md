@@ -13,8 +13,21 @@
 
 ## 👨🏻‍🏫 프로젝트 소개
 <details>
-<summary><b> 📌 프로젝트 개요</b></summary>
+<summary><b> 💻 기술 스택</b></summary>
+
+| **Category** |**Skills**| 
+|-------------|---------|
+|**Language**| ![JavaScript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white) |
+|**Frontend**|  ![Handlebars.js](https://img.shields.io/badge/ejs-B4CA65.svg?&style=for-the-badge&logo=ejs&logoColor=white) |
+|**Backend**|  ![express](https://img.shields.io/badge/express-000000?style=for-the-badge&logo=express&logoColor=white)  |
+| **Database**| ![MariaDB](https://img.shields.io/badge/mongodb-339933.svg?&style=for-the-badge&logo=mongodb&logoColor=white)
+
+</details>
+
 <br>
+
+<details>
+<summary><b> 📌 프로젝트 개요</b></summary>
 
 - jwt 엑세스토큰, 리프레시토큰 사용 인증 구현
 - 쿠키세션 + PassPort(Strategy, Session Serializer, deSerializer)를 사용한 인증 구현
@@ -26,8 +39,7 @@
 <br>
 
 <details>
-<summary><b> 🏃프로젝트 실행</b></summary>
-<br>
+<summary><b> 🏃 프로젝트 실행</b></summary>
 
 ```bash
 # prerequisites: npm, node, MongoDB Connection URI, Kakao Client ID, Google Oauth Client ID
@@ -46,7 +58,6 @@ npm start
 
 <details>
 <summary><b> 🚀 주요 기능 설명</b></summary>
-<br>
 
 - jwt 기반 인증 인가
 <p align ="center"><img src="../wiki-images/nodejs/nodejs-auth-2.png"/></p>
@@ -64,15 +75,3 @@ npm start
 
 <br>
 
-<details>
-<summary><b> 💻 기술 스택</b></summary>
-<br>
-
-| **Category** |**Skills**| 
-|-------------|---------|
-|**Language**| ![JavaScript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white) |
-|**Frontend**|  ![Handlebars.js](https://img.shields.io/badge/ejs-B4CA65.svg?&style=for-the-badge&logo=ejs&logoColor=white) |
-|**Backend**|  ![express](https://img.shields.io/badge/express-000000?style=for-the-badge&logo=express&logoColor=white)  |
-| **Database**| ![MariaDB](https://img.shields.io/badge/mongodb-339933.svg?&style=for-the-badge&logo=mongodb&logoColor=white)
-
-</details>

@@ -1,4 +1,4 @@
-# {프로젝트 제목}
+# 프로젝트 제목
 <div align="center">
         <img  style="width: 50%" src="https://placehold.co/600x400">
 </div>
@@ -13,42 +13,7 @@
 
 ## 👨🏻‍🏫 프로젝트 소개
 <details>
-<summary><b> 📌 프로젝트 개요</b></summary>
-<br>
-
-- 
-
-</details>
-
-<br>
-
-<details>
-<summary><b> 🏃프로젝트 실행</b></summary>
-<br>
-
-```bash
-
-```
-
-</details>
-
-<br>
-
-<details>
-<summary><b> 🚀 주요 기능 설명</b></summary>
-<br>
-
-- 
-    - 
-
-</details>
-
-<br>
-
-<details>
 <summary><b> 💻 기술 스택</b></summary>
-<br>
-
 
 | **Category** |**Skills**| 
 |-------------|---------|
@@ -69,6 +34,31 @@
 
 <br>
 
-- - -
+<details>
+<summary><b> 📌 프로젝트 개요</b></summary>
+
+- 
+
+</details>
+
+<br>
+
+<details>
+<summary><b> 🏃 프로젝트 실행</b></summary>
+
+```bash
+
+```
+
+</details>
+
+<br>
+
+<details>
+<summary><b> 🚀 주요 기능 설명</b></summary>
+
+-
+
+</details>
 
 <br>

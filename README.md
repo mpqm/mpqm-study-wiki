@@ -1,8 +1,8 @@
 ## wiki
 
 ## 레포 목적
-* github 레포지토리에있던 학습용, 전공 과제 및 스터디 프로젝트 저장 및 정리
-* RE (README 있음) / BC (Blog 정리 완료) / BH (Blog 정리 예정) / XX (단순 저장)
+* 전공 과제 및 학습용 프로젝트 저장 및 정리
+* RE (README O) / BC (Blog 정리 완료) / BH (Blog 정리 예정) / XX (단순 저장)
 
 ## 폴더 바로가기
 * BH [javascript](https://github.com/mpqm/mpqm-wiki/tree/main/javascript)
