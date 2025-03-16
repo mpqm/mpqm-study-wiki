@@ -52,37 +52,10 @@
 <br>
 
 <details>
-<summary><b> 🎡 ERD & Architecture </b></summary>
-<br>
-<div align="center">
-    <img  style="width: 50%" src="https://placehold.co/600x400">
-    <img  style="width: 50%" src="https://placehold.co/600x400">
-</div>
-</details>
-
+<summary><b> 🎮 기술 스택 </b></summary>
 <br>
 
-<details>
-<summary><b> 🗄️ 개발 문서 및 링크 </b></summary>
-<br>
-
-| **문서**|**링크**|
-|--------|--------|
-| ➰ 요구사항 정의서| [요구사항 정의서](wiki링크)|
-| 📃 백엔드 API 명세서|[백엔드 API 명세서](wiki링크)|
-| 🌱 프론트엔드 화면설계서|[프론트엔드 화면설계서](wiki링크)|
-| 🎥 프로젝트 시연 영상|[프론트엔드 시연 영상](wiki링크)|
-| 🔎 기능 및 성능 개선|[기능 및 성능 개선](wiki링크)|
-
-</details>
-
-<br>
-
-<details>
-<summary><b> 💻 기술 스택 </b></summary>
-<br>
-
-| *Category* |**Skills**| 
+| *CATEGORY* |**SKILLS**| 
 |-------------|---------|
 |**Language**| ![HTML5](https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white) ![JAVA](https://img.shields.io/badge/java-6DB33F?style=for-the-badge&logo=spring&logoColor=white) ![Python](https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white) |
 |**Frontend**|  ![Vue.js](https://img.shields.io/badge/vue.js-4FC08D.svg?&style=for-the-badge&logo=vuedotjs&logoColor=white) ![React](https://img.shields.io/badge/react.js-61DAFB?style=for-the-badge&logo=react&logoColor=white) |
@@ -98,3 +71,33 @@
 |**Contact**| ![Tistory](https://img.shields.io/badge/tistory-000000?style=for-the-badge&logo=Tistory&logoColor=white) ![Gmail](https://img.shields.io/badge/okqkrwhdtjd@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white) ![NAVER](https://img.shields.io/badge/okqkrwhdtjd@naver.com-03C75A?style=for-the-badge&logo=naver&logoColor=white) 
 
 </details>
+
+<br>
+
+<details>
+<summary><b> 🎡 ERD & Architecture </b></summary>
+<br>
+<div align="center">
+    <img  style="width: 50%" src="https://placehold.co/600x400">
+    <img  style="width: 50%" src="https://placehold.co/600x400">
+</div>
+</details>
+
+<br>
+
+<details>
+<summary><b> 🗄️ 프로젝트 개발 문서 </b></summary>
+<br>
+
+| **프로젝트 개발 산출물**|**링크**|
+|--------|--------|
+| ➰ 요구사항 정의서| [요구사항 정의서](wiki링크)|
+| 📃 백엔드 API 명세서|[백엔드 API 명세서](wiki링크)|
+| 🌱 프론트엔드 화면설계서|[프론트엔드 화면설계서](wiki링크)|
+| 🎥 프로젝트 시연 영상|[프론트엔드 시연 영상](wiki링크)|
+| 🔎 기능 및 성능 개선|[기능 및 성능 개선](wiki링크)|
+
+</details>
+
+<br>
+
