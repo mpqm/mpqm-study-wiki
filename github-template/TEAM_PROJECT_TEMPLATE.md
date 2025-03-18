@@ -8,10 +8,11 @@
 
 <br>
 
-## 👨🏻‍🏫 프로젝트 소개
 <details>
-<summary><b> 👩🏻‍💻 {팀명} 소개</b></summary>
+<summary><b> 👩🏻‍💻 프로젝트 멤버</b></summary>
 <br>
+
+### ?? 팀
 
 |<img src="https://placehold.co/600x400" width="150" height="150"/>|<img src="https://placehold.co/600x400" width="150" height="150"/>|<img src="https://placehold.co/600x400" width="150" height="150"/>|<img src="https://placehold.co/600x400" width="150" height="150"/>|<img src="https://placehold.co/600x400" width="150" height="150"/>|
 |:-:|:-:|:-:|:-:|:-:|
@@ -32,7 +33,7 @@
 <br>
 
 <details>
-<summary><b> 💡 프로젝트 배경</b></summary>
+<summary><b> 💡 프로젝트 배경 or 🏃 프로젝트 실행</b></summary>
 <br>
 
 - 
@@ -42,7 +43,7 @@
 <br>
 
 <details>
-<summary><b> 🚀 주요 기능 설명</b></summary>
+<summary><b> 🚀 프로젝트 설명</b></summary>
 <br>
 
 - 
@@ -52,7 +53,7 @@
 <br>
 
 <details>
-<summary><b> 🎮 기술 스택 </b></summary>
+<summary><b> 🎮 프로젝트 스택 </b></summary>
 <br>
 
 | *CATEGORY* |**SKILLS**| 
@@ -75,27 +76,17 @@
 <br>
 
 <details>
-<summary><b> 🎡 ERD & Architecture </b></summary>
-<br>
-<div align="center">
-    <img  style="width: 50%" src="https://placehold.co/600x400">
-    <img  style="width: 50%" src="https://placehold.co/600x400">
-</div>
-</details>
-
+<summary><b> 🗄️ 프로젝트 문서 </b></summary>
 <br>
 
-<details>
-<summary><b> 🗄️ 프로젝트 개발 문서 </b></summary>
-<br>
-
-| **프로젝트 개발 산출물**|**링크**|
-|--------|--------|
-| ➰ 요구사항 정의서| [요구사항 정의서](wiki링크)|
-| 📃 백엔드 API 명세서|[백엔드 API 명세서](wiki링크)|
-| 🌱 프론트엔드 화면설계서|[프론트엔드 화면설계서](wiki링크)|
-| 🎥 프로젝트 시연 영상|[프론트엔드 시연 영상](wiki링크)|
-| 🔎 기능 및 성능 개선|[기능 및 성능 개선](wiki링크)|
+| **프로젝트 개발 산출물**| **링크**                        |
+|--------|-------------------------------|
+|🎡 ERD & Architecture| [ERD & Architecture](wiki 링크) |
+| ➰ 요구사항 정의서| [요구사항 정의서](wiki링크)            |
+| 📃 백엔드 API 명세서| [백엔드 API 명세서](wiki링크)         |
+| 🌱 프론트엔드 화면설계서| [프론트엔드 화면설계서](wiki링크)         |
+| 🎥 프로젝트 시연 영상| [프론트엔드 시연 영상](wiki링크)         |
+| 🔎 기능 및 성능 개선| [기능 및 성능 개선](wiki링크)          |
 
 </details>
 
