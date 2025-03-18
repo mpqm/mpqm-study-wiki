@@ -35,7 +35,7 @@ python hmm_antropy.py
 <br>
 
 <details>
-<summary><b> 🚀 주요 기능 설명</b></summary>
+<summary><b> 🚀 프로젝트 설명</b></summary>
 <br>
 
 - Data Set Sample
@@ -108,7 +108,7 @@ python ganada-1.py
 <br>
 
 <details>
-<summary><b> 🚀 주요 기능 설명</b></summary>
+<summary><b> 🚀 프로젝트 설명</b></summary>
 <br>
 
 - Data Set Sample
