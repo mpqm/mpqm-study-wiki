@@ -11,7 +11,6 @@
 
 <br>
 
-## 👨🏻‍🏫 프로젝트 소개
 <details>
 <summary><b> 📌 프로젝트 개요</b></summary>
 <br>
@@ -45,7 +44,7 @@ npm start
 <br>
 
 <details>
-<summary><b> 🚀 주요 기능 설명</b></summary>
+<summary><b> 🚀 프로젝트 설명</b></summary>
 <br>
 
 - jwt 기반 인증 인가
@@ -65,7 +64,7 @@ npm start
 <br>
 
 <details>
-<summary><b> 🎮 기술 스택</b></summary>
+<summary><b> 🎮 프로젝트 스택</b></summary>
 <br>
 
 | **CATEGORY** | **SKILLS**                                                                                                                                                                                                                                                                                                                                | 

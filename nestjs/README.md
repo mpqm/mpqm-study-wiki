@@ -6,7 +6,6 @@
 
 <br>
 
-## 👨🏻‍🏫 프로젝트 소개
 <details>
 <summary><b> 📌 프로젝트 개요</b></summary>
 <br>
@@ -46,7 +45,7 @@ npm run test:cov
 <br>
 
 <details>
-<summary><b> 🚀 주요 기능 설명</b></summary>
+<summary><b> 🚀 프로젝트 설명</b></summary>
 <br>
 
 - 게시글
@@ -63,7 +62,7 @@ npm run test:cov
 <br>
 
 <details>
-<summary><b> 🎮 기술 스택</b></summary>
+<summary><b> 🎮 프로젝트 스택</b></summary>
 <br>
 
 | **CATEGORY** | **SKILLS**                                                                                                                                                                                                              | 
@@ -84,7 +83,6 @@ npm run test:cov
 
 <br>
 
-## 👨🏻‍🏫 프로젝트 소개
 <details>
 <summary><b> 📌 프로젝트 개요</b></summary>
 <br>
@@ -118,7 +116,7 @@ http://localhost:3000/auth/testloginsession
 <br>
 
 <details>
-<summary><b> 🚀 주요 기능 설명</b></summary>
+<summary><b> 🚀 프로젝트 설명</b></summary>
 <br>
 
 - 유저, 인증 모듈, 가드
@@ -156,7 +154,7 @@ http://localhost:3000/auth/testloginsession
 <br>
 
 <details>
-<summary><b> 🎮 기술 스택</b></summary>
+<summary><b> 🎮 프로젝트 스택</b></summary>
 <br>
 
 | **CATEGORY** | **SKILLS**                                                                                                                                                                                                              | 
@@ -177,7 +175,6 @@ http://localhost:3000/auth/testloginsession
 
 <br>
 
-## 👨🏻‍🏫 프로젝트 소개
 <details>
 <summary><b> 📌 프로젝트 개요</b></summary>
 <br>
@@ -207,7 +204,7 @@ npm run start
 <br>
 
 <details>
-<summary><b> 🚀 주요 기능 설명</b></summary>
+<summary><b> 🚀 프로젝트 설명</b></summary>
 <br>
 
 - User
@@ -236,7 +233,7 @@ npm run start
 <br>
 
 <details>
-<summary><b> 🎮 기술 스택</b></summary>
+<summary><b> 🎮 프로젝트 스택</b></summary>
 <br>
 
 | **CATEGORY** | **SKILLS**                                                                                                                                                                                                              | 
@@ -257,7 +254,6 @@ npm run start
 
 <br>
 
-## 👨🏻‍🏫 프로젝트 소개
 <details>
 <summary><b> 📌 프로젝트 개요</b></summary>
 <br>
@@ -286,7 +282,7 @@ npm run start
 <br>
 
 <details>
-<summary><b> 🚀 주요 기능 설명</b></summary>
+<summary><b> 🚀 프로젝트 설명</b></summary>
 <br>
 
 - chat
@@ -299,7 +295,7 @@ npm run start
 <br>
 
 <details>
-<summary><b> 🎮 기술 스택</b></summary>
+<summary><b> 🎮 프로젝트 스택</b></summary>
 <br>
 
 | **CATEGORY** | **SKILLS**                                                                                                                                                                                                                                                                                                                               | 

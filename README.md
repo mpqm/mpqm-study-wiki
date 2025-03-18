@@ -1,22 +1,21 @@
-## wiki
+# wiki
 
-## 레포 목적
+## 레포목적
 * 전공 과제 및 학습용 프로젝트 저장 및 정리
-* RE (README O) / BC (Blog 정리 완료) / BH (Blog 정리 예정) / XX (단순 저장)
+* 0001 (README 있음) / 0010 (Blog 정리 완료) / 0100 (Blog 정리 예정) / 1000 (단순 저장)
 
-## 폴더 바로가기
-* BH [javascript](https://github.com/mpqm/mpqm-wiki/tree/main/javascript)
-* BH [cicd](https://github.com/mpqm/mpqm-wiki/tree/main/cicd)
-* BH [spring](https://github.com/mpqm/mpqm-wiki/tree/main/spring)
-* BC [htmlcss](https://github.com/mpqm/mpqm-wiki/tree/main/htmlcss)
-* BC [java](https://github.com/mpqm/mpqm-wiki/tree/main/java)
-* RE [hyperledgerfabric](https://github.com/mpqm/mpqm-wiki/tree/main/hyperledgerfabric)
-* RE [machine-learning](https://github.com/mpqm/mpqm-wiki/tree/main/machine-learning)
-* RE [nestjs](https://github.com/mpqm/mpqm-wiki/tree/main/nestjs)
-* RE [nodejs](https://github.com/mpqm/mpqm-wiki/tree/main/nodejs)
-* RE [vuejs](https://github.com/mpqm/mpqm-wiki/tree/main/vuejs)
-* XX [template](https://github.com/mpqm/mpqm-wiki/tree/main/github-template)
-* XX [android](https://github.com/mpqm/mpqm-wiki/tree/main/android)
-* XX [c#](https://github.com/mpqm/mpqm-wiki/tree/main/c%23)
-* XX [c++](https://github.com/mpqm/mpqm-wiki/tree/main/c%2B%2B)
-* XX [sql](https://github.com/mpqm/mpqm-wiki/tree/main/sql)
+## 바로가기
+* 0100 [spring](https://github.com/mpqm/mpqm-wiki/tree/main/spring)
+* 0100 [javascript](https://github.com/mpqm/mpqm-wiki/tree/main/javascript)
+* 0100 [cicd](https://github.com/mpqm/mpqm-wiki/tree/main/cicd)
+* 0010 [htmlcss](https://github.com/mpqm/mpqm-wiki/tree/main/htmlcss)
+* 0010 [java](https://github.com/mpqm/mpqm-wiki/tree/main/java)
+* 0001 [hyperledgerfabric](https://github.com/mpqm/mpqm-wiki/tree/main/hyperledgerfabric)
+* 0011 [nestjs](https://github.com/mpqm/mpqm-wiki/tree/main/nestjs)
+* 0011 [nodejs](https://github.com/mpqm/mpqm-wiki/tree/main/nodejs)
+* 0010 [vuejs](https://github.com/mpqm/mpqm-wiki/tree/main/vuejs)
+* 1000 [template](https://github.com/mpqm/mpqm-wiki/tree/main/github-template)
+* 1000 [android](https://github.com/mpqm/mpqm-wiki/tree/main/android)
+* 1000 [c#](https://github.com/mpqm/mpqm-wiki/tree/main/c%23)
+* 1000 [c++](https://github.com/mpqm/mpqm-wiki/tree/main/c%2B%2B)
+* 1000 [sql](https://github.com/mpqm/mpqm-wiki/tree/main/sql)
