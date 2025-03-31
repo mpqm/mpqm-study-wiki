@@ -1,0 +1,45 @@
+services:
+  mariadb:
+    container_name: mariadb
+    ports:
+      - 3306:3306
+    image: mariadb:latest
+    environment:
+      - MARIADB_DATABASE=auto
+      - MARIADB_ROOT_PASSWORD=qwer1234
+      - TZ=Asia/Seoul  # 시간대 설정
+    volumes:
+      - ./mariadb/data/:/var/lib/mysql
+      - ./mariadb/mariadb.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf
+    mem_limit: 2g        # 메모리 제한 (2GB)
+    cpus: 2.0           # CPU 할당 (2 CPU 코어)
+
+  # Prometheus MySQL Exporter
+  mysqld_exporter:
+    container_name: mysqld_exporter
+    image: prom/mysqld-exporter:latest
+    environment:
+      - DATA_SOURCE_NAME=root:qwer1234@(mariadb:3306)  # MariaDB 접속 정보
+    ports:
+      - 9104:9104  # Prometheus가 수집할 exporter의 포트
+    volumes:
+      - ./mysqld-exporter/.my.cnf:/etc/mysql/.my.cnf 
+
+  prometheus:
+    container_name: prometheus
+    image: prom/prometheus:latest
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - 9090:9090
+
+
+  grafana:
+    container_name: grafana
+    image: grafana/grafana:latest
+    ports:
+      - 3000:3000
+    environment:
+      GF_SECURITY_ADMIN_PASSWORD: admin
+
+

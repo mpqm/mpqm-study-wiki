@@ -1,0 +1,123 @@
+# 단위 테스트 계획: RankProcessor
+- 정상적인 데이터 처리 검증
+    - RankProcessor가 정상적으로 데이터를 처리하여 랭킹을 생성하는지 확인
+    - 여러 PostDto 객체를 입력으로 주고, process()가 정상적으로 조회수, 좋아요, 싫어요, 댓글 수 순으로 각각 10개의 상위 랭킹을 생성하는지 확인
+    - 각 랭킹이 RankDto 객체로 변환되어 올바른 값을 갖고 반환되는지 확인
+    - 각 카테고리 (조회수, 좋아요, 싫어요, 댓글 수)에 대해 최대 10개까지만 랭킹을 반환하는지 확인
+- 첫 번째 청크 처리 (isFirstChunk 검증)
+    - 첫 번째 청크만 처리하고 이후 청크는 빈 리스트를 반환하는지 확인
+    -첫 번째 청크 처리 isFirstChunk가 true일 때는 모든 데이터를 처리하여 랭킹을 생성하고, isFirstChunk를 false로 변경하는지 확인
+    - 데이터가 처리된 후 isFirstChunk 값이 false로 변경되는지 확인
+    - 두 번째 청크부터는 빈 리스트를 반환하는지 (process() 메소드가 빈 리스트를 반환하는지) 확인
+- 필터링 및 정렬 검증
+    - 각 카테고리별로 필터링 및 정렬이 정상적으로 동작하는지 확인
+    - 각 랭킹에서 필터링된 게시물이 제대로 정렬되고, 유효한 값만 포함되는지 확인
+    - viewCount, likeCount, unlikeCount, commentCount가 null일 때도 적절히 처리되는지 (예: null 필터링 또는 기본값 처리) 확인
+- 예외 처리 및 특수 케이스 검증
+    - 예외 상황을 처리할 수 있는지 검증
+    - viewCount, likeCount, unlikeCount, commentCount이 null일때 적절하게 처리하고 랭킹을 생성하는지 확인
+    - 빈 리스트가 입력될 경우, 랭킹이 빈 리스트로 반환되는지 확인
+    - 랭킹을 생성할 때 같은 값을 가진 게시물이 여러 개 있을 경우, 순위가 잘 정해지는지 확인
+- 상태 초기화 검증 (resetState() 검증)
+    - 배치 작업이 끝날 때 상태가 초기화되는지 검증
+    - resetState() 메소드 호출 후 posts 리스트가 비어있고, isFirstChunk 값이 true로 리셋되는지 확인
+    - resetState() 호출 후 process()를 실행하여 첫 번째 청크처럼 데이터가 처리되는지 확인
+- 로그 검증
+    - 로그가 예상대로 출력되는지 확인
+    - 댓글 랭킹 처리 시, log.info를 통해 전체 게시물 수와 각 게시물의 댓글 수가 출력되는지 확인
+    - process() 메소드에서 log.info를 통해 댓글 랭킹을 출력할 때, 출력되는 로그가 예상대로 맞는지 확인 (예: 게시물 ID, 제목, 댓글 수)
+- RankDto 변환 검증
+    - PostDto가 RankDto로 변환되는 과정이 올바르게 동작하는지 검증
+    - 각 PostDto 객체에서 필드 값이 올바르게 RankDto에 매핑되는지 확인
+    - 예를 들어, viewCount, likeCount, unlikeCount, commentCount 등이 RankDto로 올바르게 변환되는지 확인
+
+# 단위 테스트 계획: RankReader
+- 정상적인 데이터 읽기 검증
+    - RankReader가 정상적으로 데이터를 읽는지 확인
+    - read() 메소드가 첫 번째 호출에서 postDao.getBatch()로부터 데이터를 읽어 정상적으로 반환하는지 확인
+    - read() 메소드가 두 번째 호출부터는 null을 반환하는지 확인 (데이터를 한 번만 읽어오고 종료됨)
+- reset() 메소드 검증
+    - reset() 메소드가 정상적으로 작동하여 read()가 다시 데이터를 읽을 수 있는지 확인
+    - reset() 메소드를 호출한 후, read()가 다시 데이터를 읽어오는지 확인
+    - reset() 후 dataRead 값이 false로 리셋되고, 다시 read()가 데이터를 반환하는지 확인
+- postDao.getBatch()의 반환값 검증
+    - postDao.getBatch()의 반환값이 빈 리스트일 때, RankReader가 정상적으로 동작하는지 확인
+    - postDao.getBatch()가 빈 리스트를 반환할 경우, read() 메소드가 빈 리스트를 반환하는지 확인
+    - postDao.getBatch()가 null을 반환할 경우, read() 메소드가 빈 리스트를 반환하는지 혹은 null을 반환하는지 확인 (정책 확인)
+- 동시성 검증
+    - read() 메소드가 여러 스레드에서 호출될 때 동기화 문제가 없는지 확인
+    - read() 메소드가 동시 호출되는 경우, 첫 번째 호출에서만 데이터를 반환하고 이후 호출에서는 null을 반환하는지 확인
+    - 동기화된 코드가 정상적으로 동작하는지 검증 (synchronized 키워드에 대한 확인)
+- PostDao 모의 객체 검증
+    - postDao.getBatch() 호출 시 반환값이 정상적으로 처리되는지 확인
+    - PostDao의 모의 객체를 사용하여 다양한 반환값 (null, 빈 리스트, 유효한 리스트)에 대해 RankReader가 정상적으로 동작하는지 확인
+    - getBatch() 호출 시 반환값이 의도한 대로 잘 전달되는지 검증
+- 예외 처리 검증
+    - RankReader가 예외 상황에서 적절히 처리되는지 확인
+    - postDao.getBatch()에서 예외가 발생할 경우, read() 메소드가 어떻게 처리되는지 확인 (예외가 발생하면 적절하게 처리하거나 예외를 던지는지)
+
+# 단위 테스트 계획: RankWriter
+- 정상적인 데이터 처리 검증
+    - RankWriter가 정상적으로 데이터를 처리하고 삽입하는지 확인
+    - Chunk가 비어있지 않고, RankDto 목록이 제공될 때 write()가 정상적으로 실행되어 기존 데이터가 삭제되고, 새로운 랭킹 데이터가 삽입되는지 확인
+    - deleteRanks()가 호출되고, insertRank()가 각 RankDto에 대해 호출되는지 확인
+    - 기존 랭킹 데이터 삭제 및 새로운 랭킹 데이터 삽입 시 로그가 정상적으로 출력되는지 확인 (삭제된 데이터 수, 삽입된 데이터 수 및 각 삽입된 데이터의 세부 정보)
+- 비어 있는 데이터 처리 검증
+    - 데이터가 없을 경우 처리하지 않는지 검증
+    - 빈 Chunk 처리: write() 메소드가 비어 있는 Chunk를 처리할 때 아무 동작을 하지 않고 리턴하는지 확인
+    - 빈 RankDto 목록 처리: Chunk는 있지만, 내부의 RankDto 목록이 비어 있을 때 write() 메소드가 아무 동작을 하지 않고 리턴하는지 확인
+- RankDao 호출 검증
+    - RankDao의 메소드가 정상적으로 호출되는지 확인
+    - RankWriter가 write() 메소드 실행 시 deleteRanks()를 호출하여 기존 랭킹 데이터를 삭제하는지 확인
+    - RankWriter가 write() 메소드 실행 시 각 RankDto에 대해 insertRank()를 호출하여 새로운 랭킹 데이터를 삽입하는지 확인
+- 상태 초기화 검증
+    - RankProcessor의 상태가 write() 후에 정상적으로 초기화되는지 확인
+    - write() 메소드 실행 후, rankProcessor.resetState()가 호출되어 RankProcessor의 상태가 초기화되는지 확인
+- 예외 처리 검증
+    - 예외 상황에서 정상적으로 처리되는지 확인
+    - deleteRanks()나 insertRank()가 예외를 던질 경우, write() 메소드가 적절히 예외를 처리하는지 확인 (예: 예외가 발생하면 롤백하거나 로깅)
+- 동시성 검증
+    - 여러 스레드에서 write() 메소드가 호출될 때 동기화 문제가 발생하지 않는지 확인
+    - 여러 스레드에서 동시에 write() 메소드가 호출되었을 때, 데이터 삽입 및 삭제가 정상적으로 동작하는지 확인
+- 대량 데이터 처리 검증
+    - 대량의 데이터를 처리할 때 성능 및 동작이 정상적인지 확인
+    - write() 메소드가 많은 양의 RankDto 데이터를 처리할 때, 삽입 및 삭제가 정상적으로 이루어지는지 확인
+    - 로그에서 삽입된 랭킹 데이터 수가 정확히 출력되는지 확인
+- 로깅 검증
+    - 로그가 예상대로 출력되는지 확인
+    - 기존 랭킹 데이터 삭제 시 "기존 랭킹 데이터 삭제: {count} 건" 로그가 출력되는지 확인
+    - 각 랭킹 데이터 삽입 시 "랭킹 데이터 삽입: {insertedId} - {ranking} 위, 게시물 ID: {postIdx}, 타입: {flag}" 로그가 출력되는지 확인
+    - 총 삽입된 랭킹 데이터 수가 "총 {insertCount} 개의 랭킹 데이터 삽입 완료" 형태로 로그에 출력되는지 확인
+
+# 단위 테스트 계획: BatchConfig (job + Step)
+- rankingCalculationStep() 메소드 검증
+    - rankingCalculationStep 메소드가 정상적으로 Step을 생성하는지 확인
+    - rankingCalculationStep() 메소드가 Step을 생성하는지, 그리고 반환되는 Step이 ItemReader, ItemProcessor, ItemWriter 및 transactionManager가 올바르게 설정되어 있는지 확인
+    - chunk(100, transactionManager)로 설정된 크기가 올바르게 적용되는지 확인 (한 번에 처리하는 데이터 양이 100인지 확인)
+    - Step이 정상적으로 구성되어 있으며, reader, processor, writer가 연결되어 있는지 확인
+- calculateRankingJob() 메소드 검증
+    - calculateRankingJob 메소드가 정상적으로 Job을 생성하는지 확인
+    - calculateRankingJob() 메소드가 정상적으로 Job을 생성하고 Step이 정상적으로 Job에 포함되는지 확인
+    - Job이 rankingCalculationStep을 시작으로 실행되는지 확인 (Job의 순서와 흐름이 제대로 설정되었는지)
+- RunIdIncrementer 검증
+    - RunIdIncrementer가 제대로 동작하는지 확인
+    - JobBuilder에 설정된 RunIdIncrementer가 정상적으로 동작하고, Job이 실행될 때마다 실행 ID가 증가하는지 확인
+- 의존성 주입 검증
+    - BatchConfig가 제대로 의존성 주입을 받고 있는지 확인
+    - JobRepository가 정상적으로 BatchConfig에 주입되는지 확인
+    - PlatformTransactionManager가 정상적으로 BatchConfig에 주입되는지 확인
+    - ItemReader<List<PostDto>>, ItemProcessor<List<PostDto>, List<RankDto>>, ItemWriter<List<RankDto>>가 정상적으로 주입되고 사용하는지 확인
+- BatchConfig의 전체 설정 검증
+    - BatchConfig의 설정이 올바르게 구성되어 있는지 확인
+    - rankingCalculationStep과 calculateRankingJob이 올바르게 연결되어 있는지, 각 Step의 순서가 정확히 설정되어 있는지 확인
+    - 배치 작업이 실행될 때 Step과 Job이 예상대로 실행되는지, 배치 작업의 흐름이 올바르게 설정되어 있는지 확인
+- 예외 처리 검증
+    - 배치 실행 시 예외 상황에서 올바르게 동작하는지 확인
+    - ItemReader, ItemProcessor, ItemWriter 또는 TransactionManager가 실패할 경우, 배치 작업이 적절하게 예외를 처리하는지 확인
+    - 배치 작업 실행 중 예외가 발생하면 적절히 예외가 처리되는지 확인
+- 동시성 검증
+    - 여러 스레드에서 Job이 실행될 때 동시성 문제가 발생하지 않는지 확인
+    - 여러 스레드에서 Job이 동시에 실행될 때, 동시성 문제가 발생하지 않고, 각 스레드가 독립적으로 실행되는지 확인
+- 성능 검증
+    - 대량의 데이터를 처리할 때 배치 작업이 정상적으로 동작하는지 확인
+    - 대량의 데이터를 처리할 때 rankingCalculationStep 및 calculateRankingJob이 성능 저하 없이 처리되는지 확인

@@ -1,0 +1,184 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# 프로젝트 개발 규칙
+- 공통
+    - 모든 작업은 /meta/docs/cursor-log.md에 기록
+    - 모든 주석은 한줄 주석만 사용 (예: `// 주석`)
+    - meta/class 폴더의 클래스의 구조를 최대한 유지하려 노력
+    - 클래스 중 SpringBatch 내부 클래스가 있을 수 있으니 유의
+    - 프로젝트 구조 
+    ```
+        |AUTO (현재 위치)
+        │── meta
+        │── src/
+        │   ├── main/
+        │   │   ├── java/             # 애플리케이션 소스 코드
+        |   |   |   ├── com
+        |   |   |   |   ├── fornet
+        |   |   |   |   |   ├── auto
+        |   |   |   |   |   |   ├── controller
+        |   |   |   |   |   |   ├── service
+        |   |   |   |   |   |   ├── dao
+        |   |   |   |   |   |   ├── dto
+        |   |   |   |   |   |   ├── common
+        |   |   |   |   |   |   ├── AutoApplication
+        │   │   ├── resources/        # 설정 파일 (application.properties 등)
+        |   |   |   ├── static        # Thymeleaf (정적파일)
+        |   |   |   ├── template      # Thymeleaf (템플릿 파일)
+        |   |   |   ├── mapper        # MyBatis
+        |   |   |   ├── upload        # 이미지 저장
+        |   |   |   ├── application.properties     
+        │   ├── test/
+        │   │   ├── java/             # 테스트 코드
+        |   |   |   ├── com
+        |   |   |   |   ├── fornet
+        |   |   |   |   |   ├── auto
+        |   |   |   |   |   |   ├── AutoTestApplication
+        │   │   ├── resources/        # 테스트 관련 설정 파일
+        │── target/                   # 컴파일 및 빌드 결과물 (JAR, WAR 파일)
+        │── pom.xml                   # Maven 프로젝트 설정 파일
+        │── .mvn/                     # Maven 관련 설정 폴더
+        │── mvnw, mvnw.cmd            # Maven Wrapper 스크립트 (Maven 설치 없이 실행 가능)
+        │── README.md                 # 프로젝트 설명 파일
+    ```
+- 백엔드
+    - 예외처리: GlobalExceptionHandler 사용
+    - 로깅: @SLF4J 사용
+    - 컨트롤러: @RequestMapping 사용하지 않고 전체 URL 직접 사용
+    ```java
+    @PostMapping("/post")
+    @ResponseBody
+    public ResponseEntity<BaseRes<Void>> insertPost(
+        @RequestPart("postDto") PostDto postDto,
+        @RequestPart(value = "files", required = false) MultipartFile[] files) throws IOException, BaseExc {
+        List<String> fileNames = fileUploadUtil.uploadFiles(files);
+        postService.insertPost(postDto, fileNames);
+        return ResponseEntity.ok(new BaseRes<>(BaseMsg.POST_CREATED));
+    }
+    ```
+    - 서비스: @Transactional 사용, 예외처리 포함
+    ```java
+    @Transactional
+    public void insertPost(PostDto postDto, List<String> fileNames) throws BaseExc {
+        // 비밀번호 암호화
+        postDto.setPassword(CryptoUtil.hashPassword(postDto.getPassword()));
+        
+        // 게시글 저장
+        Long postIdx = postDao.insertPost(postDto);
+        if (postIdx <= 0) throw new BaseExc(BaseMsg.POST_CREATED);
+        
+        // 이미지 파일 정보 저장
+        for (String fileName : fileNames) {
+            PostImageDto imageDto = PostImageDto.builder()
+                .postIdx(postIdx)
+                .filePath("/upload/" + fileName)
+                .build();
+            Long insertPostImageCnt = postImageDao.insertPostImage(imageDto);
+            if(insertPostImageCnt <= 0) throw new BaseExc(BaseMsg.ERROR);
+        }
+    }
+    ```
+- 프론트엔드
+    - Thymeleaf, jQuery, Ajax, Bootstrap 사용
+    - header, footer, layout 파일 만들지 않음
+    - 아래 파일 구조를 따름
+    ```
+    src/main/resources/
+    ├── templates/
+    │   ├── post-list.html    # 게시물 목록
+    │   ├── post-detail.html  # 게시물 상세
+    │   └── post-edit.html    # 게시물 작성/수정
+    ├── static/
+    │   ├── post-list.css   # 목록 페이지 스타일
+    │   ├── post-detail.css # 상세 페이지 스타일
+    │   ├── post-edit.css   # 작성/수정 페이지 스타일
+    │   ├── post-list.js    # 목록 페이지 스크립트
+    │   ├── post-detail.js  # 상세 페이지 스크립트
+    │   └── post-edit.js    # 작성/수정 페이지 스크립트
+    ```
+    - javascript 코딩 스타일
+    ```javascript
+    $(document).ready(() => {
+        $('#login-form').on('submit', handleLogin);
+    });
+
+    // 로그인 처리 함수
+    const handleLogin = (event) => {
+        event.preventDefault();
+        const loginData = {
+            id: $.trim($('#id').val()),
+            password: $.trim($('#password').val()),
+        };
+        $.ajax({
+            type: 'POST',
+            url: '/login',
+            contentType: 'application/json',
+            data: JSON.stringify(loginData),
+            success: (res) => {
+                if (res.success) {
+                    showAlert('success', getMessage(res));
+                    setTimeout(() => window.location.href = "/test", 1);
+                } else {
+                    showAlert('danger', getMessage(res));
+                }
+            },
+            error: (e) => {
+                const errorResponse = e.responseJSON || { message: '서버와의 통신 중 문제가 발생했습니다.', result: [] };
+                showAlert('danger', getMessage(errorResponse));
+            }
+        });
+    };
+    ```
+    - formData 이미지 업로드 예시시
+    ```javascript
+    const createPost = (formData) => {
+        const category = $('#category').val();
+        if (!category) {
+            alert('카테고리를 선택해주세요.');
+            return;
+        }
+
+        const postData = {
+            title: $('#title').val(),
+            content: $('#content').val(),
+            author: $('#author').val(),
+            password: $('#password').val(),
+            codeIdx: parseInt(category)
+        };
+        
+        const newFormData = new FormData();
+        newFormData.append('postDto', new Blob([JSON.stringify(postData)], {
+            type: 'application/json'
+        }));
+        
+        const fileInput = document.getElementById('files');
+        if (fileInput && fileInput.files.length > 0) {
+            for (let i = 0; i < fileInput.files.length; i++) {
+                newFormData.append('files', fileInput.files[i]);
+            }
+        }
+        
+        $.ajax({
+            url: '/post',
+            type: 'POST',
+            data: newFormData,
+            processData: false,
+            contentType: false,
+            success: function(response) {
+                if (response.code === 200) {
+                    alert('게시물이 등록되었습니다.');
+                    location.href = '/';
+                } else {
+                    alert(response.message || '게시물 등록에 실패했습니다.');
+                }
+            },
+            error: function(xhr) {
+                alert('게시물 등록 중 오류가 발생했습니다.');
+                console.error('에러 응답:', xhr.responseText);
+            }
+        });
+    }
+    ```

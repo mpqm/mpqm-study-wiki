@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판 - 커뮤니티</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/post-list.css">
+    <link rel="icon" href="/favicon.ico">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2>게시판</h2>
+            <div id="notificationContainer" class="notification-container d-none">
+                <div id="notificationContent" class="alert alert-dismissible fade show mb-0">
+                    <span id="notificationMessage"></span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 랭킹 컨테이너 -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title mb-3">실시간 랭킹</h5>
+                <div class="row">
+                    <!-- 조회수 랭킹 -->
+                    <div class="col-md-3">
+                        <div class="rank-container">
+                            <h6 class="rank-title">조회수 TOP 5</h6>
+                            <div id="viewRankList" class="rank-list">
+                                <!-- 조회수 랭킹은 JavaScript로 로드 -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 좋아요 랭킹 -->
+                    <div class="col-md-3">
+                        <div class="rank-container">
+                            <h6 class="rank-title">좋아요 TOP 5</h6>
+                            <div id="likeRankList" class="rank-list">
+                                <!-- 좋아요 랭킹은 JavaScript로 로드 -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 싫어요 랭킹 -->
+                    <div class="col-md-3">
+                        <div class="rank-container">
+                            <h6 class="rank-title">싫어요 TOP 5</h6>
+                            <div id="unlikeRankList" class="rank-list">
+                                <!-- 싫어요 랭킹은 JavaScript로 로드 -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 댓글 수 랭킹 -->
+                    <div class="col-md-3">
+                        <div class="rank-container">
+                            <h6 class="rank-title">댓글 수 TOP 5</h6>
+                            <div id="commentRankList" class="rank-list">
+                                <!-- 댓글 수 랭킹은 JavaScript로 로드 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 검색 및 필터링 -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-2 mb-2">
+                        <select id="categoryFilter" class="form-control">
+                            <option value="0">전체 카테고리</option>
+                            <option th:each="code : ${codes}" th:value="${code.idx}" th:text="${code.codeName}"></option>
+                            <!-- 카테고리 옵션은 JavaScript로 로드 -->
+                        </select>
+                    </div>
+                    <div class="col-md-2 mb-2">
+                        <select id="sortType" class="form-control">
+                            <option value="latest">최신순</option>
+                            <option value="oldest">오래된순</option>
+                            <option value="viewCount">조회수순</option>
+                            <option value="likeCount">좋아요순</option>
+                            <option value="unlikeCount">싫어요순</option>
+                            <option value="commentCount">댓글순</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2 mb-2">
+                        <select id="searchType" class="form-control">
+                            <option value="all">전체</option>
+                            <option value="title">제목</option>
+                            <option value="author">작성자</option>
+                            <option value="content">내용</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <input type="text" id="searchKeyword" class="form-control" placeholder="검색어 입력">
+                    </div>
+                    <div class="col-md-2 mb-2">
+                        <button id="searchBtn" class="btn btn-primary btn-block">검색</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 게시글 목록 -->
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5 class="card-title mb-0">게시글 목록</h5>
+                    <button id="writePostBtn" class="btn btn-primary">글쓰기</button>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th width="7%">번호</th>
+                                <th width="13%">카테고리</th>
+                                <th width="10%">작성자</th>
+                                <th>제목</th>
+                                <th width="7%">👁️</th>
+                                <th width="7%">👍</th>
+                                <th width="7%">👎</th>
+                                <th width="7%">💬</th>
+                                <th width="15%">등록일</th>
+                            </tr>
+                        </thead>
+                        <tbody id="postListBody">
+                            <!-- 게시물 목록은 JavaScript로 로드 -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!-- 페이지네이션 -->
+                <div id="pagination" class="mt-4">
+                    <!-- 페이지네이션은 JavaScript로 로드 -->
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <script src="/post-list.js"></script>
+</body>
+</html> 

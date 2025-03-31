@@ -1,0 +1,245 @@
+.post-content {
+    min-height: 200px;
+    line-height: 1.6;
+}
+
+.post-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.post-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.post-image:hover {
+    transform: scale(1.05);
+}
+
+.comment-list {
+    margin-bottom: 20px;
+}
+
+.comment-item {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.comment-item:last-child {
+    border-bottom: none;
+}
+
+.comment-top {
+    margin-bottom: 8px;
+}
+
+.comment-author {
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.comment-content {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.comment-date {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+.comment-actions .btn {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.75rem;
+}
+
+.btn-sm {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+#likeBtn.active {
+    background-color: #007bff;
+    color: white;
+}
+
+#unlikeBtn.active {
+    background-color: #dc3545;
+    color: white;
+}
+
+.notification-container {
+    flex-grow: 1;
+    max-width: 70%;
+    margin-left: 20px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.notification-container.d-none {
+    display: none !important;
+}
+
+#notificationContent {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0;
+}
+
+#notificationContent.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+#notificationContent.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+/* 댓글 페이지네이션 스타일 */
+.comment-pagination {
+    margin-top: 20px;
+}
+
+.comment-pagination .pagination {
+    margin-bottom: 0;
+}
+
+.comment-pagination .page-item.active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.comment-pagination .page-link {
+    color: #007bff;
+}
+
+.comment-pagination .page-link:hover {
+    background-color: #e9ecef;
+}
+
+.comment-pagination .page-item.disabled .page-link {
+    color: #6c757d;
+    pointer-events: none;
+}
+
+/* 댓글 토글 버튼 스타일 */
+#toggleCommentsBtn {
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.6rem 0;
+    border-width: 2px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#toggleCommentsBtn:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+#toggleCommentsBtn.btn-outline-secondary {
+    background-color: #f8f9fa;
+}
+
+@media (max-width: 768px) {
+    .post-info {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    
+    .post-info > div:first-child {
+        margin-bottom: 15px;
+    }
+    
+    .post-info > div:last-child {
+        align-self: flex-end;
+    }
+    
+    .post-image {
+        width: 100%;
+        height: auto;
+    }
+    
+    .notification-container {
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    
+    .d-flex.justify-content-between.align-items-center {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    
+    h2 {
+        margin-bottom: 10px;
+    }
+}
+
+/* 카드 헤더 스타일 */
+.card-header.bg-white {
+    background-color: #fff !important;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.card-header .post-actions button {
+    margin-left: 5px;
+}
+
+/* 게시글 제목과 버튼 레이아웃 개선 */
+.card-header #postTitle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    min-width: 0;
+}
+
+.card-header .post-actions {
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+/* 게시글 정보 영역 스타일 */
+.post-info {
+    font-size: 0.95rem;
+    border-bottom-color: #e9ecef !important;
+}
+
+.post-info .btn {
+    height: 32px;
+    padding: 0.25rem 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-info strong {
+    color: #495057;
+}
+
+#viewCount, #likeCount, #unlikeCount {
+    font-weight: 500;
+}
+
+/* 비활성화된 조회수 버튼 스타일 */
+.btn:disabled, .btn.disabled {
+    cursor: default;
+    opacity: 0.85;
+    color: #6c757d;
+    background-color: transparent;
+}
+
+.btn-outline-secondary:disabled {
+    border-color: #adb5bd;
+} 

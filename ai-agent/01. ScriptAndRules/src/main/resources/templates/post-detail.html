@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시글 상세</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/post-detail.css">
+    <link rel="icon" href="/favicon.ico">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2>게시글 상세</h2>
+            <div id="notificationContainer" class="notification-container d-none">
+                <div id="notificationContent" class="alert alert-dismissible fade show mb-0">
+                    <span id="notificationMessage"></span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                <h2 id="postTitle" class="mb-0 text-truncate" style="max-width: 70%; flex: 1 1 auto;"></h2>
+                <div class="post-actions flex-shrink-0 ml-3">
+                    <button id="listBtn" class="btn btn-outline-secondary">목록</button>
+                    <button id="editBtn" class="btn btn-outline-primary" style="display: none;">수정</button>
+                    <button id="deleteBtn" class="btn btn-outline-danger" style="display: none;">삭제</button>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="post-info d-flex justify-content-between align-items-center mt-2 mb-4 pb-3 border-bottom">
+                    <div>
+                        <span class="mr-3"><strong>작성자:</strong> <span id="postAuthor"></span></span>
+                        <span class="mr-3"><strong>카테고리:</strong> <span id="postCategory"></span></span>
+                        <span><strong>등록일:</strong> <span id="postDate"></span></span>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <span class="mr-3">
+                            <button class="btn btn-sm btn-outline-secondary d-flex align-items-center" disabled>
+                                <span class="mr-1">👁️</span> <span id="viewCount">0</span>
+                            </button>
+                        </span>
+                        <span class="mr-3">
+                            <button id="likeBtn" class="btn btn-sm btn-outline-primary d-flex align-items-center">
+                                <span class="mr-1">👍</span> <span id="likeCount">0</span>
+                            </button>
+                        </span>
+                        <span>
+                            <button id="unlikeBtn" class="btn btn-sm btn-outline-danger d-flex align-items-center">
+                                <span class="mr-1">👎</span> <span id="unlikeCount">0</span>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                <div id="postContent" class="post-content mb-4"></div>
+                
+                <div id="postImages" class="post-images mb-4">
+                    <!-- 이미지는 JavaScript로 로드 -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="card mt-4">
+            <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                <h4 class="mb-0">댓글</h4>
+                <button class="btn btn-outline-primary" type="button" data-toggle="collapse" data-target="#commentFormCollapse" aria-expanded="false" aria-controls="commentFormCollapse">
+                    댓글 작성
+                </button>
+            </div>
+            <div class="card-body">
+                <div class="collapse mb-4" id="commentFormCollapse">
+                    <div class="card card-body border-light bg-white">
+                        <form id="commentForm">
+                            <div class="form-row mb-3">
+                                <div class="col-md-6">
+                                    <input type="text" id="commentAuthor" class="form-control" placeholder="작성자" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="password" id="commentPassword" class="form-control" placeholder="비밀번호" required>
+                                    <small class="form-text text-muted">댓글 수정 및 삭제 시 필요합니다.</small>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="commentContent" class="form-control" rows="3" placeholder="댓글을 입력하세요..." required></textarea>
+                            </div>
+                            <div class="text-right">
+                                <button type="button" class="btn btn-outline-secondary" data-toggle="collapse" data-target="#commentFormCollapse">등록 취소</button>
+                                <button type="submit" class="btn btn-outline-primary">댓글 등록</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <button id="toggleCommentsBtn" class="btn btn-outline-primary btn-block py-2 mb-4">댓글 목록 보기</button>
+                
+                <div id="commentsSection" style="display: none;">
+                    <div id="commentList" class="comment-list mb-4">
+                        <!-- 댓글은 JavaScript로 로드 -->
+                    </div>
+                    
+                    <!-- 댓글 페이지네이션 추가 -->
+                    <div id="commentPagination" class="comment-pagination mb-4">
+                        <!-- 댓글 페이지네이션은 JavaScript로 로드 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 삭제 확인 모달 -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="deleteModalLabel">게시글 삭제</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>이 게시글을 삭제하시겠습니까?</p>
+                    <div class="form-group">
+                        <label for="deletePassword">비밀번호</label>
+                        <input type="password" class="form-control" id="deletePassword" placeholder="게시글 작성 시 입력한 비밀번호">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">취소</button>
+                    <button type="button" class="btn btn-outline-danger" id="confirmDeleteBtn">삭제</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 댓글 삭제 확인 모달 -->
+    <div class="modal fade" id="deleteCommentModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title">댓글 삭제</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>댓글을 삭제하시겠습니까? 이 작업은 취소할 수 없습니다.</p>
+                    <div class="form-group">
+                        <label for="deleteCommentPassword">비밀번호</label>
+                        <input type="password" class="form-control" id="deleteCommentPassword" placeholder="댓글 작성 시 입력한 비밀번호">
+                        <input type="hidden" id="deleteCommentIdx" value="">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">취소</button>
+                    <button type="button" class="btn btn-outline-danger" id="confirmDeleteCommentBtn">삭제</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <script src="/post-detail.js"></script>
+</body>
+</html> 
