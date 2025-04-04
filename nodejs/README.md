@@ -1,6 +1,6 @@
 # 14. Auth
 <div align="center">
-    <img  style="width: 50%" src="../wiki-images/nodejs/nodejs-auth-1.png">
+    <img  style="width: 50%" src="./14.auth/meta/image1.png">
 </div>
 <div align=center>
     <h3>
@@ -48,16 +48,16 @@ npm start
 <br>
 
 - jwt 기반 인증 인가
-<p align ="center"><img src="../wiki-images/nodejs/nodejs-auth-2.png"/></p>
+<p align ="center"><img src="./14.auth/meta/image2.png"/></p>
 
 - jwt 엑세스, 리프레시 토큰
-<p align ="center"><img src="../wiki-images/nodejs/nodejs-auth-3.png"/></p>
+<p align ="center"><img src="./14.auth/meta/image3.png"/></p>
 
 - Passport를 이용한 쿠키 세션
-<p align ="center"><img src="../wiki-images/nodejs/nodejs-auth-4.png"/></p>
+<p align ="center"><img src="./14.auth/meta/image4.png"/></p>
 
 - Oauth 인증 흐름
-<p align ="center"><img src="../wiki-images/nodejs/nodejs-auth-5.png"/></p>
+<p align ="center"><img src="./14.auth/meta/image5.png"/></p>
 
 </details>
 

@@ -1,6 +1,6 @@
 # 01. asset
 <div align="center">
-        <img  style="width: 50%" src="../wiki-images/hyperledgerfabric/메인이미지1.png">
+        <img  style="width: 50%" src="./01.asset/meta/image1.png">
 </div>
 
 <br>

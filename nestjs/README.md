@@ -121,32 +121,32 @@ http://localhost:3000/auth/testloginsession
 
 - 유저, 인증 모듈, 가드
 <p align ="center">
-  <img src ="../wiki-images/nestjs/nestjs-auth-1.png"/>
+  <img src ="./06.auth/meta/image1.png"/>
 </p>
 
 - 페스포트와 세션을 사용한 인증 과정
 <p align ="center">
-  <img src ="../wiki-images/nestjs/nestjs-auth-2.png"/>
+  <img src ="./06.auth/meta/image2.png"/>
 </p>
 
 - 로그인부터 세션 저장까지 순서도
 <p align ="center">
-  <img src ="../wiki-images/nestjs/nestjs-auth-3.png"/>
+  <img src ="./06.auth/meta/image3.png"/>
 </p>
 
 - OAuth 프로토콜 흐름, 엑세스 토큰 만료시 리프레시 토큰을 통한 재발행 </b>
 <p align ="center">
-  <img src ="../wiki-images/nestjs/nestjs-auth-4.png"/>
+  <img src ="./06.auth/meta/image4.png"/>
 </p>
 
 - 구글 OAuth 구현 순서
 <p align ="center">
-  <img src ="../wiki-images/nestjs/nestjs-auth-5.png"/>
+  <img src ="./06.auth/meta/image5.png"/>
 </p>
 
 - GoogleAuthGuard의 동작 순서도
 <p align ="center">
-  <img src ="../wiki-images/nestjs/nestjs-auth-6.png"/>
+  <img src ="./06.auth/meta/image6.png"/>
 </p>
 
 </details>
@@ -287,7 +287,7 @@ npm run start
 
 - chat
 <p align ="center">
-  <img src ="../wiki-images/nestjs/nestjs-chat-2.png"/>
+  <img src ="./08.chat/meta/image2.png"/>
 </p>
 
 </details>
