@@ -3,7 +3,7 @@
 ## 레포목적
 * 전공 과제 및 학습용 프로젝트 저장 및 정리
 * README.md 프로젝트 폴더 밖으로 이동해 합침, --- 구분선을 이용해 분리
-* 0001 (README 있음) / 0010 (Blog 정리 완료) / 0100 (Blog 정리 예정) / 1000 (단순 저장)
+* 0001 (README O) / 0010 (Blog O) / 0100 (Blog X) / 1000 (저장 O)
 
 ## 바로가기
 * 0100 [spring](https://github.com/mpqm/mpqm-wiki/tree/main/spring)
