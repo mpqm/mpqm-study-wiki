@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PdfDataSet"
+           targetNamespace="http://tempuri.org/PdfDataSet.xsd"
+           xmlns="http://tempuri.org/PdfDataSet.xsd"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           attributeFormDefault="qualified"
+           elementFormDefault="qualified">
+
+	<xs:element name="PdfDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+
+				<!-- TB_DUMMY1 -->
+				<xs:element name="TB_DUMMY1">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:int" minOccurs="0" />
+							<xs:element name="info1" type="xs:string" minOccurs="0" />
+							<xs:element name="info2" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+
+				<!-- TB_DUMMY2 -->
+				<xs:element name="TB_DUMMY2">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ID" type="xs:int" minOccurs="0" />
+							<xs:element name="info1" type="xs:string" minOccurs="0" />
+							<xs:element name="info2" type="xs:int" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+
+</xs:schema>

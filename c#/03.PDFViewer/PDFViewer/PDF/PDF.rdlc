@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+	<Description>테스트 보고서</Description>
+	<Author>사용자</Author>
+	<AutoRefresh>0</AutoRefresh>
+	<InteractiveHeight>29.7cm</InteractiveHeight>
+	<InteractiveWidth>21cm</InteractiveWidth>
+	<LeftMargin>2cm</LeftMargin>
+	<RightMargin>2cm</RightMargin>
+	<TopMargin>2cm</TopMargin>
+	<BottomMargin>2cm</BottomMargin>
+	<DataElementName>Report</DataElementName>
+	<DataElementStyle>AttributeNormal</DataElementStyle>
+	<Width>30cm</Width>
+
+	<DataSources>
+		<!-- 데이터 소스 정의 -->
+		<DataSource Name="PdfDataSet">
+			<ConnectionProperties>
+				<DataProvider>System.Data.DataSet</DataProvider>
+				<ConnectString>/* Local Connection */</ConnectString>
+			</ConnectionProperties>
+			<rd:DataSourceID>6d3341a2-4c87-4aa9-bd9f-65e49bb38207</rd:DataSourceID>
+		</DataSource>
+	</DataSources>
+
+	<DataSets>
+		<!-- 데이터 세트 정의 -->
+		<DataSet Name="TB_DUMMY1">
+			<Fields>
+				<Field Name="ID">
+					<DataField>ID</DataField>
+					<rd:TypeName>System.Int32</rd:TypeName>
+				</Field>
+				<Field Name="info1">
+					<DataField>info1</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="info2">
+					<DataField>info2</DataField>
+					<rd:TypeName>System.Int32</rd:TypeName>
+				</Field>
+			</Fields>
+			<Query>
+				<DataSourceName>PdfDataSet</DataSourceName>
+				<CommandText>SELECT * FROM TB_DUMMY1</CommandText>
+			</Query>
+		</DataSet>
+
+		<DataSet Name="TB_DUMMY2">
+			<Fields>
+				<Field Name="ID">
+					<DataField>ID</DataField>
+					<rd:TypeName>System.Int32</rd:TypeName>
+				</Field>
+				<Field Name="info1">
+					<DataField>info1</DataField>
+					<rd:TypeName>System.String</rd:TypeName>
+				</Field>
+				<Field Name="info2">
+					<DataField>info2</DataField>
+					<rd:TypeName>System.Int32</rd:TypeName>
+				</Field>
+			</Fields>
+			<Query>
+				<DataSourceName>PdfDataSet</DataSourceName>
+				<CommandText>SELECT * FROM TB_DUMMY2</CommandText>
+			</Query>
+		</DataSet>
+	</DataSets>
+
+	<Body>
+		<Height>15cm</Height>
+		<ReportItems>
+			<Table Name="Table1">
+				<TableColumns>
+					<TableColumn>
+						<Width>3cm</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>3cm</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>3cm</Width>
+					</TableColumn>
+				</TableColumns>
+				<Header>
+					<TableRows>
+						<TableRow>
+							<Height>1cm</Height>
+							<TableCells>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="IDHeader">
+											<Value>ID</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="Info1Header">
+											<Value>info1</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="Info2Header">
+											<Value>info2</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+							</TableCells>
+						</TableRow>
+					</TableRows>
+				</Header>
+				<Details>
+					<TableRows>
+						<TableRow>
+							<Height>1cm</Height>
+							<TableCells>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="ID">
+											<Value>=Fields!ID.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="Info1">
+											<Value>=Fields!info1.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="Info2">
+											<Value>=Fields!info2.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+							</TableCells>
+						</TableRow>
+					</TableRows>
+				</Details>
+				<DataSetName>TB_DUMMY1</DataSetName>
+			</Table>
+			<Table Name="TBD2">
+				<TableColumns>
+					<TableColumn>
+						<Width>3cm</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>3cm</Width>
+					</TableColumn>
+					<TableColumn>
+						<Width>3cm</Width>
+					</TableColumn>
+				</TableColumns>
+				<Header>
+					<TableRows>
+						<TableRow>
+							<Height>1cm</Height>
+							<TableCells>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TBD2_IDHeader">
+											<Value>ID</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TBD2_Info1Header">
+											<Value>info1</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TBD2_Info2Header">
+											<Value>info2</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+							</TableCells>
+						</TableRow>
+					</TableRows>
+				</Header>
+				<Details>
+					<TableRows>
+						<TableRow>
+							<Height>1cm</Height>
+							<TableCells>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TBD2_ID">
+											<Value>=Fields!ID.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TBD2_Info1">
+											<Value>=Fields!info1.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+								<TableCell>
+									<ReportItems>
+										<Textbox Name="TBD2_Info2">
+											<Value>=Fields!info2.Value</Value>
+										</Textbox>
+									</ReportItems>
+								</TableCell>
+							</TableCells>
+						</TableRow>
+					</TableRows>
+				</Details>
+				<DataSetName>TB_DUMMY2</DataSetName>
+			</Table>
+		</ReportItems>
+	</Body>
+
+	<Language>ko-KR</Language>
+</Report>
