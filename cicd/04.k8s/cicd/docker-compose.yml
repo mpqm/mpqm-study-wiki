@@ -1,0 +1,51 @@
+services:
+  # backend
+  backend:
+    container_name: backend
+    image: registry:5000/backend:${DOCKER_IMAGE_TAG}
+    ports:
+      - "8080:8080"
+
+  # frontend
+  frontend:
+    container_name: frontend
+    ports:
+      - "80:80"
+    image: registry:5000/frontend:${DOCKER_IMAGE_TAG}
+
+  # database
+  database:
+    container_name: database
+    ports:
+      - 3306:3306
+    image: mariadb:latest
+    environment:
+      - MARIADB_DATABASE=study
+      - MARIADB_ROOT_PASSWORD=qwer1234
+    volumes:
+      - ../cicd/mariadb/:/var/lib/mysql
+    mem_limit: 2g        # 메모리 제한 (2GB)
+    cpus: 2.0           # CPU 할당 (2 CPU 코어)
+
+  registry:
+    container_name: registry
+    image: registry:2
+    restart: always
+    ports:
+      - "5000:5000"
+    volumes:
+      - ../cicd/registry/daemon.json:/etc/docker/daemon.json
+
+  jenkins:
+    image: jenkins/jenkins:lts  # 🔹 최신 LTS 버전 사용
+    container_name: jenkins
+    restart: unless-stopped
+    privileged: true  # 🔹 Jenkins에서 Docker 실행을 허용
+    user: root  # 🔹 root 권한으로 실행 (Docker 실행을 위해 필요)
+    ports:
+      - "9090:8080"  # 🔹 Jenkins 웹 UI 포트
+      - "50000:50000"  # 🔹 에이전트와의 통신 포트
+    volumes:
+      - ../cicd/jenkins/data:/var/jenkins_home  # 🔹 Jenkins 데이터 저장소
+      - ../cicd/jenkins/:/var/run/docker.sock  # 🔹 Docker 컨테이너를 제어할 수 있도록 마운트
+

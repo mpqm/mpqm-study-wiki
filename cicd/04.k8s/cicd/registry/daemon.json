@@ -1,0 +1,8 @@
+{
+  "registry-mirrors": [],
+  "insecure-registries": [
+      "registry:5000"
+  ],
+  "debug": true,
+  "experimental": true
+}

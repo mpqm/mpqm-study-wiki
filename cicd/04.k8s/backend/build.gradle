@@ -1,0 +1,93 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.3.2'
+	id 'io.spring.dependency-management' version '1.1.6'
+	id("com.palantir.docker") version "0.36.0"
+}
+
+group = 'com.cicd'
+version = '0.0.1-SNAPSHOT'
+
+bootJar {
+	archiveFileName = "api.jar"
+}
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(17)
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
+
+def platform = project.hasProperty('platform') ? project.property('platform') : "frontend"
+
+docker {
+	if (platform == "frontend") {
+		name "registry:5000/frontend:${version}"
+		files "../frontend/dist"
+		buildArgs(['DIST_DIR': "../"])
+		dockerfile file("../cicd/Dockerfile_frontend_host")
+	} else {
+		name "registry:5000/backend:${version}"
+		files tasks.bootJar.outputs.files
+		buildArgs(['JAR_FILE': tasks.bootJar.outputs.files.singleFile.name])
+		dockerfile file("../cicd/Dockerfile_backend_host")
+	}
+}
+
+// Backend Docker 이미지 빌드 & Push
+task buildDockerBackend(type: Exec) {
+	workingDir project.rootDir
+	commandLine 'gradlew.bat', 'docker', '-Pplatform=backend'
+	doLast {
+		commandLine 'docker', 'push', "registry:5000/backend-local:${version}"
+	}
+}
+
+// Frontend 빌드 & Docker 이미지 빌드 & Push
+task buildFrontend(type: Exec) {
+	workingDir '../frontend'
+	commandLine 'C:\\Program Files\\nodejs\\npm.cmd', 'run', 'build'
+}
+
+task buildDockerFrontend(type: Exec, dependsOn: buildFrontend) {
+	workingDir project.rootDir
+	commandLine 'cmd', '/c', 'gradlew.bat', 'docker'
+	doLast {
+		commandLine 'docker', 'push', "registry:5000/frontend-local:${version}"
+	}
+}
+
+// Backend 컨테이너 실행
+task dockerComposeUpBackend(type: Exec, dependsOn: buildDockerBackend) {
+	environment 'DOCKER_IMAGE_TAG', version
+	commandLine 'docker-compose', '-f', '../cicd/docker-compose.yml', 'up', '--build', '-d', 'backend-local'
+}
+
+// Frontend 컨테이너 실행
+task dockerComposeUpFrontend(type: Exec, dependsOn: buildDockerFrontend) {
+	environment 'DOCKER_IMAGE_TAG', version
+	commandLine 'docker-compose', '-f', '../cicd/docker-compose.yml', 'up', '--build', '-d', 'frontend-local'
+}
+
+// Backend + Frontend 실행
+task buildAll(dependsOn: ['dockerComposeUpBackend', 'dockerComposeUpFrontend']) {
+	doLast {
+		println "Backend & Frontend 컨테이너가 실행되었습니다!"
+	}
+}
+

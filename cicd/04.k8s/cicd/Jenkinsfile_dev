@@ -1,0 +1,136 @@
+pipeline {
+    agent any
+      environment {
+            PULL_REQUEST_BASE_BRANCH = "${env.PULL_REQUEST_BASE_BRANCH}"
+            PULL_REQUEST_REF_BRANCH = "${env.PULL_REQUEST_REF_BRANCH}"
+            IF_MERGED = "${env.IF_MERGED}"
+
+    }
+    stages {
+
+        // 1. 깃 클론
+        stage('Git clone') {
+            // dddddd
+            steps {
+                script {
+                     def branchToUse = PULL_REQUEST_BASE_BRANCH
+                    git branch: "${branchToUse}", url: 'https://github.com/beyond-sw-camp/be06-fin-SABUJAKS-IRS'
+                }
+            }
+        }
+
+        // 2. 권한 추가
+        stage('Add Permission') {
+            steps {
+                sh 'chmod +x /var/lib/jenkins/workspace/sabujaks-batch-backend/backend/api/gradlew'
+            }
+        }
+
+        // 3. gradle 빌드
+        stage('Build') {
+            steps {
+                dir('/var/lib/jenkins/workspace/sabujaks-batch-backend/backend/api') {
+                    sh './gradlew bootJar'
+                }
+            }
+        }
+
+        // 4. Docker 빌드
+        stage('Docker Build') {
+            steps {
+                script {
+                    sh 'docker build -f cicd/jenkins/backend/Dockerfile -t sabujaks/backend-api:1.$BUILD_ID .'
+                }
+            }
+        }
+
+        // 5. Docker Push
+        stage('Docker Push') {
+            steps {
+                script {
+                    // Docker 로그인
+                    withCredentials([usernamePassword(credentialsId: 'dockerhub_credential', usernameVariable: 'DOCKER_EMAIL', passwordVariable: 'DOCKER_PASSWORD')]) {
+                        sh "docker login -u ${DOCKER_EMAIL} -p ${DOCKER_PASSWORD}"
+                    }
+                    // Docker Push
+                    sh 'docker push sabujaks/backend-api:1.$BUILD_ID'
+                }
+            }
+        }
+
+        // 6. SSH 전송 및 배포 관리
+        stage('SSH transfer') {
+            steps {
+                script {
+                    def isOdd = (BUILD_ID.toInteger() % 2 != 0)
+                    def deploymentFile = isOdd ? 'backend-api-deployment-blue.yml' : 'backend-api-deployment-green.yml'
+                    def otherDeployment = isOdd ? 'backend-api-deployment-green' : 'backend-api-deployment-blue'
+                    def newSelector = isOdd ? 'blue' : 'green'
+                    def serviceName = 'backend-svc'
+
+                    def deploymentName = deploymentFile.replace('.yml', '')
+
+                    // SSH 전송 플러그인 사용
+                    sshPublisher(
+                        // 오류 발생 시 진행을 멈춤
+                        continueOnError: false,
+                        // 오류 발생 시 파이프라인을 실패시킴
+                        failOnError: true,
+                        // 전송자 목록
+                        publishers: [
+                            sshPublisherDesc(
+                                // SSH 서버 설정 이름 지정 ( master 노드 )
+                                configName: "k8s-master",
+                                // 자세한 출력 모드 활성화
+                                verbose: true,
+                                transfers: [
+                                    sshTransfer(
+                                        // 전송할 파일 지정
+                                        sourceFiles: "cicd/k8s/backend/${deploymentFile}",
+                                        // 원격 디렉토리 지정 ( 원격서버로 파일을 전송할 위치 )
+                                        remoteDirectory: "/home/test/",
+                                        // 전송 후 야멜 파일의 VERSION을 파이프라인 빌드 숫자로 변경
+                                        execCommand: """
+                                            sed -i "s/latest/1.${BUILD_ID}/g" /home/test/cicd/k8s/backend/${deploymentFile}
+                                            kubectl apply -f /home/test/cicd/k8s/backend/${deploymentFile}
+
+                                            kubectl scale deployment ${deploymentName} --replicas=2
+
+                                            kubectl wait --for=condition=ready pod -l deployment=${newSelector},type=backend-api --timeout=300s
+
+                                            kubectl patch service ${serviceName} -p '{"spec":{"selector":{"deployment":"${newSelector}","type":"backend-api"}}}'
+
+                                            kubectl scale deployment ${otherDeployment} --replicas=0
+                                        """
+                                    )
+                                ]
+                            )
+                        ]
+                    )
+                }
+            }
+        }
+    }
+    post {
+        success {
+            discordSend description: """
+            제목 : ${currentBuild.displayName}
+            결과 : ${currentBuild.result}
+            실행 시간 : ${currentBuild.duration / 1000}s
+            """,
+            link: env.BUILD_URL, result: currentBuild.currentResult,
+            title: "${env.JOB_NAME} : ${currentBuild.displayName} 성공",
+            webhookURL: "${env.Discord}"
+        }
+        failure {
+            discordSend description: """
+            제목 : ${currentBuild.displayName}
+            결과 : ${currentBuild.result}
+            실행 시간 : ${currentBuild.duration / 1000}s
+            """,
+            link: env.BUILD_URL, result: currentBuild.currentResult,
+            title: "${env.JOB_NAME} : ${currentBuild.displayName} 실패",
+            webhookURL: "${env.Discord}"
+        }
+    }
+}
